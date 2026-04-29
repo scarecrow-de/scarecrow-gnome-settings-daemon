@@ -13,7 +13,7 @@ gsd_api_version_minor = 0
 gsd_api_version = '@0@.@1@'.format(gsd_major_version, gsd_api_version_minor)
 gsd_api_name = '@0@-@1@'.format(meson.project_name(), gsd_api_version)
 
-glib_min_version = '2.56'
+glib_min_version = '2.58'
 
 glib_version_def = 'GLIB_VERSION_@0@_@1@'.format(
     glib_min_version.split('.')[0], glib_min_version.split('.')[1])

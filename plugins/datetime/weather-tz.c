@@ -29,8 +29,6 @@ static GList *
 location_get_cities (GWeatherLocation *parent_location)
 {
         GList *cities = NULL;
-        GWeatherLocation **children;
-        gint i;
 
 	g_autoptr (GWeatherLocation) iter = NULL;
         while ((iter = gweather_location_next_child (parent_location, iter)) != NULL) {
