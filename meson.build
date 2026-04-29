@@ -13,7 +13,7 @@ gsd_api_version_minor = 0
 gsd_api_version = '@0@.@1@'.format(gsd_major_version, gsd_api_version_minor)
 gsd_api_name = '@0@-@1@'.format(meson.project_name(), gsd_api_version)
 
-glib_min_version = '2.56'
+glib_min_version = '2.58'
 
 glib_version_def = 'GLIB_VERSION_@0@_@1@'.format(
     glib_min_version.split('.')[0], glib_min_version.split('.')[1])
@@ -90,14 +90,14 @@ endif
 add_project_arguments(common_flags + compiler_flags, language: 'c')
 
 glib_dep = dependency('glib-2.0', version: '>=' + glib_min_version)
-geocode_glib_dep = dependency('geocode-glib-1.0', version: '>= 3.10.0')
+geocode_glib_dep = dependency('geocode-glib-2.0', version: '>= 3.10.0')
 gio_dep = dependency('gio-2.0', version: '>= 2.53.0')
 gio_unix_dep = dependency('gio-unix-2.0')
 gnome_desktop_dep = dependency('gnome-desktop-3.0', version: '>= 3.34.2')
 gsettings_desktop_dep = dependency('gsettings-desktop-schemas', version: '>= 3.35.91')
 gtk_dep = dependency('gtk+-3.0', version: '>= 3.15.3')
 gtk_x11_dep = dependency('gtk+-x11-3.0')
-gweather_dep = dependency('gweather-3.0', version: '>= 3.9.5')
+gweather_dep = dependency('gweather4', version: '>= 3.9.5')
 lcms_dep = dependency('lcms2', version: '>= 2.2')
 libcanberra_gtk_dep = dependency('libcanberra-gtk3')
 libgeoclue_dep = dependency('libgeoclue-2.0', version: '>= 2.3.1')

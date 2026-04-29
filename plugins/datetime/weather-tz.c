@@ -29,17 +29,15 @@ static GList *
 location_get_cities (GWeatherLocation *parent_location)
 {
         GList *cities = NULL;
-        GWeatherLocation **children;
-        gint i;
 
-        children = gweather_location_get_children (parent_location);
-        for (i = 0; children[i]; i++) {
-                if (gweather_location_get_level (children[i]) == GWEATHER_LOCATION_CITY) {
+	g_autoptr (GWeatherLocation) iter = NULL;
+        while ((iter = gweather_location_next_child (parent_location, iter)) != NULL) {
+                if (gweather_location_get_level (iter) == GWEATHER_LOCATION_CITY) {
                         cities = g_list_prepend (cities,
-                                                 children[i]);
+                                                 iter);
                 } else {
                         cities = g_list_concat (cities,
-                                                location_get_cities (children[i]));
+                                                location_get_cities (iter));
                 }
         }
 
@@ -80,7 +78,7 @@ load_timezones (GList *cities)
                 }
 
                 country = gweather_location_get_country (l->data);
-                timezone_id = gweather_timezone_get_tzid (gweather_location_get_timezone (l->data));
+                timezone_id = g_time_zone_get_identifier (gweather_location_get_timezone (l->data));
                 gweather_location_get_coords (l->data,
                                               &latitude,
                                               &longitude);
