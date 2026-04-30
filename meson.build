@@ -5,6 +5,8 @@ project(
   meson_version: '>= 0.47.0'
 )
 
+meson.add_dist_script('fix_dist.sh')
+
 gsd_version = meson.project_version()
 version_array = gsd_version.split('.')
 gsd_major_version = version_array[0].to_int()
