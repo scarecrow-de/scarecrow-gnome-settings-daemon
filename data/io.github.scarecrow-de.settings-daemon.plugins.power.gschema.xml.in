@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema gettext-domain="@GETTEXT_PACKAGE@" id="io.github.scarecrow.settings-daemon.plugins.power" path="/io/github/scarecrow/settings-daemon/plugins/power/">
+  <schema gettext-domain="@GETTEXT_PACKAGE@" id="io.github.scarecrow-de.settings-daemon.plugins.power" path="/io/github/scarecrow/settings-daemon/plugins/power/">
     <key name="idle-brightness" type="i">
       <default>30</default>
       <summary>The brightness of the screen when idle</summary>
@@ -16,7 +16,7 @@
       <summary>Sleep timeout computer when on AC</summary>
       <description>The amount of time in seconds the computer on AC power needs to be inactive before it goes to sleep. A value of 0 means never.</description>
     </key>
-    <key name="sleep-inactive-ac-type" enum="io.github.scarecrow.settings-daemon.GsdPowerActionType">
+    <key name="sleep-inactive-ac-type" enum="io.github.scarecrow-de.settings-daemon.GsdPowerActionType">
       <default>'suspend'</default>
       <summary>Whether to hibernate, suspend or do nothing when inactive</summary>
       <description>The type of sleeping that should be performed when the computer is inactive.</description>
@@ -26,7 +26,7 @@
       <summary>Sleep timeout computer when on battery</summary>
       <description>The amount of time in seconds the computer on battery power needs to be inactive before it goes to sleep. A value of 0 means never.</description>
     </key>
-    <key name="sleep-inactive-battery-type" enum="io.github.scarecrow.settings-daemon.GsdPowerActionType">
+    <key name="sleep-inactive-battery-type" enum="io.github.scarecrow-de.settings-daemon.GsdPowerActionType">
       <default>'suspend'</default>
       <summary>Whether to hibernate, suspend or do nothing when inactive</summary>
       <description>The type of sleeping that should be performed when the computer is inactive.</description>
@@ -36,7 +36,7 @@
       <summary>Enable the ALS sensor</summary>
       <description>If the ambient light sensor functionality is enabled.</description>
     </key>
-    <key name="power-button-action" enum="io.github.scarecrow.settings-daemon.GsdPowerButtonActionType">
+    <key name="power-button-action" enum="io.github.scarecrow-de.settings-daemon.GsdPowerButtonActionType">
       <default>'suspend'</default>
       <summary>Power button action</summary>
       <description>The action to take when the system power button is pressed. This action is hard-coded (and the setting ignored) on virtual machines (power off) and tablets (suspend).</description>

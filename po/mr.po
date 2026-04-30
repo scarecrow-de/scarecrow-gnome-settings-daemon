@@ -25,11 +25,11 @@ msgstr ""
 msgid "GNOME Settings Daemon"
 msgstr "GNOME संयोजना डीमन"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:1
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.gschema.xml.in.in.h:1
 msgid "Smartcard removal action"
 msgstr "स्मार्टकार्ड काढून टाकण्याची कृती"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:2
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.gschema.xml.in.in.h:2
 msgid ""
 "Set this to one of \"none\", \"lock-screen\", or \"force-logout\". The "
 "action will get performed when the smartcard used for log in is removed."
@@ -38,21 +38,21 @@ msgstr ""
 "करा. "
 "लॉगइनकरीता वापरले जाणारे स्मार्टकार्ड काढून टाकल्यावर कृती सुरू केली जाईल."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:3
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.gschema.xml.in.in.h:3
 msgid "Disable touchpad while typing"
 msgstr "टाईपकरतेवेळी टचपॅड अकार्यक्षम करा"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:4
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.gschema.xml.in.in.h:4
 msgid ""
 "Set this to TRUE if you have problems with accidentally hitting the touchpad "
 "while typing."
 msgstr "टाईप करतेवेळी टचपॅडला चुकीने हात लागल्यास यांस TRUE सेट करा."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:5
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.gschema.xml.in.in.h:5
 msgid "Enable horizontal scrolling"
 msgstr "आडवे स्क्रोलींग कार्यक्षम करा"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:6
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.gschema.xml.in.in.h:6
 msgid ""
 "Set this to TRUE to allow horizontal scrolling by the same method selected "
 "with the scroll_method key."
@@ -61,11 +61,11 @@ msgstr ""
 "स्वीकारण्याकरीता याला "
 "TRUE असे सेट करा."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:7
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.gschema.xml.in.in.h:7
 msgid "Select the touchpad scroll method"
 msgstr "टचपॅड स्क्रोल पद्धत नीवडा"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:8
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.gschema.xml.in.in.h:8
 msgid ""
 "Select the touchpad scroll method. Supported values are: \"disabled\", "
 "\"edge-scrolling\", \"two-finger-scrolling\"."
@@ -74,65 +74,65 @@ msgstr ""
 "\"disabled\", \"edge-"
 "scrolling\", \"two-finger-scrolling\" असे आहेत."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:9
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.gschema.xml.in.in.h:9
 msgid "Enable mouse clicks with touchpad"
 msgstr "टचपॅडसह माऊस क्लिक्स् कार्यक्षम करा"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:10
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.gschema.xml.in.in.h:10
 msgid ""
 "Set this to TRUE to be able to send mouse clicks by tapping on the touchpad."
 msgstr ""
 "टचपॅडवर टॅप केल्यानंतर माऊस क्लिक्स् पाठवण्यासाठी यांस TRUE असे सेट करा."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:11
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.gschema.xml.in.in.h:11
 msgid "Enable touchpad"
 msgstr "टचपॅड सुरू करा"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:12
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.gschema.xml.in.in.h:12
 msgid "Set this to TRUE to enable all touchpads."
 msgstr "सर्व टचपॅडस् सुरू करण्यासाठी यास TRUE असे सेट करा."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:13
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.gschema.xml.in.in.h:13
 msgid ""
 "Highlights the current location of the pointer when the Control key is "
 "pressed and released."
 msgstr "कंट्रोल कि दाबले व सोडल्यानंतर पॉईंटरचे सध्याचे ठिकाण ठळक करतो."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:14
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.gschema.xml.in.in.h:14
 msgid "Double click time"
 msgstr "डबल क्लिक वेळ"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:15
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.gschema.xml.in.in.h:15
 msgid "Length of a double click in milliseconds."
 msgstr "मिलिसेकंदातील डबल क्लिकची लांबी."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:16
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.gschema.xml.in.in.h:16
 msgid "Drag threshold"
 msgstr "ड्रॅग थ्रेशहोल्ड"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:17
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.gschema.xml.in.in.h:17
 msgid "Distance before a drag is started."
 msgstr "ड्रॅग सुरू करण्यापूर्वी अंतर."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:18
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.gschema.xml.in.in.h:18
 msgid "Middle button emulation"
 msgstr "मधल्या बटनचे एम्युलेशन"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:19
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.gschema.xml.in.in.h:19
 msgid ""
 "Enables middle mouse button emulation through simultaneous left and right "
 "button click."
 msgstr "सतत डावे व उजवे बटन क्लिकने मिडल माऊस बटन इम्युलेशन सुरू करत आहे."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:20
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.gschema.xml.in.in.h:20
 msgid "Whether the tablet's orientation is locked, or rotated automatically."
 msgstr "टॅबलेटचे निर्देशन कुलूपबंद आहे, किंवा स्वयंरित्या गोल फिरते."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:21
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.gschema.xml.in.in.h:21
 msgid "Device hotplug custom command"
 msgstr "डिव्हाइस hotplug पसंतीचे आदेश"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:22
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.gschema.xml.in.in.h:22
 msgid ""
 "Command to be run when a device is added or removed. An exit value of 1 "
 "means that the device will not be handled further by scarecrow-settings-daemon."
@@ -140,93 +140,93 @@ msgstr ""
 "साधन समाविष्ट किंवा काढून टाकल्यावर चालवण्याजोगी आदेश. 1 चे एक्जिट मूल्य "
 "म्हणजे साधन scarecrow-settings-daemon तर्फे हाताळले जाणार नाही."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:1
-#: ../data/io.github.scarecrow.settings-daemon.plugins.color.gschema.xml.in.in.h:1
-#: ../data/io.github.scarecrow.settings-daemon.plugins.datetime.gschema.xml.in.in.h:1
-#: ../data/io.github.scarecrow.settings-daemon.plugins.gschema.xml.in.in.h:3
-#: ../data/io.github.scarecrow.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:1
-#: ../data/io.github.scarecrow.settings-daemon.plugins.keyboard.gschema.xml.in.in.h:1
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:1
-#: ../data/io.github.scarecrow.settings-daemon.plugins.orientation.gschema.xml.in.in.h:1
-#: ../data/io.github.scarecrow.settings-daemon.plugins.power.gschema.xml.in.in.h:1
-#: ../data/io.github.scarecrow.settings-daemon.plugins.print-notifications.gschema.xml.in.in.h:1
-#: ../data/io.github.scarecrow.settings-daemon.plugins.sharing.gschema.xml.in.in.h:1
-#: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:1
-#: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:1
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:1
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.color.gschema.xml.in.in.h:1
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.datetime.gschema.xml.in.in.h:1
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.gschema.xml.in.in.h:3
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:1
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.keyboard.gschema.xml.in.in.h:1
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:1
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.orientation.gschema.xml.in.in.h:1
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.power.gschema.xml.in.in.h:1
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.print-notifications.gschema.xml.in.in.h:1
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.sharing.gschema.xml.in.in.h:1
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:1
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:1
 msgid "Activation of this plugin"
 msgstr "या प्लगइनला सुरू करणे"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:2
-#: ../data/io.github.scarecrow.settings-daemon.plugins.color.gschema.xml.in.in.h:2
-#: ../data/io.github.scarecrow.settings-daemon.plugins.datetime.gschema.xml.in.in.h:2
-#: ../data/io.github.scarecrow.settings-daemon.plugins.gschema.xml.in.in.h:4
-#: ../data/io.github.scarecrow.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:2
-#: ../data/io.github.scarecrow.settings-daemon.plugins.keyboard.gschema.xml.in.in.h:2
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:2
-#: ../data/io.github.scarecrow.settings-daemon.plugins.orientation.gschema.xml.in.in.h:2
-#: ../data/io.github.scarecrow.settings-daemon.plugins.power.gschema.xml.in.in.h:2
-#: ../data/io.github.scarecrow.settings-daemon.plugins.print-notifications.gschema.xml.in.in.h:2
-#: ../data/io.github.scarecrow.settings-daemon.plugins.sharing.gschema.xml.in.in.h:2
-#: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:2
-#: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:2
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:2
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.color.gschema.xml.in.in.h:2
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.datetime.gschema.xml.in.in.h:2
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.gschema.xml.in.in.h:4
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:2
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.keyboard.gschema.xml.in.in.h:2
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:2
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.orientation.gschema.xml.in.in.h:2
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.power.gschema.xml.in.in.h:2
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.print-notifications.gschema.xml.in.in.h:2
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.sharing.gschema.xml.in.in.h:2
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:2
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:2
 msgid "Whether this plugin would be activated by scarecrow-settings-daemon or not"
 msgstr "scarecrow-settings-daemon तर्फे हे प्लगइन सुरू होईल किंवा नाही"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:3
-#: ../data/io.github.scarecrow.settings-daemon.plugins.color.gschema.xml.in.in.h:3
-#: ../data/io.github.scarecrow.settings-daemon.plugins.datetime.gschema.xml.in.in.h:3
-#: ../data/io.github.scarecrow.settings-daemon.plugins.gschema.xml.in.in.h:5
-#: ../data/io.github.scarecrow.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:13
-#: ../data/io.github.scarecrow.settings-daemon.plugins.keyboard.gschema.xml.in.in.h:3
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:29
-#: ../data/io.github.scarecrow.settings-daemon.plugins.orientation.gschema.xml.in.in.h:3
-#: ../data/io.github.scarecrow.settings-daemon.plugins.power.gschema.xml.in.in.h:3
-#: ../data/io.github.scarecrow.settings-daemon.plugins.print-notifications.gschema.xml.in.in.h:3
-#: ../data/io.github.scarecrow.settings-daemon.plugins.sharing.gschema.xml.in.in.h:3
-#: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:5
-#: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:7
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:3
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.color.gschema.xml.in.in.h:3
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.datetime.gschema.xml.in.in.h:3
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.gschema.xml.in.in.h:5
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:13
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.keyboard.gschema.xml.in.in.h:3
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:29
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.orientation.gschema.xml.in.in.h:3
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.power.gschema.xml.in.in.h:3
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.print-notifications.gschema.xml.in.in.h:3
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.sharing.gschema.xml.in.in.h:3
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:5
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:7
 msgid "Priority to use for this plugin"
 msgstr "या प्लगइनकरीता वापरण्याजोगी प्राधान्यता"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:4
-#: ../data/io.github.scarecrow.settings-daemon.plugins.color.gschema.xml.in.in.h:4
-#: ../data/io.github.scarecrow.settings-daemon.plugins.datetime.gschema.xml.in.in.h:4
-#: ../data/io.github.scarecrow.settings-daemon.plugins.gschema.xml.in.in.h:6
-#: ../data/io.github.scarecrow.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:14
-#: ../data/io.github.scarecrow.settings-daemon.plugins.keyboard.gschema.xml.in.in.h:4
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:30
-#: ../data/io.github.scarecrow.settings-daemon.plugins.orientation.gschema.xml.in.in.h:4
-#: ../data/io.github.scarecrow.settings-daemon.plugins.power.gschema.xml.in.in.h:4
-#: ../data/io.github.scarecrow.settings-daemon.plugins.print-notifications.gschema.xml.in.in.h:4
-#: ../data/io.github.scarecrow.settings-daemon.plugins.sharing.gschema.xml.in.in.h:4
-#: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:6
-#: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:8
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:4
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.color.gschema.xml.in.in.h:4
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.datetime.gschema.xml.in.in.h:4
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.gschema.xml.in.in.h:6
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:14
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.keyboard.gschema.xml.in.in.h:4
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:30
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.orientation.gschema.xml.in.in.h:4
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.power.gschema.xml.in.in.h:4
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.print-notifications.gschema.xml.in.in.h:4
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.sharing.gschema.xml.in.in.h:4
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:6
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:8
 msgid "Priority to use for this plugin in scarecrow-settings-daemon startup queue"
 msgstr ""
 "scarecrow-settings-daemon स्टार्टअप क्युऊमध्ये या प्लगइनकरीता वापरण्याजोगी "
 "प्राधान्यता"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:5
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:5
 msgid "Wacom stylus absolute mode"
 msgstr "वॅकॉम स्टायलस ॲबसोल्युट मोड"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:6
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:6
 msgid "Enable this to set the tablet to absolute mode."
 msgstr "टॅबलेटला ॲब्सोल्युट मोडमध्ये ठरवण्याकरीता यास सुरू करा."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:7
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:7
 msgid "Wacom tablet area"
 msgstr "वॅकॉम टॅबलेट क्षेत्र"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:8
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:8
 msgid "Set this to x1, y1 and x2, y2 of the area usable by the tools."
 msgstr "यास साधनांतर्फे वापरण्याजोगी क्षेत्राच्या x1, y1 व x2, y2 करीता ठरवा."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:9
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:9
 msgid "Wacom tablet aspect ratio"
 msgstr "वॅकॉम टॅबलेट ॲस्पेक्ट प्रमाण"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:10
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:10
 msgid ""
 "Enable this to restrict the Wacom tablet area to match the aspect ratio of "
 "the output."
@@ -234,11 +234,11 @@ msgstr ""
 "आउटपुटचे ॲस्पेक्ट प्रमाण जुळण्याकरीता वॅकॉम टॅबलेट क्षेत्र प्रतिबंध करण्यसाठी "
 "यास सुरू करा."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:11
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:11
 msgid "Wacom tablet rotation"
 msgstr "वॅकॉम टॅबलेट चक्रगती"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:12
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:12
 msgid ""
 "Set this to 'none', 'cw' for 90 degree clockwise, 'half' for 180 degree, and "
 "'ccw' for 90 degree counterclockwise."
@@ -247,30 +247,30 @@ msgstr ""
 "डिग्री "
 "घड्याळाच्या उलटदिशाकरीता 'ccw' असे मूल्य ठरवा."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:13
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:13
 msgid "Wacom touch feature"
 msgstr "वॅकॉम टच गुणधर्म"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:14
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:14
 msgid "Enable this to move the cursor when the user touches the tablet."
 msgstr "वापरकर्ता टॅबलेटला हात लावल्यावर कर्सर हलवण्यासाठी यास सुरू करा."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:15
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:15
 #| msgid "Wacom tablet rotation"
 msgid "Wacom last calibrated resolution"
 msgstr "वॅकॉम शेवटचे कॅलिब्रेट केलेले रेजोल्युशन"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:16
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:16
 msgid ""
 "Holds the last calibrated resolution to help check if calibration is needed."
 msgstr ""
 "कॅलिब्रेशन आवश्यक असल्यास शेवटचे कॅलिब्रेट केलेल्या रेजोल्युशनचा वापर करते."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:17
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:17
 msgid "Wacom display mapping"
 msgstr "वॅकॉम डिस्पले मॅपिंग"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:18
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:18
 msgid ""
 "EDID information of monitor to map tablet to. Must be in the format [vendor, "
 "product, serial]. [\"\",\"\",\"\"] disables mapping."
@@ -279,80 +279,80 @@ msgstr ""
 "serial] "
 "असे हवे. [\"\",\"\",\"\"] मॅपिंग बंद करते."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:19
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:19
 msgid "Wacom stylus pressure curve"
 msgstr "वॅकॉम स्टायलस प्रेशर कर्व्ह"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:20
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:20
 msgid ""
 "Set this to x1, y1 and x2, y2 of the pressure curve applied to the stylus."
 msgstr ""
 "यास स्टायलसकरीता लागू केलेल्या प्रेशर कर्व्हच्या x1, y1 व x2, y2 करीता ठरवा."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:21
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:21
 msgid "Wacom stylus button mapping"
 msgstr "वॅकॉम स्टायलस बटन मॅपिंग"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:22
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:22
 msgid "Set this to the logical button mapping."
 msgstr "यास लॉजिकल बटन मॅपिंगकरीता ठरवा."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:23
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:23
 msgid "Wacom stylus pressure threshold"
 msgstr "वॅकॉम स्टायलस प्रेशर थ्रेशहोल्ड"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:24
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:24
 msgid ""
 "Set this to the pressure value at which a stylus click event is generated."
 msgstr "स्टायलस क्लिक इव्हेंट निर्माण होईल असे प्रेशर मूल्यकरीता सेट करा."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:25
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:25
 msgid "Wacom eraser pressure curve"
 msgstr "वॅकॉम इरेजर प्रेशर कर्व्ह"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:26
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:26
 msgid ""
 "Set this to x1, y1 and x2, y2 of the pressure curve applied to the eraser."
 msgstr ""
 "यास इरेजरकरीता लागू केलेल्या प्रेशर कर्व्हच्या x1, y1 व x2, y2 करीता ठरवा."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:27
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:27
 msgid "Wacom eraser button mapping"
 msgstr "वॅकॉम इरेजर बटनची मॅपिंग"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:28
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:28
 msgid "Wacom eraser pressure threshold"
 msgstr "वॅकॉम इरेजर प्रेशर थ्रेशहोल्ड"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:29
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:29
 msgid ""
 "Set this to the pressure value at which an eraser click event is generated."
 msgstr "इरेजेर क्लिक इव्हेंट निर्माण होईल अशा प्रेशर मूल्यकरीता यास सेट करा."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:30
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:30
 msgid "Wacom button action type"
 msgstr "वॅकॉम बटन कृती प्रकार"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:31
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:31
 msgid "The type of action triggered by the button being pressed."
 msgstr "दाबलेल्या बटनतर्फे निर्माण होणाऱ्या कृतीचे प्रकार."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:32
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:32
 msgid "Key combination for the custom action"
 msgstr "पसंतीच्या कृतीकरीता किची जोडणी"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:33
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:33
 msgid ""
 "The keyboard shortcut generated when the button is pressed for custom "
 "actions."
 msgstr "पसंतीच्या कृतीकरीता बटन दाबल्यास निर्माण झालेले किबोर्ड शॉर्टकट."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:34
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:34
 #| msgid "Key combinations for an elevator custom action"
 msgid "Key combinations for a touchring or touchstrip custom action"
 msgstr "touchring किंवा touchstrip पसंतीच्या कृतीकरिता एकत्रीत जोडणी"
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:35
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:35
 msgid ""
 "The keyboard shortcuts generated when a touchring or touchstrip is used for "
 "custom actions (up followed by down)."
@@ -363,40 +363,40 @@ msgstr ""
 
 #. Translators: This is the OLED display on an Intuos4 tablet:
 #. http://eu.shop.wacom.eu/images/articles/d9abd9f2d4d88aa0649cda97a8077e2b_8.jpg
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:38
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:38
 msgid "Button label for OLED display."
 msgstr "OLED डिस्पलेकरिता बटन लेबल."
 
-#: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:39
+#: ../data/io.github.scarecrow-de.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:39
 msgid "Label will be rendered to OLED display belonging to the button"
 msgstr "बटनच्या मालकीचे OLED डिस्पलेकरिता लेबल दाखवले जाईल"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.color.gschema.xml.in.in.h:5
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.color.gschema.xml.in.in.h:5
 msgid "The duration a display profile is valid"
 msgstr "डिस्पले प्रोफाइल वैध राहेल असा कालावधि"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.color.gschema.xml.in.in.h:6
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.color.gschema.xml.in.in.h:6
 msgid ""
 "This is the number of days after which the display color profile is "
 "considered invalid."
 msgstr "दिवसांची संख्या ज्यानंतर डिस्पले रंग प्रोफाइल अवैध ठरवले जाते."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.color.gschema.xml.in.in.h:7
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.color.gschema.xml.in.in.h:7
 msgid "The duration a printer profile is valid"
 msgstr "छपाईयंत्र प्रोफाइल वैध राहते ते कालावधि"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.color.gschema.xml.in.in.h:8
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.color.gschema.xml.in.in.h:8
 msgid ""
 "This is the number of days after which the printer color profile is "
 "considered invalid."
 msgstr ""
 "दिवसांची संख्या ज्यानंतर छपाईयंत्र डिस्पले रंग प्रोफाइल अवैध ठरवले जाते."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.gschema.xml.in.in.h:1
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.gschema.xml.in.in.h:1
 msgid "List of plugins that are allowed to be loaded"
 msgstr "लोडजोगी स्वीकार्य प्लगइन्सची सूची"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.gschema.xml.in.in.h:2
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.gschema.xml.in.in.h:2
 msgid ""
 "A list of strings representing the plugins that are allowed to be loaded "
 "(default: 'all'). The plugins still need to be marked as active to get "
@@ -406,20 +406,20 @@ msgstr ""
 "'all'). लोड करण्यासाठी प्लगइन्सला चिन्ह लावणे तरीही आवश्यक होते. यास फक्त "
 "स्टार्टअपवेळी विश्लेषीत केले जाते."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:3
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:3
 msgid "Mount paths to ignore"
 msgstr "दुर्लक्ष करण्याजोगी माऊंट मार्गे"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:4
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:4
 msgid "Specify a list of mount paths to ignore when they run low on space."
 msgstr ""
 "जागा कमी पडत असल्यास दुर्लक्ष करण्याजोगी माऊंट मार्गांची सूची निर्देशीत करा."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:5
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:5
 msgid "Free percentage notify threshold"
 msgstr "मोकळी टक्केवारी सूचना मर्यादा"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:6
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:6
 msgid ""
 "Percentage free space threshold for initial warning of low disk space. If "
 "the percentage free space drops below this, a warning will be shown."
@@ -428,11 +428,11 @@ msgstr ""
 "मोकळ्या "
 "जागेची टक्केवारी यापेक्षा कमी आढळल्यास, सावधानता दाखवले जाईल."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:7
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:7
 msgid "Subsequent free space percentage notify threshold"
 msgstr "परस्पर मोकळी जागा टक्केवारी मर्यादा सूचीत करते"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:8
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:8
 msgid ""
 "Specify the percentage that the free disk space should reduce by before "
 "issuing a subsequent warning."
@@ -440,11 +440,11 @@ msgstr ""
 "परस्पर सावधानता दाखवण्यापूर्वी मोकळी डिस्क जागा कमी करण्यासाठी टक्केवारी "
 "निर्देशीत करा."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:9
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:9
 msgid "Free space notify threshold"
 msgstr "मोकळी जागा सूचीत करण्यासाठी मर्यादा"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:10
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:10
 msgid ""
 "Specify an amount in GB. If the amount of free space is more than this, no "
 "warning will be shown."
@@ -453,11 +453,11 @@ msgstr ""
 "दाखवली "
 "जाणार नाही."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:11
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:11
 msgid "Minimum notify period for repeated warnings"
 msgstr "सतत सावधानतासाठी कमाल सूचना कालावधी"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:12
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.housekeeping.gschema.xml.in.in.h:12
 msgid ""
 "Specify a time in minutes. Subsequent warnings for a volume will not appear "
 "more often than this period."
@@ -466,313 +466,313 @@ msgstr ""
 "वारंवार "
 "आढळणार नाही."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:3
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:3
 msgid "Custom keybindings"
 msgstr "पसंतीची किबाइंडिंग्स्"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:4
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:4
 msgid "List of custom keybindings"
 msgstr "पसंतीच्या किबाइंडिंग्स्ची सूची"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:5
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:5
 msgid "Launch calculator"
 msgstr "गणनयंत्र दाखल करा"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:6
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:6
 msgid "Binding to launch the calculator."
 msgstr "गणनायंत्र दाखलन करीता बांधणी."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:7
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:7
 #| msgid "X Settings"
 msgid "Launch settings"
 msgstr "लाँच सेटिंग्ज"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:8
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:8
 #| msgid "Binding to launch the search tool."
 msgid "Binding to launch GNOME settings."
 msgstr "GNOME सेटिंग्ज सुरू करण्यासाठी बाइंडिंग."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:9
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:9
 msgid "Launch email client"
 msgstr "ईमेल क्लाऐंट दाखल करा"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:10
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:10
 msgid "Binding to launch the email client."
 msgstr "ईमेल क्लाऐंट दाखलन करीता बांधणी."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:11
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:11
 msgid "Eject"
 msgstr "बाहेर काढा"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:12
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:12
 msgid "Binding to eject an optical disc."
 msgstr "ऑपटिकल डिस्क बाहेर काढण्यासाठी बांधणी."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:13
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:13
 msgid "Launch help browser"
 msgstr "मदत ब्राऊजर दाखल करा"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:14
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:14
 msgid "Binding to launch the help browser."
 msgstr "मदत ब्राऊजर दाखलन करीता बांधणी."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:15
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:15
 msgid "Home folder"
 msgstr "मुख्य संचयीका"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:16
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:16
 msgid "Binding to open the Home folder."
 msgstr "मुख्य संचयीका उघढण्याकरीता बांधणी."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:17
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:17
 msgid "Launch media player"
 msgstr "मिडीया वादक दाखल करा"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:18
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:18
 msgid "Binding to launch the media player."
 msgstr "मिडीया वादक दाखलन करीता बांधणी."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:19
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:19
 msgid "Next track"
 msgstr "पुढचे गाणी"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:20
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:20
 msgid "Binding to skip to next track."
 msgstr "पुढची गाणी वगळण्याकरीता बांधणी."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:21
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:21
 msgid "Pause playback"
 msgstr "आवाज स्तब्ध करा"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:22
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:22
 msgid "Binding to pause playback."
 msgstr "प्लेबॅक स्तब्ध करण्याकरीता बांधणी."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:23
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:23
 msgid "Play (or play/pause)"
 msgstr "चालवा (किंवा चालवा/स्तब्ध)"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:24
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:24
 msgid "Binding to start playback (or toggle play/pause)."
 msgstr "प्लेबॅक चालविण्याकरीता बांधणी (किंवा चालवा/स्तब्ध बदल लागू करा)."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:25
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:25
 msgid "Log out"
 msgstr "लॉग आउट"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:26
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:26
 msgid "Binding to log out."
 msgstr "बाहेर पडण्याकरीता बांधणी."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:27
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:27
 msgid "Previous track"
 msgstr "पूर्वीचे गाणी"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:28
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:28
 msgid "Binding to skip to previous track."
 msgstr "पूर्वीचे गाणी वगळण्याकरीता बांधणी."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:31
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:31
 msgid "Lock screen"
 msgstr "पडदा कुलूप बंद करा"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:32
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:32
 msgid "Binding to lock the screen."
 msgstr "पडदा कुलूपबंद करण्याकरीता बांधणी."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:33
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:33
 msgid "Search"
 msgstr "शोधा"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:34
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:34
 msgid "Binding to launch the search tool."
 msgstr "शोध साधन दाखलन करीता बांधणी."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:35
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:35
 msgid "Stop playback"
 msgstr "गाणी थांबवा"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:36
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:36
 msgid "Binding to stop playback."
 msgstr "प्लेबॅक थांबविण्याकरीता बांधणी."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:37
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:37
 msgid "Volume down"
 msgstr "आवाज कमी"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:38
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:38
 msgid "Binding to lower the system volume."
 msgstr "प्रणाली आवाज कमी करण्याकरीता बांधणी."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:39
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:39
 msgid "Volume mute"
 msgstr "आवाज मुक"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:40
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:40
 msgid "Binding to mute the system volume."
 msgstr "प्रणाली आवाज पूर्णपणे बंद करण्याकरीता बांधणी."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:41
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:41
 msgid "Volume up"
 msgstr "आवाज जास्त"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:42
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:42
 msgid "Binding to raise the system volume."
 msgstr "प्रणाली आवाज वाढविण्याकरीता बांधणी."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:43
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:43
 msgid "Take a screenshot"
 msgstr "स्क्रीनशॉट घ्या"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:44
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:44
 msgid "Binding to take a screenshot."
 msgstr "स्क्रीनकास्ट घेण्यासाठी बाइंडिंग."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:45
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:45
 msgid "Take a screenshot of a window"
 msgstr "पटलाचे स्क्रीनशॉट घ्या"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:46
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:46
 msgid "Binding to take a screenshot of a window."
 msgstr "पटलाचे स्क्रीनशॉट घेण्यासाठी बाइंडिंग."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:47
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:47
 msgid "Take a screenshot of an area"
 msgstr "क्षेत्राचे स्क्रीनशॉट घ्या"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:48
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:48
 msgid "Binding to take a screenshot of an area."
 msgstr "क्षेत्राचे स्क्रीनशॉट घेण्यासाठी बाइंडिंग."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:49
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:49
 msgid "Copy a screenshot to clipboard"
 msgstr "स्क्रीनशॉटचे क्लिपबोर्डवर प्रत बनवा"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:50
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:50
 msgid "Binding to copy a screenshot to clipboard."
 msgstr "स्क्रीनशॉटचे क्लिपबोर्डवर प्रत बनवण्यासाठी बाइंड करा."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:51
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:51
 msgid "Copy a screenshot of a window to clipboard"
 msgstr "पटलाचे स्क्रीनशॉट क्लिपबोर्डवर प्रत बनवा"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:52
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:52
 msgid "Binding to copy a screenshot of a window to clipboard."
 msgstr "पटलाचे स्क्रीनशॉट याचे क्लिपबोर्डवर प्रत बनवण्यासाठी बाइंड करत आहे."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:53
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:53
 msgid "Copy a screenshot of an area to clipboard"
 msgstr "क्षेत्राचे स्क्रीनशॉट क्लिपबोर्डवर प्रत बनवा"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:54
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:54
 msgid "Binding to copy a screenshot of an area to clipboard."
 msgstr "पटलाचे स्क्रीनशॉट याचे क्लिपबोर्डवर प्रत बनवण्यासाठी बाइंड करत आहे."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:55
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:55
 msgid "Record a short video of the screen"
 msgstr "पडद्याचे एक छोटे व्हिडीओ रेकॉर्ड करा"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:56
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:56
 msgid "Launch web browser"
 msgstr "वेब ब्राऊर दाखल करा"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:57
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:57
 msgid "Binding to launch the web browser."
 msgstr "वेब ब्राऊजर दाखलन करीता बांधणी."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:58
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:58
 msgid "Toggle magnifier"
 msgstr "टॉगल वर्धक"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:59
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:59
 msgid "Binding to show the screen magnifier"
 msgstr "स्क्रीन मॅगनिफायर दाखवण्याकरीता बाइंडिंग."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:60
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:60
 msgid "Toggle screen reader"
 msgstr "स्क्रीन रिडर टॉगल करा"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:61
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:61
 msgid "Binding to start the screen reader"
 msgstr "स्क्रीन रिडर सुरू करण्यासाठी बाइंडिंग"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:62
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:62
 msgid "Toggle on-screen keyboard"
 msgstr "ऑन-स्क्रीन कळफलक टॉगल करा"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:63
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:63
 msgid "Binding to show the on-screen keyboard"
 msgstr "ऑनस्क्रीन किबोर्ड दाखवण्याकरीता बाइंडिंग"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:64
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:64
 msgid "Increase text size"
 msgstr "मजकूर आकार वाढवा"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:65
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:65
 msgid "Binding to increase the text size"
 msgstr "मजकूर आकार वाढवण्याकरीता बाइंडिंग"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:66
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:66
 msgid "Decrease text size"
 msgstr "मजकूर आकार कमी करा"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:67
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:67
 msgid "Binding to decrease the text size"
 msgstr "मजकूर आकार कमी करण्यासाठी बाइंडिंग"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:68
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:68
 msgid "Toggle contrast"
 msgstr "काँट्रास्टमध्ये बदल करा"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:69
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:69
 msgid "Binding to toggle the interface contrast"
 msgstr "इंटरफेस काँट्रास्ट बदलण्याकरीता बाइंडिंग"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:70
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:70
 msgid "Magnifier zoom in"
 msgstr "मॅगनिफायर मोठे करा"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:71
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:71
 msgid "Binding for the magnifier to zoom in"
 msgstr "झूम करण्यासाठी मॅगनिफायरकरीता बाइंडिंग"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:72
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:72
 msgid "Magnifier zoom out"
 msgstr "मॅगनिफायर छोटे करा"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:73
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:73
 msgid "Binding for the magnifier to zoom out"
 msgstr "मॅगनिफायरला झूम अशक्य करण्यासाठी बाइंडिंग"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:74
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:74
 msgid "Name"
 msgstr "नाव"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:75
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:75
 msgid "Name of the custom binding"
 msgstr "पसंतीच्या बाइंडिंगचे नाव"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:76
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:76
 msgid "Binding"
 msgstr "बाइंडिंग"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:77
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:77
 msgid "Binding for the custom binding"
 msgstr "पसंतीच्या बाइंडिंगकरीता बाइंडिंग"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:78
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:78
 msgid "Command"
 msgstr "आदेश"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:79
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.media-keys.gschema.xml.in.in.h:79
 msgid "Command to run when the binding is invoked"
 msgstr "बाइंडिंग सुरू केल्यावर चालवण्याजोगी आदेश"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.sharing.gschema.xml.in.in.h:5
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.sharing.gschema.xml.in.in.h:5
 msgid "On which connections the service is enabled"
 msgstr "सर्व्हिस कोणत्या जोडणींवर सुरू केले जाते"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.sharing.gschema.xml.in.in.h:6
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.sharing.gschema.xml.in.in.h:6
 msgid ""
 "The list of NetworkManager connections (each one represented with its UUID) "
 "on which this service is enabled and started."
@@ -780,11 +780,11 @@ msgstr ""
 "NetworkManager जोडणींची सूची (प्रत्येकाला UUID सह प्रस्तुत केले जाते) ज्यावर "
 "सर्व्हिस समर्थीत आणि सुरू केली जाते."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:3
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:3
 msgid "File for default configuration for RandR"
 msgstr "RandR करीता पूर्वनिर्धारित संरचनाकरीता फाइल"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:4
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:4
 msgid ""
 "The XRandR plugin will look for a default configuration in the file "
 "specified by this key. This is similar to the ~/.config/monitors.xml that "
@@ -800,11 +800,11 @@ msgstr ""
 "मांडणीसह जुळत "
 "नसल्यास, या कितर्फे निर्देशीत फाइलचा वापर त्याऐवजी केले जाईल."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:7
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:7
 msgid "Whether to turn off specific monitors after boot"
 msgstr "बूट नंतर ठराविक मॉनिटर्स् बंद करायचे"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:8
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:8
 #| msgid ""
 #| "'clone' will display the same thing on all monitors, 'dock' will switch "
 #| "off the internal monitor, 'do-nothing' will use the default Xorg "
@@ -821,11 +821,11 @@ msgstr ""
 "एक्सटेंड करा). पूर्वनिर्धारित, 'follow-lid', हे 'do-nothing' आणि 'dock' "
 "अंतर्गत पसंती करेल, लीड (परस्परित्या) खुले किंवा बंद आहे, यावर आधारित असते."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:3
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:3
 msgid "Antialiasing"
 msgstr "ऍन्टीअलायजींग"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:4
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:4
 msgid ""
 "The type of antialiasing to use when rendering fonts. Possible values are: "
 "\"none\" for no antialiasing, \"grayscale\" for standard grayscale "
@@ -837,11 +837,11 @@ msgstr ""
 "\"rgba\" "
 "उपपीक्सेल ऍन्टीअलायसींग करीता (फक्त LCD पडदा)."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:5
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:5
 msgid "Hinting"
 msgstr "हिंटींग"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:6
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:6
 msgid ""
 "The type of hinting to use when rendering fonts. Possible values are: \"none"
 "\" for no hinting, \"slight\" for basic, \"medium\" for moderate, and \"full"
@@ -853,11 +853,11 @@ msgstr ""
 "\"rgba\" "
 "उपपीक्सेल अलायसींग करीता (फक्त LCD पडदा करीता)."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:9
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:9
 msgid "RGBA order"
 msgstr "RGBA क्रमवारी"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:10
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:10
 msgid ""
 "The order of subpixel elements on an LCD screen; only used when antialiasing "
 "is set to \"rgba\". Possible values are: \"rgb\" for red on left (most "
@@ -872,11 +872,11 @@ msgstr ""
 "वरील "
 "लाल करीता, \"vbgr\" तळातील लाल करीता."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:11
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:11
 msgid "List of explicitly disabled GTK+ modules"
 msgstr "GTK+ घटकांची सुव्यक्तपणे बंद केलेली सूची"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:12
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:12
 msgid ""
 "A list of strings representing the GTK+ modules that will not be loaded, "
 "even if enabled by default in their configuration."
@@ -885,11 +885,11 @@ msgstr ""
 "जरी "
 "पूर्वनिर्धारितपणे सुरू केले जाते."
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:13
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:13
 msgid "List of explicitly enabled GTK+ modules"
 msgstr "GTK+ घटकांची सुव्यक्तपणे सुरू केलेली सूची"
 
-#: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:14
+#: ../data/io.github.scarecrow-de.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:14
 msgid ""
 "A list of strings representing the GTK+ modules that will be loaded, usually "
 "in addition to conditional and forcibly disabled ones."
@@ -1818,11 +1818,11 @@ msgstr "स्व हाइबरनेशन"
 #. - A normal active user on the local machine does not need permission
 #. to change the backlight brightness.
 #.
-#: ../plugins/power/io.github.scarecrow.settings-daemon.plugins.power.policy.in.in.h:5
+#: ../plugins/power/io.github.scarecrow-de.settings-daemon.plugins.power.policy.in.in.h:5
 msgid "Modify the laptop brightness"
 msgstr "लॅपटॉप उजळपणा संपादित करा"
 
-#: ../plugins/power/io.github.scarecrow.settings-daemon.plugins.power.policy.in.in.h:6
+#: ../plugins/power/io.github.scarecrow-de.settings-daemon.plugins.power.policy.in.in.h:6
 msgid "Authentication is required to modify the laptop brightness"
 msgstr "लॅपटॉपचा उजळपणा संपादित करण्यासाठी ओळखपटवणे आवश्यक आहे"
 
@@ -2329,11 +2329,11 @@ msgstr "संपादित करा"
 #. - A normal active user on the local machine does not need permission
 #. to change the LED setting for a Wacom tablet
 #.
-#: ../plugins/wacom/io.github.scarecrow.settings-daemon.plugins.wacom.policy.in.in.h:5
+#: ../plugins/wacom/io.github.scarecrow-de.settings-daemon.plugins.wacom.policy.in.in.h:5
 msgid "Modify the lit LED for a Wacom tablet"
 msgstr "वॅकॉम टॅबलेटकरीता लिट LED संपादित करा"
 
-#: ../plugins/wacom/io.github.scarecrow.settings-daemon.plugins.wacom.policy.in.in.h:6
+#: ../plugins/wacom/io.github.scarecrow-de.settings-daemon.plugins.wacom.policy.in.in.h:6
 msgid "Authentication is required to modify the lit LED for a Wacom tablet"
 msgstr "वॅकॉम टॅबलेटकरीता LED सुरू करण्यासाठी ओळख पटवणे आवश्यक आहे"
 
@@ -2341,12 +2341,12 @@ msgstr "वॅकॉम टॅबलेटकरीता LED सुरू क�
 #. - A normal active user on the local machine does not need permission
 #. to change the OLED images for a Wacom tablet
 #.
-#: ../plugins/wacom/io.github.scarecrow.settings-daemon.plugins.wacom.policy.in.in.h:11
+#: ../plugins/wacom/io.github.scarecrow-de.settings-daemon.plugins.wacom.policy.in.in.h:11
 #| msgid "Modify the lit LED for a Wacom tablet"
 msgid "Modify the OLED image for a Wacom tablet"
 msgstr "वॅकॉम टॅबलेटकरिता OLED प्रतिमा संपादित करा"
 
-#: ../plugins/wacom/io.github.scarecrow.settings-daemon.plugins.wacom.policy.in.in.h:12
+#: ../plugins/wacom/io.github.scarecrow-de.settings-daemon.plugins.wacom.policy.in.in.h:12
 #| msgid "Authentication is required to modify the lit LED for a Wacom tablet"
 msgid "Authentication is required to modify the OLED image for a Wacom tablet"
 msgstr "वॅकॉम टॅबलेटकरीता OLED प्रतिमा संपादित करण्यासाठी ओळख पटवणे आवश्यक आहे"

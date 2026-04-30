@@ -21,11 +21,11 @@
 
 <node name="/" xmlns:doc="http://www.freedesktop.org/dbus/1.0/doc.dtd">
   <!--
-      org.gnome.Shell:
+      io.github.scarecrow-de.Shell:
 
       An interface used to request shell features.
   -->
-  <interface name="org.gnome.Shell">
+  <interface name="io.github.scarecrow-de.Shell">
     <method name="FocusSearch"/>
     <method name="ShowOSD">
       <arg type="a{sv}" direction="in" name="params"/>

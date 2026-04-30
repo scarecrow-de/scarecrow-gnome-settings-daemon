@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema gettext-domain="@GETTEXT_PACKAGE@" id="io.github.scarecrow.settings-daemon.plugins.media-keys.deprecated">
+  <schema gettext-domain="@GETTEXT_PACKAGE@" id="io.github.scarecrow-de.settings-daemon.plugins.media-keys.deprecated">
     <key name="calculator" type="s">
       <default>'XF86Calculator'</default>
       <summary>Launch calculator</summary>
@@ -178,7 +178,7 @@
     </key>
   </schema>
 
-  <schema gettext-domain="@GETTEXT_PACKAGE@" id="io.github.scarecrow.settings-daemon.plugins.media-keys" path="/io/github/scarecrow/settings-daemon/plugins/media-keys/">
+  <schema gettext-domain="@GETTEXT_PACKAGE@" id="io.github.scarecrow-de.settings-daemon.plugins.media-keys" path="/io/github/scarecrow/settings-daemon/plugins/media-keys/">
     <key name="custom-keybindings" type="as">
       <default>[]</default>
       <summary>Custom keybindings</summary>
@@ -748,7 +748,7 @@
     </key>
   </schema>
 
-  <schema gettext-domain="@GETTEXT_PACKAGE@" id="io.github.scarecrow.settings-daemon.plugins.media-keys.custom-keybinding">
+  <schema gettext-domain="@GETTEXT_PACKAGE@" id="io.github.scarecrow-de.settings-daemon.plugins.media-keys.custom-keybinding">
     <key name="name" type="s">
       <default>''</default>
       <summary>Name</summary>
