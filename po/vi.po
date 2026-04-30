@@ -1,14 +1,14 @@
 # Vietnamese Translation for GNOME Settings Daemon.
 # Bản dịch tiếng Việt dành cho GNOME Settings Daemon.
 # Copyright © 2016 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gnome-settings-daemon package.
+# This file is distributed under the same license as the scarecrow-settings-daemon package.
 # Nguyễn Thái Ngọc Duy <pclouds@gmail.com>, 2004,2007,2009,2011-2013.
 # Clytie Siddall <clytie@riverland.net.au>, 2005-2009.
 # Trần Ngọc Quân <vnwildman@gmail.com>, 2014, 2015, 2016.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon master\n"
+"Project-Id-Version: scarecrow-settings-daemon master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "settings-daemon&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2016-09-07 20:48+0000\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Gtranslator 2.91.7\n"
 
-#: ../data/gnome-settings-daemon.desktop.in.in.h:1
+#: ../data/scarecrow-settings-daemon.desktop.in.in.h:1
 msgid "GNOME Settings Daemon"
 msgstr "Trình nền cài đặt GNOME"
 
@@ -94,8 +94,8 @@ msgstr "Kích hoạt phần bổ sung này"
 #: ../data/io.github.scarecrow.settings-daemon.plugins.sharing.gschema.xml.in.in.h:2
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:2
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:2
-msgid "Whether this plugin would be activated by gnome-settings-daemon or not"
-msgstr "Có kích hoạt phần bổ sung này trong gnome-settings-daemon hay không"
+msgid "Whether this plugin would be activated by scarecrow-settings-daemon or not"
+msgstr "Có kích hoạt phần bổ sung này trong scarecrow-settings-daemon hay không"
 
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:3
 #: ../data/io.github.scarecrow.settings-daemon.plugins.color.gschema.xml.in.in.h:3
@@ -126,9 +126,9 @@ msgstr "Độ ưu tiên của phần bổ sung này"
 #: ../data/io.github.scarecrow.settings-daemon.plugins.sharing.gschema.xml.in.in.h:4
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:6
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:8
-msgid "Priority to use for this plugin in gnome-settings-daemon startup queue"
+msgid "Priority to use for this plugin in scarecrow-settings-daemon startup queue"
 msgstr ""
-"Độ ưu tiên của phần bổ sung này trong chuỗi khởi động gnome-settings-daemon"
+"Độ ưu tiên của phần bổ sung này trong chuỗi khởi động scarecrow-settings-daemon"
 
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:5
 msgid "Wacom stylus absolute mode"
@@ -788,15 +788,15 @@ msgstr ""
 "Danh sách các mô đun GTK+ sẽ được tải vào; thông thường ở chế độ cưỡng chế "
 "tắt hay có điều kiện."
 
-#: ../gnome-settings-daemon/main.c:53
+#: ../scarecrow-settings-daemon/main.c:53
 msgid "Enable debugging code"
 msgstr "Bật mã gỡ lỗi"
 
-#: ../gnome-settings-daemon/main.c:54
+#: ../scarecrow-settings-daemon/main.c:54
 msgid "Replace existing daemon"
 msgstr "Thay thế dịch vụ hiện tại"
 
-#: ../gnome-settings-daemon/main.c:55
+#: ../scarecrow-settings-daemon/main.c:55
 msgid "Exit after a time (for debugging)"
 msgstr "Thoát sau một khoảng thời gian (để tìm lỗi)"
 

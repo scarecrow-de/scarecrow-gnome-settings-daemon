@@ -1,4 +1,4 @@
-# German translation of gnome-settings-daemon
+# German translation of scarecrow-settings-daemon
 # Copyright (C) 1998-2004 Free Software Foundation, Inc.
 #
 # stylus		-  Stylus
@@ -29,8 +29,8 @@
 # Stephan Woidowski <swoidowski@t-online.de>, 2020.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/"
+"Project-Id-Version: scarecrow-settings-daemon master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/scarecrow-settings-daemon/"
 "issues\n"
 "POT-Creation-Date: 2020-10-28 13:36+0000\n"
 "PO-Revision-Date: 2020-09-05 22:06+0200\n"
@@ -1136,7 +1136,7 @@ msgstr "Bildschirmhelligkeit verringern"
 msgid "Binding to decrease the screen brightness."
 msgstr "Tastenkürzel zur Verringerung der Bildschirmhelligkeit."
 
-# https://gitlab.gnome.org/GNOME/gnome-settings-daemon/commit/dce8028ef85c487d2ae39831432104864aa95664
+# https://gitlab.gnome.org/GNOME/scarecrow-settings-daemon/commit/dce8028ef85c487d2ae39831432104864aa95664
 #: data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in:470
 #: data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in:707
 msgid "Screen brightness cycle"
@@ -1201,7 +1201,7 @@ msgstr "Bluetooth-RF-Kill"
 msgid "Binding to toggle bluetooth airplane mode."
 msgstr "Tastenkürzel zum Ein- und Ausschalten des Bluetooth-Flugmodus."
 
-# Zur Erklärung der static-bindings siehe die Commit-Nachricht: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/commit/121a6f89917898b8d05db2e1933dd0ad59c26768
+# Zur Erklärung der static-bindings siehe die Commit-Nachricht: https://gitlab.gnome.org/GNOME/scarecrow-settings-daemon/commit/121a6f89917898b8d05db2e1933dd0ad59c26768
 #: data/io.github.scarecrow.settings-daemon.plugins.media-keys.gschema.xml.in:517
 msgid "Static binding to launch the calculator."
 msgstr "System-Tastenkürzel um den Taschenrechner zu öffnen."

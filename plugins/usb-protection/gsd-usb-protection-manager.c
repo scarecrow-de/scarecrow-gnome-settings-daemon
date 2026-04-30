@@ -1080,7 +1080,7 @@ start_usb_protection_idle_cb (GsdUsbProtectionManager *manager)
                                   usb_protection_proxy_ready,
                                   manager);
 
-        notify_init ("gnome-settings-daemon");
+        notify_init ("scarecrow-settings-daemon");
 
         manager->start_idle_id = 0;
 
@@ -1094,7 +1094,7 @@ gsd_usb_protection_manager_start (GsdUsbProtectionManager *manager,
         gnome_settings_profile_start (NULL);
 
         manager->start_idle_id = g_idle_add ((GSourceFunc) start_usb_protection_idle_cb, manager);
-        g_source_set_name_by_id (manager->start_idle_id, "[gnome-settings-daemon] start_usbguard_idle_cb");
+        g_source_set_name_by_id (manager->start_idle_id, "[scarecrow-settings-daemon] start_usbguard_idle_cb");
 
         manager->introspection_data = g_dbus_node_info_new_for_xml (introspection_xml, NULL);
         g_assert (manager->introspection_data != NULL);

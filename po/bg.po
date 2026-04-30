@@ -1,4 +1,4 @@
-# Bulgarian translation of gnome-settings-daemon po-file.
+# Bulgarian translation of scarecrow-settings-daemon po-file.
 # Copyright (C) 2002, 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
 # Copyright (C) 2009, 2010, 2012 Free Software Foundation, Inc.
 # Copyright (C) 2010 Damyan Ivanov.
@@ -12,7 +12,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon master\n"
+"Project-Id-Version: scarecrow-settings-daemon master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-02 07:11+0300\n"
 "PO-Revision-Date: 2012-10-02 07:10+0300\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../data/gnome-settings-daemon.desktop.in.in.h:1
+#: ../data/scarecrow-settings-daemon.desktop.in.in.h:1
 msgid "GNOME Settings Daemon"
 msgstr "Сървър за настройките на GNOME"
 
@@ -174,8 +174,8 @@ msgstr "Стартиране на тази приставка"
 #: ../data/io.github.scarecrow.settings-daemon.plugins.updates.gschema.xml.in.in.h:2
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:2
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:2
-msgid "Whether this plugin would be activated by gnome-settings-daemon or not"
-msgstr "Дали приставката да се стартира от gnome-settings-daemon или не"
+msgid "Whether this plugin would be activated by scarecrow-settings-daemon or not"
+msgstr "Дали приставката да се стартира от scarecrow-settings-daemon или не"
 
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:3
 #: ../data/io.github.scarecrow.settings-daemon.plugins.color.gschema.xml.in.in.h:3
@@ -204,9 +204,9 @@ msgstr "Приоритет на приставката"
 #: ../data/io.github.scarecrow.settings-daemon.plugins.updates.gschema.xml.in.in.h:4
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:6
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:8
-msgid "Priority to use for this plugin in gnome-settings-daemon startup queue"
+msgid "Priority to use for this plugin in scarecrow-settings-daemon startup queue"
 msgstr ""
-"Приоритет на приставката в опашката за стартиране на gnome-settings-daemon"
+"Приоритет на приставката в опашката за стартиране на scarecrow-settings-daemon"
 
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:5
 msgid "Wacom stylus absolute mode"
@@ -1108,11 +1108,11 @@ msgstr ""
 "Списък от имената на модулите на GTK+, които да бъдат заредени. Той допълва "
 "модулите, които се зареждат при определено условие или са изключени."
 
-#: ../gnome-settings-daemon/main.c:54
+#: ../scarecrow-settings-daemon/main.c:54
 msgid "Enable debugging code"
 msgstr "Включване на код за изчистване на грешки"
 
-#: ../gnome-settings-daemon/main.c:55
+#: ../scarecrow-settings-daemon/main.c:55
 msgid "Exit after a time (for debugging)"
 msgstr "Изход след време — за изчистване на грешки"
 

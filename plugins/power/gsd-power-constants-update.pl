@@ -22,7 +22,7 @@ die "Could not open file gsdpowerconstants.py: $!\n" unless open(OUT_CONSTANTS, 
 
 print OUT_CONSTANTS<<EOF;
 
-# File auto-generated from script http://git.gnome.org/browse/gnome-settings-daemon/tree/plugins/power/gsd-power-constants-update.pl
+# File auto-generated from script http://git.gnome.org/browse/scarecrow-settings-daemon/tree/plugins/power/gsd-power-constants-update.pl
 
 # Modified by the GTK+ Team and others 1997-2012.  See the AUTHORS
 # file for a list of people on the GTK+ Team.  See the ChangeLog

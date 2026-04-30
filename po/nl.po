@@ -1,5 +1,5 @@
 # Dutch translation for Gnome Settings Daemon
-# This file is distributed under the same license as the gnome-settings-daemon
+# This file is distributed under the same license as the scarecrow-settings-daemon
 # package.
 # Bas Wagter <B.J.Wagter@bk.tudelft.nl>
 # Hein-Jan Leliveld <h.j.leliveld@student.tn.tudelft.nl>
@@ -18,8 +18,8 @@
 # Justin van Steijn <jvs@fsfe.org>, 2016, 2018.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/"
+"Project-Id-Version: scarecrow-settings-daemon\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/scarecrow-settings-daemon/"
 "issues\n"
 "POT-Creation-Date: 2020-01-18 13:37+0000\n"
 "PO-Revision-Date: 2020-02-24 18:43+0100\n"
@@ -2639,14 +2639,14 @@ msgstr "Verkeerde pincode"
 #~ msgstr "Activatie van deze plug-in"
 
 #~ msgid ""
-#~ "Whether this plugin would be activated by gnome-settings-daemon or not"
-#~ msgstr "Of de plug-in door gnome-settings-daemon geactiveerd moet worden"
+#~ "Whether this plugin would be activated by scarecrow-settings-daemon or not"
+#~ msgstr "Of de plug-in door scarecrow-settings-daemon geactiveerd moet worden"
 
 #~ msgid "Priority to use for this plugin"
 #~ msgstr "Te gebruiken prioriteit voor deze plug-in"
 
 #~ msgid ""
-#~ "Priority to use for this plugin in gnome-settings-daemon startup queue"
+#~ "Priority to use for this plugin in scarecrow-settings-daemon startup queue"
 #~ msgstr ""
 #~ "Te gebruiken prioriteit van deze plug-in in de opstartvolgorde van gnome-"
 #~ "settings-daemon"

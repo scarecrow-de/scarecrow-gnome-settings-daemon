@@ -685,7 +685,7 @@ gsd_wwan_manager_start (GsdWwanManager *self,
 
         gnome_settings_profile_start (NULL);
         self->start_idle_id = g_idle_add ((GSourceFunc) start_wwan_idle_cb, self);
-        g_source_set_name_by_id (self->start_idle_id, "[gnome-settings-daemon] start_wwan_idle_cb");
+        g_source_set_name_by_id (self->start_idle_id, "[scarecrow-settings-daemon] start_wwan_idle_cb");
 
         gnome_settings_profile_end (NULL);
         return TRUE;

@@ -11,7 +11,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon 3.3.5\n"
+"Project-Id-Version: scarecrow-settings-daemon 3.3.5\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "settings-daemon&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-08-15 19:30+0000\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 1.6.3\n"
 
-#: ../data/gnome-settings-daemon.desktop.in.in.h:1
+#: ../data/scarecrow-settings-daemon.desktop.in.in.h:1
 msgid "GNOME Settings Daemon"
 msgstr "GNOME 設定值伺服程式"
 
@@ -129,8 +129,8 @@ msgstr "裝置熱插拔自選指令"
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:22
 msgid ""
 "Command to be run when a device is added or removed. An exit value of 1 "
-"means that the device will not be handled further by gnome-settings-daemon."
-msgstr "當加入或移除裝置時要執行的指令。結束值若為 1 則表示這個裝置未來不會被 gnome-settings-daemon。"
+"means that the device will not be handled further by scarecrow-settings-daemon."
+msgstr "當加入或移除裝置時要執行的指令。結束值若為 1 則表示這個裝置未來不會被 scarecrow-settings-daemon。"
 
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:1
 #: ../data/io.github.scarecrow.settings-daemon.plugins.color.gschema.xml.in.in.h:1
@@ -161,8 +161,8 @@ msgstr "這個外掛程式的使用情況"
 #: ../data/io.github.scarecrow.settings-daemon.plugins.sharing.gschema.xml.in.in.h:2
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:2
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:2
-msgid "Whether this plugin would be activated by gnome-settings-daemon or not"
-msgstr "這個外掛程式是否要在 gnome-settings-daemon 中啟用"
+msgid "Whether this plugin would be activated by scarecrow-settings-daemon or not"
+msgstr "這個外掛程式是否要在 scarecrow-settings-daemon 中啟用"
 
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:3
 #: ../data/io.github.scarecrow.settings-daemon.plugins.color.gschema.xml.in.in.h:3
@@ -193,8 +193,8 @@ msgstr "這個外掛程式的優先順序"
 #: ../data/io.github.scarecrow.settings-daemon.plugins.sharing.gschema.xml.in.in.h:4
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:6
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:8
-msgid "Priority to use for this plugin in gnome-settings-daemon startup queue"
-msgstr "這個外掛程式用於 gnome-settings-daemon 啟動佇列中的優先順序"
+msgid "Priority to use for this plugin in scarecrow-settings-daemon startup queue"
+msgstr "這個外掛程式用於 scarecrow-settings-daemon 啟動佇列中的優先順序"
 
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:5
 msgid "Wacom stylus absolute mode"
@@ -814,15 +814,15 @@ msgid ""
 "in addition to conditional and forcibly disabled ones."
 msgstr "表示要載入的 GTK+ 模組的字串清單，通常還有條件和明確停用的項目。"
 
-#: ../gnome-settings-daemon/main.c:53
+#: ../scarecrow-settings-daemon/main.c:53
 msgid "Enable debugging code"
 msgstr "啟用除錯碼"
 
-#: ../gnome-settings-daemon/main.c:54
+#: ../scarecrow-settings-daemon/main.c:54
 msgid "Replace existing daemon"
 msgstr "取代現有的伺服程式"
 
-#: ../gnome-settings-daemon/main.c:55
+#: ../scarecrow-settings-daemon/main.c:55
 msgid "Exit after a time (for debugging)"
 msgstr "一段時間後離開（偵錯用）"
 

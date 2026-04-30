@@ -186,7 +186,7 @@ gsd_datetime_manager_class_init (GsdDatetimeManagerClass *klass)
 
         object_class->finalize = gsd_datetime_manager_finalize;
 
-        notify_init ("gnome-settings-daemon");
+        notify_init ("scarecrow-settings-daemon");
 }
 
 static void

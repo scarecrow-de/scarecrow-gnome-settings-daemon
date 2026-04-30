@@ -1,4 +1,4 @@
-# Norwegian bokmål translation of gnome-settings-daemon.
+# Norwegian bokmål translation of scarecrow-settings-daemon.
 # Copyright (C) 1999-2005 Free Software Foundation, Inc.
 #
 # Kjartan Maraas <kmaraas@gnome.org>, 1999-2020.
@@ -6,8 +6,8 @@
 # Torstein Adolf Winterseth <kvikende@fsfe.org>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon 3.38.x\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/"
+"Project-Id-Version: scarecrow-settings-daemon 3.38.x\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/scarecrow-settings-daemon/"
 "issues\n"
 "POT-Creation-Date: 2021-01-12 07:57+0000\n"
 "PO-Revision-Date: 2021-01-13 15:05+0100\n"

@@ -1302,7 +1302,7 @@ main (int argc, char *argv[])
   npn_owner_id = 0;
   pdi_owner_id = 0;
 
-  notify_init ("gnome-settings-daemon-printer");
+  notify_init ("scarecrow-settings-daemon-printer");
 
   npn_introspection_data =
           g_dbus_node_info_new_for_xml (npn_introspection_xml, &error);

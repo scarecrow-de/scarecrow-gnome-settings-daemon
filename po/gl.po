@@ -1,4 +1,4 @@
-# Galician translation of gnome-settings-daemon
+# Galician translation of scarecrow-settings-daemon
 # (C) 2002 Free Software Foundation, Inc.
 # Proxecto Trasno - Adaptación do software libre á lingua galega:  Se desexas
 # colaborar connosco, podes atopar máis información en http://www.trasno.net
@@ -16,8 +16,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon.master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/"
+"Project-Id-Version: scarecrow-settings-daemon.master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/scarecrow-settings-daemon/"
 "issues\n"
 "POT-Creation-Date: 2020-09-03 20:47+0000\n"
 "PO-Revision-Date: 2020-09-06 11:16+0200\n"

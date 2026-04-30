@@ -1,4 +1,4 @@
-# Lithuanian translation of gnome-settings-daemon
+# Lithuanian translation of scarecrow-settings-daemon
 # Copyright © 2000-2008, 2010 Free Software Foundation, Inc.
 # Gediminas Paulauskas <menesis@chatsubo.lt>, 2000-2002.
 # Vaidotas Zemlys <mpiktas@delfi.lt>, 2003.
@@ -11,8 +11,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/"
+"Project-Id-Version: scarecrow-settings-daemon\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/scarecrow-settings-daemon/"
 "issues\n"
 "POT-Creation-Date: 2020-09-03 20:47+0000\n"
 "PO-Revision-Date: 2020-09-05 20:04+0300\n"
@@ -2869,16 +2869,16 @@ msgstr[2] "Jums liko %1$u bandymų"
 #~ msgstr "Šio įskiepio aktyvavimas"
 
 #~ msgid ""
-#~ "Whether this plugin would be activated by gnome-settings-daemon or not"
-#~ msgstr "Ar gnome-settings-daemon aktyvuos šį įskiepį, ar ne"
+#~ "Whether this plugin would be activated by scarecrow-settings-daemon or not"
+#~ msgstr "Ar scarecrow-settings-daemon aktyvuos šį įskiepį, ar ne"
 
 #~ msgid "Priority to use for this plugin"
 #~ msgstr "Šio įskiepio naudojimo prioritetas"
 
 #~ msgid ""
-#~ "Priority to use for this plugin in gnome-settings-daemon startup queue"
+#~ "Priority to use for this plugin in scarecrow-settings-daemon startup queue"
 #~ msgstr ""
-#~ "Šio įskiepio naudojimo prioritetas gnome-settings-daemon startavimo eilėje"
+#~ "Šio įskiepio naudojimo prioritetas scarecrow-settings-daemon startavimo eilėje"
 
 #~ msgid "Enable debugging code"
 #~ msgstr "Įjungti derinimo kodą"

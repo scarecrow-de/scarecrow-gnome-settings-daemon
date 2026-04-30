@@ -514,7 +514,7 @@ queue_notify (GsdXSettingsManager *manager)
                 return;
 
         manager->notify_idle_id = g_idle_add (notify_idle, manager);
-        g_source_set_name_by_id (manager->notify_idle_id, "[gnome-settings-daemon] notify_idle");
+        g_source_set_name_by_id (manager->notify_idle_id, "[scarecrow-settings-daemon] notify_idle");
 }
 
 typedef enum {
@@ -962,7 +962,7 @@ start_fontconfig_monitor (GsdXSettingsManager  *manager)
         g_signal_connect (manager->fontconfig_monitor, "updated", G_CALLBACK (fontconfig_callback), manager);
 
         manager->start_idle_id = g_idle_add ((GSourceFunc) start_fontconfig_monitor_idle_cb, manager);
-        g_source_set_name_by_id (manager->start_idle_id, "[gnome-settings-daemon] start_fontconfig_monitor_idle_cb");
+        g_source_set_name_by_id (manager->start_idle_id, "[scarecrow-settings-daemon] start_fontconfig_monitor_idle_cb");
 
         gnome_settings_profile_end (NULL);
 }

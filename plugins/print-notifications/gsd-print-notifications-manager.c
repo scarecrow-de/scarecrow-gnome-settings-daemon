@@ -382,7 +382,7 @@ on_cups_notification (GDBusConnection *connection,
 {
         /* Ignore any signal starting with Server*. This has caused a message
          * storm through ServerAudit messages in the past, see
-         *  https://gitlab.gnome.org/GNOME/gnome-settings-daemon/issues/62
+         *  https://gitlab.gnome.org/GNOME/scarecrow-settings-daemon/issues/62
          */
         if (!signal_name || (strncmp (signal_name, "Server", 6) == 0))
                 return;
@@ -937,7 +937,7 @@ process_cups_notification (GsdPrintNotificationsManager *manager,
                                                         data->manager = manager;
 
                                                         data->timeout_id = g_timeout_add_seconds (CONNECTING_TIMEOUT, show_notification, data);
-                                                        g_source_set_name_by_id (data->timeout_id, "[gnome-settings-daemon] show_notification");
+                                                        g_source_set_name_by_id (data->timeout_id, "[scarecrow-settings-daemon] show_notification");
                                                         manager->timeouts = g_list_append (manager->timeouts, data);
                                                 } else {
                                                         ReasonData *reason_data;
@@ -1432,13 +1432,13 @@ renew_subscription_timeout_enable (GsdPrintNotificationsManager *manager,
                                 g_timeout_add_seconds (RENEW_INTERVAL,
                                                        renew_subscription_with_connection_test,
                                                        manager);
-                        g_source_set_name_by_id (manager->renew_source_id, "[gnome-settings-daemon] renew_subscription_with_connection_test");
+                        g_source_set_name_by_id (manager->renew_source_id, "[scarecrow-settings-daemon] renew_subscription_with_connection_test");
                 } else {
                         manager->renew_source_id =
                                 g_timeout_add_seconds (RENEW_INTERVAL,
                                                        renew_subscription,
                                                        manager);
-                        g_source_set_name_by_id (manager->renew_source_id, "[gnome-settings-daemon] renew_subscription");
+                        g_source_set_name_by_id (manager->renew_source_id, "[scarecrow-settings-daemon] renew_subscription");
                 }
         } else {
                 manager->renew_source_id = 0;
@@ -1469,13 +1469,13 @@ cups_connection_test_cb (GObject      *source_object,
 
                 renew_subscription_timeout_enable (manager, TRUE, TRUE);
                 manager->check_source_id = g_timeout_add_seconds (CHECK_INTERVAL, process_new_notifications, manager);
-                g_source_set_name_by_id (manager->check_source_id, "[gnome-settings-daemon] process_new_notifications");
+                g_source_set_name_by_id (manager->check_source_id, "[scarecrow-settings-daemon] process_new_notifications");
         } else {
                 g_debug ("Test connection to CUPS server \'%s:%d\' failed.", cupsServer (), ippPort ());
                 if (manager->cups_connection_timeout_id == 0) {
                         manager->cups_connection_timeout_id =
                                 g_timeout_add_seconds (CUPS_CONNECTION_TEST_INTERVAL, cups_connection_test, manager);
-                        g_source_set_name_by_id (manager->cups_connection_timeout_id, "[gnome-settings-daemon] cups_connection_test");
+                        g_source_set_name_by_id (manager->cups_connection_timeout_id, "[scarecrow-settings-daemon] cups_connection_test");
                 }
         }
 }
@@ -1601,7 +1601,7 @@ gsd_print_notifications_manager_start (GsdPrintNotificationsManager *manager,
         manager->held_jobs = NULL;
 
         manager->start_idle_id = g_idle_add (gsd_print_notifications_manager_start_idle, manager);
-        g_source_set_name_by_id (manager->start_idle_id, "[gnome-settings-daemon] gsd_print_notifications_manager_start_idle");
+        g_source_set_name_by_id (manager->start_idle_id, "[scarecrow-settings-daemon] gsd_print_notifications_manager_start_idle");
 
         gnome_settings_profile_end (NULL);
 
@@ -1682,7 +1682,7 @@ gsd_print_notifications_manager_class_init (GsdPrintNotificationsManagerClass *k
 
         object_class->finalize = gsd_print_notifications_manager_finalize;
 
-        notify_init ("gnome-settings-daemon");
+        notify_init ("scarecrow-settings-daemon");
 }
 
 static void

@@ -21,7 +21,7 @@ msgstr ""
 "X-Launchpad-Export-Date: 2015-02-05 07:02+0000\n"
 "X-Generator: Launchpad (build 17331)\n"
 
-#: ../data/gnome-settings-daemon.desktop.in.in.h:1
+#: ../data/scarecrow-settings-daemon.desktop.in.in.h:1
 msgid "GNOME Settings Daemon"
 msgstr "Uslužni program za podešavanje Gnoma"
 
@@ -73,7 +73,7 @@ msgstr "Proizvoljna naredba za vruće priključivanje uređaja"
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:10
 msgid ""
 "Command to be run when a device is added or removed. An exit value of 1 "
-"means that the device will not be handled further by gnome-settings-daemon."
+"means that the device will not be handled further by scarecrow-settings-daemon."
 msgstr ""
 "Naredba koja će biti pokrenuta kada je dodat ili uklonjen uređaj. Izlazna "
 "vrijednost 1 znači da uređajem neće rukovati gnome-settings-daem."
@@ -107,7 +107,7 @@ msgstr "Aktivacija ovog dodatka"
 #: ../data/io.github.scarecrow.settings-daemon.plugins.sharing.gschema.xml.in.in.h:2
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:2
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:2
-msgid "Whether this plugin would be activated by gnome-settings-daemon or not"
+msgid "Whether this plugin would be activated by scarecrow-settings-daemon or not"
 msgstr ""
 "Da li će ovaj dodatak biti aktiviran pozadinskim programom podešavanja gnoma "
 "ili ne"
@@ -141,7 +141,7 @@ msgstr "Prioritet koji će biti korišćen za ovaj dodatak"
 #: ../data/io.github.scarecrow.settings-daemon.plugins.sharing.gschema.xml.in.in.h:4
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:6
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:8
-msgid "Priority to use for this plugin in gnome-settings-daemon startup queue"
+msgid "Priority to use for this plugin in scarecrow-settings-daemon startup queue"
 msgstr ""
 "Prioritet koji će biti korišćen za ovaj dodatak u redu za pokretanje u "
 "pozadinskom programu podešavanja gnoma"
@@ -816,15 +816,15 @@ msgstr ""
 "Spisak niski koje predstavljaju GTK+ module koji će biti učitani, obično kao "
 "dodatak onima koji su uslovno i nasilno onemogućeni."
 
-#: ../gnome-settings-daemon/main.c:53
+#: ../scarecrow-settings-daemon/main.c:53
 msgid "Enable debugging code"
 msgstr "Uključi kod za traženje grešaka"
 
-#: ../gnome-settings-daemon/main.c:54
+#: ../scarecrow-settings-daemon/main.c:54
 msgid "Replace existing daemon"
 msgstr "Zamjenjuje postojeći pozadinski program"
 
-#: ../gnome-settings-daemon/main.c:55
+#: ../scarecrow-settings-daemon/main.c:55
 msgid "Exit after a time (for debugging)"
 msgstr "Izađi nakon određenog vremena (za traženje grešaka)"
 

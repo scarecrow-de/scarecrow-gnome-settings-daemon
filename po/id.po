@@ -1,6 +1,6 @@
-# Indonesian translation of gnome-settings-daemon
-# Copyright (C) 2003 gnome-settings-daemon's copyright holder
-# This file is distributed under the same license as the gnome-settings-daemon package.
+# Indonesian translation of scarecrow-settings-daemon
+# Copyright (C) 2003 scarecrow-settings-daemon's copyright holder
+# This file is distributed under the same license as the scarecrow-settings-daemon package.
 #
 # Mohammad DAMT <mdamt@bisnisweb.com> 2003
 # Ahmad Riza H Nst  <rizahnst@gnome.org> 2006
@@ -10,8 +10,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/"
+"Project-Id-Version: scarecrow-settings-daemon master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/scarecrow-settings-daemon/"
 "issues\n"
 "POT-Creation-Date: 2020-09-03 20:47+0000\n"
 "PO-Revision-Date: 2020-09-04 09:58+0700\n"

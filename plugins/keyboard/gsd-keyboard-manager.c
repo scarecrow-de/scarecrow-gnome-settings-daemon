@@ -625,7 +625,7 @@ gsd_keyboard_manager_start (GsdKeyboardManager *manager,
         gnome_settings_profile_start (NULL);
 
         manager->start_idle_id = g_idle_add ((GSourceFunc) start_keyboard_idle_cb, manager);
-        g_source_set_name_by_id (manager->start_idle_id, "[gnome-settings-daemon] start_keyboard_idle_cb");
+        g_source_set_name_by_id (manager->start_idle_id, "[scarecrow-settings-daemon] start_keyboard_idle_cb");
 
         gnome_settings_profile_end (NULL);
 

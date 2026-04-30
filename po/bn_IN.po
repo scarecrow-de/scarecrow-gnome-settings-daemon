@@ -26,7 +26,7 @@ msgstr ""
 "\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: ../data/gnome-settings-daemon.desktop.in.in.h:1
+#: ../data/scarecrow-settings-daemon.desktop.in.in.h:1
 msgid "GNOME Settings Daemon"
 msgstr "GNOME Settings ডেমন"
 
@@ -150,11 +150,11 @@ msgstr "ডিভাইস হট-প্লাগ করার স্বনি�
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:22
 msgid ""
 "Command to be run when a device is added or removed. An exit value of 1 "
-"means that the device will not be handled further by gnome-settings-daemon."
+"means that the device will not be handled further by scarecrow-settings-daemon."
 msgstr ""
 "কোনো ডিভাইস যোগ করা বা সরানোর জন্য যে কম্যান্ড চালাতে হবে। প্রস্থান মান 1 এর "
 "অর্থ "
-"হল ডিভাইসটি অার gnome-settings-daemon দ্বারা ব্যবস্থাপিত হবে না।"
+"হল ডিভাইসটি অার scarecrow-settings-daemon দ্বারা ব্যবস্থাপিত হবে না।"
 
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:1
 #: ../data/io.github.scarecrow.settings-daemon.plugins.color.gschema.xml.in.in.h:1
@@ -185,8 +185,8 @@ msgstr "এই প্লাগ-ইন সক্রিয়করণ"
 #: ../data/io.github.scarecrow.settings-daemon.plugins.sharing.gschema.xml.in.in.h:2
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:2
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:2
-msgid "Whether this plugin would be activated by gnome-settings-daemon or not"
-msgstr "gnome-settings-daemon দ্বারা এই প্লাগ-ইন সক্রিয় করা হবে কি না"
+msgid "Whether this plugin would be activated by scarecrow-settings-daemon or not"
+msgstr "scarecrow-settings-daemon দ্বারা এই প্লাগ-ইন সক্রিয় করা হবে কি না"
 
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:3
 #: ../data/io.github.scarecrow.settings-daemon.plugins.color.gschema.xml.in.in.h:3
@@ -217,9 +217,9 @@ msgstr "এই প্লাগ-ইনের ক্ষেত্রে ব্য�
 #: ../data/io.github.scarecrow.settings-daemon.plugins.sharing.gschema.xml.in.in.h:4
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:6
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:8
-msgid "Priority to use for this plugin in gnome-settings-daemon startup queue"
+msgid "Priority to use for this plugin in scarecrow-settings-daemon startup queue"
 msgstr ""
-"gnome-settings-daemon প্রারম্ভিক সারিতে ব্যবহারযোগ্য প্লাগ-ইনের গুরুত্ব"
+"scarecrow-settings-daemon প্রারম্ভিক সারিতে ব্যবহারযোগ্য প্লাগ-ইনের গুরুত্ব"
 
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:5
 msgid "Wacom stylus absolute mode"
@@ -930,15 +930,15 @@ msgstr ""
 "করা "
 "স্ট্রীংগুলির তালিকা লোড হবে।"
 
-#: ../gnome-settings-daemon/main.c:53
+#: ../scarecrow-settings-daemon/main.c:53
 msgid "Enable debugging code"
 msgstr "কোড ডিবাগ ব্যবস্থা সক্রিয় করুন"
 
-#: ../gnome-settings-daemon/main.c:54
+#: ../scarecrow-settings-daemon/main.c:54
 msgid "Replace existing daemon"
 msgstr "বিদ্যমান daemon প্রতিস্থাপন করুন"
 
-#: ../gnome-settings-daemon/main.c:55
+#: ../scarecrow-settings-daemon/main.c:55
 msgid "Exit after a time (for debugging)"
 msgstr "কিছু সময় পরে প্রস্থান করুন (ডিবাগিঙের জন্য)"
 

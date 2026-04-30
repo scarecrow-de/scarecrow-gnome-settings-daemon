@@ -1,6 +1,6 @@
-# Slovak translation for gnome-settings-daemon.
+# Slovak translation for scarecrow-settings-daemon.
 # Copyright (C) 2000-2005, 2007-2013 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gnome-settings-daemon package.
+# This file is distributed under the same license as the scarecrow-settings-daemon package.
 # Stanislav Visnovsky <visnovsky@nenya.ms.mff.cuni.cz>, 2000-2004.
 # Marcel Telka <marcel@telka.sk>, 2005.
 # Peter Tuharsky <tuharsky@misbb.sk>, 2007.
@@ -10,8 +10,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/"
+"Project-Id-Version: scarecrow-settings-daemon\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/scarecrow-settings-daemon/"
 "issues\n"
 "POT-Creation-Date: 2020-09-03 20:47+0000\n"
 "PO-Revision-Date: 2020-09-06 18:08+0200\n"
@@ -3207,9 +3207,9 @@ msgstr[2] "Máte %u zostávajúce pokusy"
 
 # description
 #~ msgid ""
-#~ "Whether this plugin would be activated by gnome-settings-daemon or not"
+#~ "Whether this plugin would be activated by scarecrow-settings-daemon or not"
 #~ msgstr ""
-#~ "Či má byť tento zásuvný modul aktivovaný programom gnome-settings-daemon "
+#~ "Či má byť tento zásuvný modul aktivovaný programom scarecrow-settings-daemon "
 #~ "alebo nie"
 
 # summary
@@ -3218,10 +3218,10 @@ msgstr[2] "Máte %u zostávajúce pokusy"
 
 # description
 #~ msgid ""
-#~ "Priority to use for this plugin in gnome-settings-daemon startup queue"
+#~ "Priority to use for this plugin in scarecrow-settings-daemon startup queue"
 #~ msgstr ""
 #~ "Priorita, ktorá sa má pre tento modul použiť v rade spúšťania programom "
-#~ "gnome-settings-daemon"
+#~ "scarecrow-settings-daemon"
 
 # Popis voľby príkazového riadka
 #~ msgid "Enable debugging code"

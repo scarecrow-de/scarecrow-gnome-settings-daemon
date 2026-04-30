@@ -6,7 +6,7 @@ of the usual values that are exported to the X server as XSETTINGS.  The
 intent of this is to allow users to override values of programmatically
 determined settings (such as 'Gtk/ShellShowsAppMenu') and to allow
 developers to introduce new XSETTINGS for testing (without having to kill the
-gnome-settings-daemon running in the session and run their own patched
+scarecrow-settings-daemon running in the session and run their own patched
 version).
 
 The type of the overrides is 'a{sv}'.

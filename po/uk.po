@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-control-center\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/iss"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/scarecrow-settings-daemon/iss"
 "ues\n"
 "POT-Creation-Date: 2020-09-03 18:28+0000\n"
 "PO-Revision-Date: 2020-09-03 21:39+0300\n"

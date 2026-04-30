@@ -4,7 +4,7 @@ include:
 variables:
   FDO_DISTRIBUTION_TAG: latest
   FDO_DISTRIBUTION_VERSION: rawhide
-  FDO_UPSTREAM_REPO: gnome/gnome-settings-daemon
+  FDO_UPSTREAM_REPO: gnome/scarecrow-settings-daemon
   # Expiry sets fdo.expires on the image
   FEDORA_IMAGE: "$CI_REGISTRY/$FDO_UPSTREAM_REPO/fedora/$FDO_DISTRIBUTION_VERSION:$FDO_DISTRIBUTION_TAG"
   FDO_EXPIRES_AFTER: 8w
@@ -162,7 +162,7 @@ coverage:
     BUILD_OPTS: "-Db_coverage=true"
     coverage: '/^Lines:.\d+.\d+.(\d+\.\d+\%)/'
   only:
-    - master@GNOME/gnome-settings-daemon
+    - master@GNOME/scarecrow-settings-daemon
 
   script:
     - *environment_information
@@ -193,7 +193,7 @@ pages:
     paths:
       - public
   only:
-    - master@GNOME/gnome-settings-daemon
+    - master@GNOME/scarecrow-settings-daemon
 
 ##
 # Stage: Manual

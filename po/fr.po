@@ -1,6 +1,6 @@
 # French translation of gnome-daemon-settings.
 # Copyright (C) 2008-2020 Free Software Foundation, Inc.
-# This file is under the same license as the gnome-settings-daemon package.
+# This file is under the same license as the scarecrow-settings-daemon package.
 #
 # Claude Paroz <claude@2xlibre.net>, 2008-2020
 # Robert-André Mauchin <zebob.m@pengzone.org>, 2008
@@ -17,8 +17,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon HEAD\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/"
+"Project-Id-Version: scarecrow-settings-daemon HEAD\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/scarecrow-settings-daemon/"
 "issues\n"
 "POT-Creation-Date: 2020-09-03 20:47+0000\n"
 "PO-Revision-Date: 2020-09-06 10:35+0200\n"

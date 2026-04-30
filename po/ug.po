@@ -1,4 +1,4 @@
-# Uyghur translation for gnome-settings-daemon.
+# Uyghur translation for scarecrow-settings-daemon.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Gheyret Kenji<gheyret@yahoo.com>,2010.
@@ -7,8 +7,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-settings-daemon&keywords=I18N+L10N&component=general\n"
+"Project-Id-Version: scarecrow-settings-daemon\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=scarecrow-settings-daemon&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2013-02-24 18:40+0000\n"
 "PO-Revision-Date: 2013-02-25 18:42+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../data/gnome-settings-daemon.desktop.in.in.h:1
+#: ../data/scarecrow-settings-daemon.desktop.in.in.h:1
 msgid "GNOME Settings Daemon"
 msgstr "گىنوم تەڭشەك مۇئەككىلى"
 
@@ -123,8 +123,8 @@ msgstr "ئۈسكۈنىنى قىزىق چېتىپ ئۈزگەندىكى ئۆزلە
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:22
 msgid ""
 "Command to be run when a device is added or removed. An exit value of 1 "
-"means that the device will not be handled further by gnome-settings-daemon."
-msgstr "بۇيرۇق ئۈسكۈنە قوشۇلغان ياكى چىقىرىۋېتىلگەندە ئىجرا بولىدۇ. ئاخىرلىشىش قىممىتى 1 بولسا، مەزكۇر ئۈسكۈنىنى gnome-settings-daemon بۇنىڭدىن كېيىن باشقۇرمايدۇ."
+"means that the device will not be handled further by scarecrow-settings-daemon."
+msgstr "بۇيرۇق ئۈسكۈنە قوشۇلغان ياكى چىقىرىۋېتىلگەندە ئىجرا بولىدۇ. ئاخىرلىشىش قىممىتى 1 بولسا، مەزكۇر ئۈسكۈنىنى scarecrow-settings-daemon بۇنىڭدىن كېيىن باشقۇرمايدۇ."
 
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:1
 #: ../data/io.github.scarecrow.settings-daemon.plugins.color.gschema.xml.in.in.h:1
@@ -153,8 +153,8 @@ msgstr "بۇ قىستۇرمىنى ئاكتىپلاش"
 #: ../data/io.github.scarecrow.settings-daemon.plugins.updates.gschema.xml.in.in.h:2
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:2
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:2
-msgid "Whether this plugin would be activated by gnome-settings-daemon or not"
-msgstr "مەزكۇر قىستۇرما gnome-settings-daemon ئارقىلىق ئاكتىپلىنامدۇ يوق"
+msgid "Whether this plugin would be activated by scarecrow-settings-daemon or not"
+msgstr "مەزكۇر قىستۇرما scarecrow-settings-daemon ئارقىلىق ئاكتىپلىنامدۇ يوق"
 
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:3
 #: ../data/io.github.scarecrow.settings-daemon.plugins.color.gschema.xml.in.in.h:3
@@ -183,8 +183,8 @@ msgstr "بۇ قىستۇرمىنى ئىشلىتىشنىڭ مەرتىۋىسى"
 #: ../data/io.github.scarecrow.settings-daemon.plugins.updates.gschema.xml.in.in.h:4
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:6
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:8
-msgid "Priority to use for this plugin in gnome-settings-daemon startup queue"
-msgstr "gnome-settings-daemon نىڭ قوزغىلىش ئۆچىرىتىدىكى مەزكۇر قىستۇرمىنىڭ مەرتىۋىسى"
+msgid "Priority to use for this plugin in scarecrow-settings-daemon startup queue"
+msgstr "scarecrow-settings-daemon نىڭ قوزغىلىش ئۆچىرىتىدىكى مەزكۇر قىستۇرمىنىڭ مەرتىۋىسى"
 
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:5
 msgid "Wacom stylus absolute mode"
@@ -977,15 +977,15 @@ msgid ""
 "in addition to conditional and forcibly disabled ones."
 msgstr "يۈكلىنىدىغان GTK+ بۆلىكىنى ئىپادىلەيدىغان تېكىستلەرنىڭ تىزىمى. ئادەتتە شەرتلىك ۋە مەجبۇرىي چەكلەيدىغان بىر قىسىم بۆلەكلەر قوشۇلىدۇ."
 
-#: ../gnome-settings-daemon/main.c:52
+#: ../scarecrow-settings-daemon/main.c:52
 msgid "Enable debugging code"
 msgstr "سازلاش كودىنى قوزغات"
 
-#: ../gnome-settings-daemon/main.c:53
+#: ../scarecrow-settings-daemon/main.c:53
 msgid "Replace existing daemon"
 msgstr "مەۋجۇت مۇئەككەلنى ئالماشتۇر"
 
-#: ../gnome-settings-daemon/main.c:54
+#: ../scarecrow-settings-daemon/main.c:54
 msgid "Exit after a time (for debugging)"
 msgstr "بىردەمدىن كېيىن چېكىن - سازلاش ئۈچۈن"
 
@@ -3029,14 +3029,14 @@ msgstr "X تەڭشىكى باشقۇرۇش"
 #~ msgstr "توختا(_L)"
 
 #~ msgid ""
-#~ "Priority to use for this plugin in gnome-settings-daemon startup queue."
+#~ "Priority to use for this plugin in scarecrow-settings-daemon startup queue."
 #~ msgstr ""
-#~ "gnome-settings-daemon نىڭ قوزغىلىش ئۆچىرىتىدىكى مەزكۇر قىستۇرمىنىڭ "
+#~ "scarecrow-settings-daemon نىڭ قوزغىلىش ئۆچىرىتىدىكى مەزكۇر قىستۇرمىنىڭ "
 #~ "ئالدىنلىقى."
 
 #~ msgid ""
-#~ "Whether this plugin would be activated by gnome-settings-daemon or not."
-#~ msgstr "مەزكۇر قىستۇرما gnome-settings-daemon ئارقىلىق ئاكتىپلىنامدۇ يوق."
+#~ "Whether this plugin would be activated by scarecrow-settings-daemon or not."
+#~ msgstr "مەزكۇر قىستۇرما scarecrow-settings-daemon ئارقىلىق ئاكتىپلىنامدۇ يوق."
 
 #~ msgid "Allowed keys"
 #~ msgstr "رۇخسەت قىلىنغان كۇنۇپكىلار"

@@ -644,7 +644,7 @@ Version 3.23.2
 ==============
 
 - This update requires gnome-session 3.23.2. It splits up
-  gnome-settings-daemon into separate helper daemons, making it
+  scarecrow-settings-daemon into separate helper daemons, making it
   easier to root cause possible problems, and paving the way
   to using systemd to handle the session
 - Remove localeexec wrapper now that gnome-session implements
@@ -2646,7 +2646,7 @@ Housekeeping:
 - NULL-terminate the ignore-paths array (Bastien Nocera) (#657849)
 
 Power:
-- Do not exit gnome-settings-daemon if upower fails to load (Richard Hughes)
+- Do not exit scarecrow-settings-daemon if upower fails to load (Richard Hughes)
 - Fix impossible to hit error paths (Bastien Nocera) (#657364)
 - Fix BRIGHTESS_STEP_AMOUNT calculation macro (Kamal Mostafa)
 - Do most of the work in _start () (Bastien Nocera) (#657924)
@@ -2841,7 +2841,7 @@ Version 3.1.2
 =============
 
 Common:
-- Don't try to convert show-keyboard-leds-indicator in gnome-settings-daemon.convert
+- Don't try to convert show-keyboard-leds-indicator in scarecrow-settings-daemon.convert
   (Chris Coulson)
 - Add touchscreen detection (Bastien Nocera)
 - Add X property setting helper (Bastien Nocera)
@@ -2975,7 +2975,7 @@ Version 3.0.2
 Common:
 - Fix syndaemon never getting started (Edward Sheldrake) (#648885)
 - Fix example input device script (Bastien Nocera)
-- Don't try to convert show-keyboard-leds-indicator in gnome-settings-daemon.convert (Chris Coulson)
+- Don't try to convert show-keyboard-leds-indicator in scarecrow-settings-daemon.convert (Chris Coulson)
 
 Date & Time:
 - Fix setting NTP on Fedora 15 (Bastien Nocera) (#648556)
@@ -3389,7 +3389,7 @@ Version 2.91.2
 - Use Gdk to get events about input devices being added (Bastien Nocera)
 - Cleanup macro magic in plugin.h (Paolo Borelli) (#591798)
 - Update gnome-media cut'n'paste code (Bastien Nocera) (#612024)
-- Add gnome-settings-daemon man page (Joshua Cummings) (#588716)
+- Add scarecrow-settings-daemon man page (Joshua Cummings) (#588716)
 - Remove horrible xmodmap fallback code (Bastien Nocera) (#150542)
 - Remove outdated plugin (Bastien Nocera)
 - Use g_timeout_add_seconds (Bastien Nocera) (#582703)
@@ -3409,7 +3409,7 @@ Version 2.91.2
 - Add ability to hard-code media keys (Bastien Nocera) (#623223)
 - Use $(sysconfigdir) for .ad files, since they are settings (Rodrigo Moya)
 - Enable maintainer mode (Rodrigo Moya)
-- Don't display the gnome-settings-daemon autostart in the startup applications
+- Don't display the scarecrow-settings-daemon autostart in the startup applications
   list (Rodrigo Moya)
 - Add settings key for disabling boot time configuration (Martin Pitt, Rodrigo
   Moya) (#631388)
@@ -3975,7 +3975,7 @@ Version 2.25.92
   using the close icon or by pressing escape (Jens Granseuer) (#571492)
 - add missing keys for a11y shortcut keys to GConf schemas (Jens Granseuer)
   (#572807)
-- install gnome-settings-daemon-plugin.h for custom plugin developement
+- install scarecrow-settings-daemon-plugin.h for custom plugin developement
   (Jens Granseuer) (#573610)
 - Updated translations:
   - bg (Alexander Shopov)
@@ -4075,7 +4075,7 @@ Version 2.25.3
 - Shut the daemon down properly when the SIGTERM signal is received or the
   D-Bus bus goes away (Ray Strode)
 - Restore AccessX bits to original values on exit, fixes sticky keys
-  coming on when gnome-settings-daemon has exited (Ray Strode)
+  coming on when scarecrow-settings-daemon has exited (Ray Strode)
 - Use only top-level glib and gtk+ headers (Pedro Fragoso) (#563796)
 
 ==============
@@ -4337,7 +4337,7 @@ Version 2.23.3
 ================
 Version 2.23.1.1
 ================
-- Install .desktop for gnome-settings-daemon in a standard autostart directory
+- Install .desktop for scarecrow-settings-daemon in a standard autostart directory
   (Lucas Rocha)
 - Updated translations:
   - nb (Kjartan Maraas)
@@ -4493,7 +4493,7 @@ Version 2.21.91
   (#514047)
 - Don't crash when running the screensaver fails (Jens Granseuer)
   (#514385)
-- Rename src folder to gnome-settings-daemon (Damien Carberry, Jens
+- Rename src folder to scarecrow-settings-daemon (Damien Carberry, Jens
   Granseuer) (#511820)
 - Add uninstalled.pc file for building against an uninstalled copy of
   g-s-d (Damien Carberry, Jens Granseuer) (#511820)
@@ -4548,9 +4548,9 @@ Version 2.21.90
 - Initialize GnomeProgram to avoid critical warnings from libgnome (Wouter
   Bolsterlee) (#509770)
 - Hopefully allow $(libdir) to be the same directory as $(libexecdir) by
-  installing the gnome-settings-daemon binary into a subdirectory of
+  installing the scarecrow-settings-daemon binary into a subdirectory of
   $(libexecdir) (Wouter Bolsterlee) (#504203)
-- Don't use weird autofoo stuff to install gnome-settings-daemon into another
+- Don't use weird autofoo stuff to install scarecrow-settings-daemon into another
   directory (Wouter Bolsterlee) (#504203)
 - Suppress verbose GConf schema installation output (Wouter Bolsterlee)
 
@@ -4589,4 +4589,4 @@ Version 2.21.5
 Version 2.21.4
 ===============
 
-Initial development release of new gnome-settings-daemon design.
+Initial development release of new scarecrow-settings-daemon design.

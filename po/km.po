@@ -1,13 +1,13 @@
-# translation of po_gnome-settings-daemon-km.po to Khmer
-# Khmer translation for gnome-settings-daemon
+# translation of po_scarecrow-settings-daemon-km.po to Khmer
+# Khmer translation for scarecrow-settings-daemon
 # Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
-# This file is distributed under the same license as the gnome-settings-daemon package.
+# This file is distributed under the same license as the scarecrow-settings-daemon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 # Khoem Sokhem <khoemsokhem@khmeros.info>, 2012.
 # sutha <sutha@khmeros.info>, 2012.
 msgid ""
 msgstr ""
-"Project-Id-Version: po_gnome-settings-daemon-km\n"
+"Project-Id-Version: po_scarecrow-settings-daemon-km\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "settings-daemon&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2012-09-27 08:43+0000\n"
@@ -22,7 +22,7 @@ msgstr ""
 "X-Generator: WordForge 0.8 RC1\n"
 "X-Language: km-KH\n"
 
-#: ../data/gnome-settings-daemon.desktop.in.in.h:1
+#: ../data/scarecrow-settings-daemon.desktop.in.in.h:1
 msgid "GNOME Settings Daemon"
 msgstr "ដេមិន​ការ​កំណត់ GNOME"
 
@@ -156,7 +156,7 @@ msgstr "ការ​ធ្វើឲ្យ​សកម្ម​នៃ​កម្
 #: ../data/io.github.scarecrow.settings-daemon.plugins.updates.gschema.xml.in.in.h:2
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:2
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:2
-msgid "Whether this plugin would be activated by gnome-settings-daemon or not"
+msgid "Whether this plugin would be activated by scarecrow-settings-daemon or not"
 msgstr "ថា​តើ​កម្មវិធី​ជំនួយ​នេះ​គួរ​ត្រូវ​បាន​ធ្វើឲ្យ​សកម្ម​ដោយ​ដេមិន​ការ​កំណត់ gnome ដែរ ឬទេ"
 
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:3
@@ -186,7 +186,7 @@ msgstr "អាទិភាព​ដែល​ត្រូវ​ប្រើ​ស
 #: ../data/io.github.scarecrow.settings-daemon.plugins.updates.gschema.xml.in.in.h:4
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:6
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:8
-msgid "Priority to use for this plugin in gnome-settings-daemon startup queue"
+msgid "Priority to use for this plugin in scarecrow-settings-daemon startup queue"
 msgstr "អាទិភាព​ដែល​ត្រូវ​ប្រើ​សម្រាប់​កម្មវិធី​ជំនួយ​នេះ​នៅ​ក្នុង​ជួរ​ចាប់ផ្ដើម​ដេមិន​ការ​កំណត់ gnome"
 
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:5
@@ -1045,11 +1045,11 @@ msgstr ""
 "បញ្ជី​ខ្សែ​អក្សរ​បង្ហាញ​អំពី​ម៉ូឌុល GTK+ ដែល​នឹង​ត្រូវ​បាន​ផ្ទុក ជាធម្មតា​នៅ​ក្នុង​​ការ​បន្ថែម​ទៅកាន់​លក្ខខ័ណ្ឌ និង​"
 "ម៉ូឌុល​ដែល​បាន​បិទ​ដោយ​បង្ខំ ។"
 
-#: ../gnome-settings-daemon/main.c:54
+#: ../scarecrow-settings-daemon/main.c:54
 msgid "Enable debugging code"
 msgstr "បើក​កូដ​បំបាត់​កំហុស"
 
-#: ../gnome-settings-daemon/main.c:55
+#: ../scarecrow-settings-daemon/main.c:55
 msgid "Exit after a time (for debugging)"
 msgstr "ចេញ​បន្ទាប់​ពេល (សម្រាប់​ការ​បំបាត់​កំហុស)"
 

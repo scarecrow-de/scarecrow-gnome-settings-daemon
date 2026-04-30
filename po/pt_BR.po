@@ -1,6 +1,6 @@
-# Brazilian Portuguese translation of gnome-settings-daemon.
+# Brazilian Portuguese translation of scarecrow-settings-daemon.
 # Copyright (C) 2020 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gnome-settings-daemon package.
+# This file is distributed under the same license as the scarecrow-settings-daemon package.
 # Ivan Passos <ivan@cyclades.com>, 1999.
 # Sandro Nunes Henrique <sandro@conectiva.com.br>, 1999.
 # Gustavo Maciel Dias Vieira <gustavo@sagui.org>, 2000-2001.
@@ -26,8 +26,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/"
+"Project-Id-Version: scarecrow-settings-daemon\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/scarecrow-settings-daemon/"
 "issues\n"
 "POT-Creation-Date: 2020-09-03 18:28+0000\n"
 "PO-Revision-Date: 2020-09-03 16:16-0300\n"
@@ -2978,14 +2978,14 @@ msgstr[1] "Você tem %1$u tentativas restantes"
 #~ msgstr "Ativação deste plug-in"
 
 #~ msgid ""
-#~ "Whether this plugin would be activated by gnome-settings-daemon or not"
-#~ msgstr "Habilitar este plug-in pelo gnome-settings-daemon ou não"
+#~ "Whether this plugin would be activated by scarecrow-settings-daemon or not"
+#~ msgstr "Habilitar este plug-in pelo scarecrow-settings-daemon ou não"
 
 #~ msgid "Priority to use for this plugin"
 #~ msgstr "Prioridade para usar este plug-in"
 
 #~ msgid ""
-#~ "Priority to use for this plugin in gnome-settings-daemon startup queue"
+#~ "Priority to use for this plugin in scarecrow-settings-daemon startup queue"
 #~ msgstr ""
 #~ "Prioridade para usar este plug-in na fila de inicialização do gnome-"
 #~ "settings-daemon"
@@ -3242,7 +3242,7 @@ msgstr[1] "Você tem %1$u tentativas restantes"
 #~ msgstr ""
 #~ "Comando para ser executado quando um dispositivo é adicionado ou "
 #~ "removido. Um valor de saída de 1 significa que o dispositivo não via ser "
-#~ "manipulado posteriormente pelo gnome-settings-daemon."
+#~ "manipulado posteriormente pelo scarecrow-settings-daemon."
 
 #~ msgid ""
 #~ "The type of hinting to use when rendering fonts. Possible values are: "

@@ -1,6 +1,6 @@
-# Polish translation for gnome-settings-daemon.
-# Copyright © 1998-2020 the gnome-settings-daemon authors.
-# This file is distributed under the same license as the gnome-settings-daemon package.
+# Polish translation for scarecrow-settings-daemon.
+# Copyright © 1998-2020 the scarecrow-settings-daemon authors.
+# This file is distributed under the same license as the scarecrow-settings-daemon package.
 # Zbigniew Chyla <chyla@alice.ci.pwr.wroc.pl>, 1998-2003.
 # Artur Flinta <aflinta@at.kernel.pl>, 2003-2007.
 # Tomasz Dominikowski <dominikowski@gmail.com>, 2007-2009.
@@ -10,8 +10,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/"
+"Project-Id-Version: scarecrow-settings-daemon\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/scarecrow-settings-daemon/"
 "issues\n"
 "POT-Creation-Date: 2020-09-03 20:47+0000\n"
 "PO-Revision-Date: 2020-09-05 13:00+0200\n"

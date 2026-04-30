@@ -237,7 +237,7 @@ start_timeout (FcMonitor *self)
 {
         self->state = UPDATE_PENDING;
         self->timeout = g_timeout_add (TIMEOUT_MILLISECONDS, start_update, self);
-        g_source_set_name_by_id (self->timeout, "[gnome-settings-daemon] update");
+        g_source_set_name_by_id (self->timeout, "[scarecrow-settings-daemon] update");
 }
 
 static gboolean

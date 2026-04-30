@@ -24,7 +24,7 @@ msgstr ""
 "X-Launchpad-Export-Date: 2015-05-20 16:48+0000\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/gnome-settings-daemon.desktop.in.in.h:1
+#: ../data/scarecrow-settings-daemon.desktop.in.in.h:1
 msgid "GNOME Settings Daemon"
 msgstr "Servici dels paramètres GNOME"
 
@@ -101,8 +101,8 @@ msgstr "Activacion d'aqueste empeuton"
 #: ../data/io.github.scarecrow.settings-daemon.plugins.sharing.gschema.xml.in.in.h:2
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:2
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:2
-msgid "Whether this plugin would be activated by gnome-settings-daemon or not"
-msgstr "Indica s'aqueste empeuton es activat per gnome-settings-daemon o pas"
+msgid "Whether this plugin would be activated by scarecrow-settings-daemon or not"
+msgstr "Indica s'aqueste empeuton es activat per scarecrow-settings-daemon o pas"
 
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:3
 #: ../data/io.github.scarecrow.settings-daemon.plugins.color.gschema.xml.in.in.h:3
@@ -133,7 +133,7 @@ msgstr "Prioritat d'utilizacion d'aqueste empeuton"
 #: ../data/io.github.scarecrow.settings-daemon.plugins.sharing.gschema.xml.in.in.h:4
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:6
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:8
-msgid "Priority to use for this plugin in gnome-settings-daemon startup queue"
+msgid "Priority to use for this plugin in scarecrow-settings-daemon startup queue"
 msgstr ""
 "Prioritat d'utilizacion d'aqueste empeuton dins la lista d'aviada de gnome-"
 "settings-daemon"
@@ -823,15 +823,15 @@ msgstr ""
 "Lista de cadenas que representan los moduls GTK+ de cargar, en general en "
 "mai de los desactivats condicionalament o de fòrça."
 
-#: ../gnome-settings-daemon/main.c:53
+#: ../scarecrow-settings-daemon/main.c:53
 msgid "Enable debugging code"
 msgstr "Activa lo còdi de desbugatge"
 
-#: ../gnome-settings-daemon/main.c:54
+#: ../scarecrow-settings-daemon/main.c:54
 msgid "Replace existing daemon"
 msgstr "Remplaçar lo demòni existent"
 
-#: ../gnome-settings-daemon/main.c:55
+#: ../scarecrow-settings-daemon/main.c:55
 msgid "Exit after a time (for debugging)"
 msgstr "Quitar aprèp un certan relambi (per desbugatge)"
 
@@ -2271,7 +2271,7 @@ msgstr "Gestion dels paramètres X"
 #~ msgstr ""
 #~ "Comanda d'activar al moment de l'apondon o del levament d'un periferic. "
 #~ "Una valor de sortida de 1 significa que lo periferic serà pas mai pres en "
-#~ "carga per gnome-settings-daemon."
+#~ "carga per scarecrow-settings-daemon."
 
 #~ msgid "Wacom tablet PC feature"
 #~ msgstr "Foncionalitat de la tauleta PC Wacom"

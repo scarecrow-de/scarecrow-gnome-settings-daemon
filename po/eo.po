@@ -1,6 +1,6 @@
-# Esperanto translation for gnome-settings-daemon.
+# Esperanto translation for scarecrow-settings-daemon.
 # Copyright (C) 2011 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gnome-settings-daemon package.
+# This file is distributed under the same license as the scarecrow-settings-daemon package.
 # Aisano < >, 2011.
 # Michael MORONI < >, 2011.
 # Carmen Bianca BAKKER <carmen@carmenbianca.eu>, 2018-2020.
@@ -8,8 +8,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/"
+"Project-Id-Version: scarecrow-settings-daemon\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/scarecrow-settings-daemon/"
 "issues\n"
 "POT-Creation-Date: 2020-01-18 13:37+0000\n"
 "PO-Revision-Date: 2020-02-12 08:32+0100\n"

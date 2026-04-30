@@ -1969,7 +1969,7 @@ set_temporary_unidle_on_ac (GsdPowerManager *manager,
                 manager->temporary_unidle_on_ac_id = g_timeout_add_seconds (POWER_UP_TIME_ON_AC,
                                                                                   (GSourceFunc) temporary_unidle_done_cb,
                                                                                   manager);
-                g_source_set_name_by_id (manager->temporary_unidle_on_ac_id, "[gnome-settings-daemon] temporary_unidle_done_cb");
+                g_source_set_name_by_id (manager->temporary_unidle_on_ac_id, "[scarecrow-settings-daemon] temporary_unidle_done_cb");
         }
 }
 
@@ -2035,7 +2035,7 @@ gsd_power_manager_class_init (GsdPowerManagerClass *klass)
 
         object_class->finalize = gsd_power_manager_finalize;
 
-        notify_init ("gnome-settings-daemon");
+        notify_init ("scarecrow-settings-daemon");
 }
 
 static void

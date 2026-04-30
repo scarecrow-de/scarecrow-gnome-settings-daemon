@@ -1,6 +1,6 @@
-# Swedish messages for gnome-settings-daemon
+# Swedish messages for scarecrow-settings-daemon
 # Copyright © 1998-2020 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gnome-settings-daemon package.
+# This file is distributed under the same license as the scarecrow-settings-daemon package.
 #
 # Martin Wahlen <mva@sbbs.se>, 1998, 1999.
 # Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004, 2005.
@@ -10,8 +10,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/"
+"Project-Id-Version: scarecrow-settings-daemon\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/scarecrow-settings-daemon/"
 "issues\n"
 "POT-Creation-Date: 2020-09-03 20:47+0000\n"
 "PO-Revision-Date: 2020-09-06 21:25+0200\n"
@@ -2934,7 +2934,7 @@ msgstr[1] "Du har %u försök kvar"
 #~ msgstr "Aktivering av denna insticksmodul"
 
 #~ msgid ""
-#~ "Whether this plugin would be activated by gnome-settings-daemon or not"
+#~ "Whether this plugin would be activated by scarecrow-settings-daemon or not"
 #~ msgstr ""
 #~ "Huruvida denna insticksmodul ska aktiveras genom gnome-inställningsdemon "
 #~ "eller inte"
@@ -2943,7 +2943,7 @@ msgstr[1] "Du har %u försök kvar"
 #~ msgstr "Prioritet att använda för denna insticksmodul"
 
 #~ msgid ""
-#~ "Priority to use for this plugin in gnome-settings-daemon startup queue"
+#~ "Priority to use for this plugin in scarecrow-settings-daemon startup queue"
 #~ msgstr ""
 #~ "Prioritet att använda för denna insticksmodul i uppstartskön för gnome-"
 #~ "inställningsdemon"

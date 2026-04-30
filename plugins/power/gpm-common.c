@@ -296,7 +296,7 @@ gsd_power_enable_screensaver_watchdog (void)
         id = g_timeout_add_seconds (XSCREENSAVER_WATCHDOG_TIMEOUT,
                                     disable_builtin_screensaver,
                                     NULL);
-        g_source_set_name_by_id (id, "[gnome-settings-daemon] disable_builtin_screensaver");
+        g_source_set_name_by_id (id, "[scarecrow-settings-daemon] disable_builtin_screensaver");
         return id;
 }
 
@@ -440,7 +440,7 @@ play_loop_start (guint *id)
         *id = g_timeout_add_seconds (GSD_POWER_MANAGER_CRITICAL_ALERT_TIMEOUT,
                                      (GSourceFunc) play_loop_timeout_cb,
                                      NULL);
-        g_source_set_name_by_id (*id, "[gnome-settings-daemon] play_loop_timeout_cb");
+        g_source_set_name_by_id (*id, "[scarecrow-settings-daemon] play_loop_timeout_cb");
         play_sound ();
 }
 

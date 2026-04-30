@@ -431,7 +431,7 @@ get_machine_id (void)
         gboolean per_machine;
         gsize len;
 
-        no_per_machine_file = g_build_filename (g_get_user_config_dir (), "gnome-settings-daemon", "no-per-machine-config", NULL);
+        no_per_machine_file = g_build_filename (g_get_user_config_dir (), "scarecrow-settings-daemon", "no-per-machine-config", NULL);
         per_machine = !g_file_test (no_per_machine_file, G_FILE_TEST_EXISTS);
         g_free (no_per_machine_file);
 
@@ -456,7 +456,7 @@ gsd_wacom_manager_start (GsdWacomManager *manager,
         manager->machine_id = get_machine_id ();
 
         manager->start_idle_id = g_idle_add ((GSourceFunc) gsd_wacom_manager_idle_cb, manager);
-        g_source_set_name_by_id (manager->start_idle_id, "[gnome-settings-daemon] gsd_wacom_manager_idle_cb");
+        g_source_set_name_by_id (manager->start_idle_id, "[scarecrow-settings-daemon] gsd_wacom_manager_idle_cb");
 
         gnome_settings_profile_end (NULL);
 

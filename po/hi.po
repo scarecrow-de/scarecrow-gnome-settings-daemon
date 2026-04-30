@@ -1,7 +1,7 @@
 # rajesh <rajeshkajha@yahoo.com>, 2012, 2014.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon.master.hi\n"
+"Project-Id-Version: scarecrow-settings-daemon.master.hi\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "settings-daemon&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-09-21 07:26+0000\n"
@@ -16,7 +16,7 @@ msgstr ""
 "X-Generator: Lokalize 1.5\n"
 "X-DamnedLies-Scope: partial\n"
 
-#: ../data/gnome-settings-daemon.desktop.in.in.h:1
+#: ../data/scarecrow-settings-daemon.desktop.in.in.h:1
 msgid "GNOME Settings Daemon"
 msgstr "गनोम सेटिंग डेमॉन"
 
@@ -131,7 +131,7 @@ msgstr "उपकरण हॉटप्लग मनपसंद कमांड
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:22
 msgid ""
 "Command to be run when a device is added or removed. An exit value of 1 "
-"means that the device will not be handled further by gnome-settings-daemon."
+"means that the device will not be handled further by scarecrow-settings-daemon."
 msgstr ""
 "जब कोई उपकरण जोड़ा जाए या निकाला जाए तो चलाया जाने वाला कमांड. एक्जिट मान 1 "
 "का "
@@ -166,8 +166,8 @@ msgstr "इस प्लगिन का सक्रियकरण"
 #: ../data/io.github.scarecrow.settings-daemon.plugins.sharing.gschema.xml.in.in.h:2
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:2
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:2
-msgid "Whether this plugin would be activated by gnome-settings-daemon or not"
-msgstr "क्या यह प्लगइन को gnome-settings-daemon से सक्रिय किया जाए या नहीं"
+msgid "Whether this plugin would be activated by scarecrow-settings-daemon or not"
+msgstr "क्या यह प्लगइन को scarecrow-settings-daemon से सक्रिय किया जाए या नहीं"
 
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:3
 #: ../data/io.github.scarecrow.settings-daemon.plugins.color.gschema.xml.in.in.h:3
@@ -198,9 +198,9 @@ msgstr "इस प्लगइन के उपयोग के लिए प्
 #: ../data/io.github.scarecrow.settings-daemon.plugins.sharing.gschema.xml.in.in.h:4
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:6
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:8
-msgid "Priority to use for this plugin in gnome-settings-daemon startup queue"
+msgid "Priority to use for this plugin in scarecrow-settings-daemon startup queue"
 msgstr ""
-"gnome-settings-daemon आरंभिक कतार में इस प्लगइन के उपयोग के लिए प्राथमिकता"
+"scarecrow-settings-daemon आरंभिक कतार में इस प्लगइन के उपयोग के लिए प्राथमिकता"
 
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:5
 msgid "Wacom stylus absolute mode"
@@ -902,15 +902,15 @@ msgstr ""
 "रूप से सशर्त "
 "और बाध्यकारी रूप से निष्क्रिय किए गए के अलावा."
 
-#: ../gnome-settings-daemon/main.c:53
+#: ../scarecrow-settings-daemon/main.c:53
 msgid "Enable debugging code"
 msgstr "डिबगिंग कोड सक्रिय करें"
 
-#: ../gnome-settings-daemon/main.c:54
+#: ../scarecrow-settings-daemon/main.c:54
 msgid "Replace existing daemon"
 msgstr "मौजूदा डेमन बदलें"
 
-#: ../gnome-settings-daemon/main.c:55
+#: ../scarecrow-settings-daemon/main.c:55
 msgid "Exit after a time (for debugging)"
 msgstr "एक समय के बाद बाहर - डिबगिंग के लिए"
 

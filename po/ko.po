@@ -1,5 +1,5 @@
-# gnome-settings-daemon Korean translation
-# This file is distributed under the same license as the gnome-settings-daemon package.
+# scarecrow-settings-daemon Korean translation
+# This file is distributed under the same license as the scarecrow-settings-daemon package.
 #
 # Young-Ho Cha <ganadist@chollian.net>, 2002, 2006
 # Changwoo Ryu <cwryu@debian.org>, 2002-2006, 2007-2020.
@@ -13,8 +13,8 @@
 #   - mute: 음소거
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/"
+"Project-Id-Version: scarecrow-settings-daemon\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/scarecrow-settings-daemon/"
 "issues\n"
 "POT-Creation-Date: 2020-09-03 20:47+0000\n"
 "PO-Revision-Date: 2020-09-05 21:01+0900\n"

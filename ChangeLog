@@ -21,7 +21,7 @@
 	explicitly black.  We don't want to follow the theme's colors, as
 	the label is always shown against a light pastel background ---
 	using the theme's colors makes the label hard to read on "inverse"
-	themes.  Fixes the gnome-settings-daemon part of bug #556050.
+	themes.  Fixes the scarecrow-settings-daemon part of bug #556050.
 
 2009-04-15  Thomas H.P. Andersen  <phomes@gmail.com>
 
@@ -158,7 +158,7 @@
 
 2009-03-18  Jens Granseuer  <jensgr@gmx.net>
 
-	* gnome-settings-daemon/Makefile.am:
+	* scarecrow-settings-daemon/Makefile.am:
 	* plugins/a11y-keyboard/Makefile.am:
 	* plugins/background/Makefile.am:
 	* plugins/clipboard/Makefile.am:
@@ -187,7 +187,7 @@
 
 	Based on patch by: Christopher Taylor <christophth@tiscali.it>
 
-	* gnome-settings-daemon/Makefile.am:
+	* scarecrow-settings-daemon/Makefile.am:
 	* plugins/a11y-keyboard/Makefile.am:
 	* plugins/background/Makefile.am:
 	* plugins/clipboard/Makefile.am:
@@ -215,12 +215,12 @@
 
 2009-03-02  Jens Granseuer  <jensgr@gmx.net>
 
-	* gnome-settings-daemon/Makefile.am: also install the plugin header
+	* scarecrow-settings-daemon/Makefile.am: also install the plugin header
 	file because it is needed for custom plugins (bug #573610)
 
 2009-02-23  Jens Granseuer  <jensgr@gmx.net>
 
-	* data/gnome-settings-daemon.schemas.in: add missing keys for a11y
+	* data/scarecrow-settings-daemon.schemas.in: add missing keys for a11y
 	shortcut names (bug #572807)
 
 2009-02-22  Jens Granseuer  <jensgr@gmx.net>
@@ -305,7 +305,7 @@
 
 	Bug 570743 – restart on crash
 
-	* data/gnome-settings-daemon.desktop.in.in: Have gnome-session
+	* data/scarecrow-settings-daemon.desktop.in.in: Have gnome-session
 	restart g-s-d if it crashes (heaven forbid!).
 
 2009-02-04  Vincent Untz  <vuntz@gnome.org>
@@ -559,7 +559,7 @@
 	Based on a patch by: Lennart Poettering <lennart@poettering.net>
 
 	* configure.ac:
-	* data/gnome-settings-daemon.schemas.in:
+	* data/scarecrow-settings-daemon.schemas.in:
 	* plugins/Makefile.am:
 	* plugins/sound/Makefile.am:
 	* plugins/sound/gsd-sound-manager.c:
@@ -586,7 +586,7 @@
 
 	* configure.ac: Set GNOME_KEYBINDINGS_KEYSDIR.
 
-	* data/gnome-settings-daemon.schemas.in: Add missing schemas for
+	* data/scarecrow-settings-daemon.schemas.in: Add missing schemas for
 	the keys in /destkop/gnome/applications/at, and also add new
 	schemas for keys in /desktop/gnome/keybindings that define 
 	global keybindings for turning ATs on and off. Todo: There are no
@@ -647,7 +647,7 @@
 
 	Patch by: Frederic Peters <fpeters@0d.be>
 
-	* gnome-settings-daemon/main.c: (main): initialize thread system since
+	* scarecrow-settings-daemon/main.c: (main): initialize thread system since
 	ORBit no longer does it for us (#565515)
 
 ==================== 2.25.3 ====================
@@ -676,7 +676,7 @@
 	Shutdown properly when bus goes away.  Previously
 	we were just letting libdbus call exit(1) for us.
 
-	* gnome-settings-daemon/main.c (get_session_bus):
+	* scarecrow-settings-daemon/main.c (get_session_bus):
 	Set up a filter function to catch disconection
 	events.
 	(bus_message_handler): quit event loop when
@@ -686,7 +686,7 @@
 
 	Shutdown properly when killed.
 
-	* gnome-settings-daemon/main.c (on_term_signal):
+	* scarecrow-settings-daemon/main.c (on_term_signal):
 	top half of signal handling code. close a pipe
 	when getting SIGTERM.
 	(on_term_signal_pipe_closed),
@@ -696,7 +696,7 @@
 
 2008-12-07  Ray Strode  <rstrode@redhat.com>
 
-	* gnome-settings-daemon/main.c: Rename pipefds to
+	* scarecrow-settings-daemon/main.c: Rename pipefds to
 	daemon_pipe_fds.  This fits the naming style of the
 	surrounding code better.  Also, we're going to need
 	another pipe, so better to use a specific name here.
@@ -719,7 +719,7 @@
 
 2008-12-07  Behdad Esfahbod  <behdad@gnome.org>
 
-	* gnome-settings-daemon/main.c (daemon_detach): Don't call umask (bug
+	* scarecrow-settings-daemon/main.c (daemon_detach): Don't call umask (bug
 	#563543)
 
 2008-12-04  Jens Granseuer  <jensgr@gmx.net>
@@ -793,7 +793,7 @@ Tue Dec  2 15:37:21 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2008-11-24  Behdad Esfahbod  <behdad@gnome.org>
 
-	* gnome-settings-daemon/main.c (parse_args), (main): Fix --no-daemon 
+	* scarecrow-settings-daemon/main.c (parse_args), (main): Fix --no-daemon 
 	(bug #562175)
 
 2008-11-24  Jens Granseuer  <jensgr@gmx.net>
@@ -859,12 +859,12 @@ Tue Dec  2 15:37:21 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2008-11-10  Behdad Esfahbod  <behdad@gnome.org>
 
-	* gnome-settings-daemon/main.c (daemon_start): Check return value of
+	* scarecrow-settings-daemon/main.c (daemon_start): Check return value of
 	pipe().
 
 2008-11-10  Behdad Esfahbod  <behdad@gnome.org>
 
-	* gnome-settings-daemon/main.c (daemon_start), (daemon_detach),
+	* scarecrow-settings-daemon/main.c (daemon_start), (daemon_detach),
 	(daemon_terminate_parent), (main): Fork before gtk_init (bug #559695)
 
 2008-11-09  Jens Granseuer  <jensgr@gmx.net>
@@ -890,7 +890,7 @@ Tue Dec  2 15:37:21 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2008-11-06  Behdad Esfahbod  <behdad@gnome.org>
 
-	* data/gnome-settings-daemon.schemas.in: Reshuffle plugin priorities a
+	* data/scarecrow-settings-daemon.schemas.in: Reshuffle plugin priorities a
 	bit.  Now that we do many of the plugins in idle callback, those can
 	be put at the end.
 
@@ -963,7 +963,7 @@ Tue Dec  2 15:37:21 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2008-11-04  Behdad Esfahbod  <behdad@gnome.org>
 
-	* gnome-settings-daemon/main.c (daemonize), (main): Use a pipe
+	* scarecrow-settings-daemon/main.c (daemonize), (main): Use a pipe
 	to communicate between child and parent process instead of a
 	signal.  Signals are not queued, so if the child tried to signal
 	the parent before the parent got a chance to wait for it, the signal
@@ -972,7 +972,7 @@ Tue Dec  2 15:37:21 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2008-11-04  Behdad Esfahbod  <behdad@gnome.org>
 
-	* gnome-settings-daemon/main.c (daemonize): Don't close stderr.
+	* scarecrow-settings-daemon/main.c (daemonize): Don't close stderr.
 	Otherwise we just lose all our warnings that will not end up
 	in ~/.xsession-errors.
 
@@ -984,7 +984,7 @@ Tue Dec  2 15:37:21 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2008-11-03  Behdad Esfahbod  <behdad@gnome.org>
 
-	* gnome-settings-daemon/main.c (daemonize), (main):
+	* scarecrow-settings-daemon/main.c (daemonize), (main):
 	Make parent wait for initialization in children to finish before
 	returning.  This makes gnome-session to wait for initialization
 	to be done before spawning other processes.  This way, apps
@@ -993,9 +993,9 @@ Tue Dec  2 15:37:21 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2008-11-03  Behdad Esfahbod  <behdad@gnome.org>
 
-	* gnome-settings-daemon/gnome-settings-manager.c (_load_file),
+	* scarecrow-settings-daemon/gnome-settings-manager.c (_load_file),
 	(gnome_settings_manager_start), (gnome_settings_manager_stop):
-	* gnome-settings-daemon/gnome-settings-plugin-info.c
+	* scarecrow-settings-daemon/gnome-settings-plugin-info.c
 	(gnome_settings_plugin_info_set_enabled_key_name):
 	* plugins/a11y-keyboard/gsd-a11y-keyboard-manager.c
 	(register_config_callback):
@@ -1079,8 +1079,8 @@ Tue Dec  2 15:37:21 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2008-11-03  Behdad Esfahbod  <behdad@gnome.org>
 
-	* gnome-settings-daemon/gnome-settings-manager.c (_load_file):
-	* gnome-settings-daemon/gnome-settings-plugin-info.c
+	* scarecrow-settings-daemon/gnome-settings-manager.c (_load_file):
+	* scarecrow-settings-daemon/gnome-settings-plugin-info.c
 	(gnome_settings_plugin_info_fill_from_file), (load_plugin_module):
 	* plugins/font/gsd-font-manager.c (child_watch_cb),
 	(spawn_with_input):
@@ -1094,7 +1094,7 @@ Tue Dec  2 15:37:21 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2008-11-03  Behdad Esfahbod  <behdad@gnome.org>
 
-	* data/gnome-settings-daemon.schemas.in: Disable xrdb plugin by
+	* data/scarecrow-settings-daemon.schemas.in: Disable xrdb plugin by
 	default (#bug #557807)
 
 2008-11-02  Jens Granseuer  <jensgr@gmx.net>
@@ -1117,7 +1117,7 @@ Tue Dec  2 15:37:21 2008  Søren Sandmann  <sandmann@redhat.com>
 	Get rid of libgnome (bug #557808).
 
 	* configure.ac: bump required gtk+ version to 2.13.1
-	* gnome-settings-daemon/main.c: (main): don't use g_program_init
+	* scarecrow-settings-daemon/main.c: (main): don't use g_program_init
 	* plugins/a11y-keyboard/Makefile.am:
 	* plugins/a11y-keyboard/gsd-a11y-keyboard-manager.c:
 	(ax_response_callback), (ax_stickykeys_response),
@@ -1199,9 +1199,9 @@ Tue Dec  2 15:37:21 2008  Søren Sandmann  <sandmann@redhat.com>
 
 	Bug 555553 – format not a string literal and no format arguments
 
-	* gnome-settings-daemon/gnome-settings-manager.c
-	* gnome-settings-daemon/gnome-settings-module.c
-	* gnome-settings-daemon/main.c
+	* scarecrow-settings-daemon/gnome-settings-manager.c
+	* scarecrow-settings-daemon/gnome-settings-module.c
+	* scarecrow-settings-daemon/main.c
 	* plugins/a11y-keyboard/gsd-a11y-keyboard-manager.c
 	* plugins/xrdb/gsd-xrdb-manager.c: Use printf safely.
 
@@ -1296,7 +1296,7 @@ Tue Dec  2 15:37:21 2008  Søren Sandmann  <sandmann@redhat.com>
 
 	Patch by: Simon Zheng <simon.zheng@sun.com>
 
-	* gnome-settings-daemon/main.c: (main): fix the fix for read-only
+	* scarecrow-settings-daemon/main.c: (main): fix the fix for read-only
 	home directories from bug #530975
 
 ==================== 2.23.92 ====================
@@ -1592,7 +1592,7 @@ Thu Jul 24 14:48:04 2008  Søren Sandmann  <sandmann@redhat.com>
 
 	Patch by: Damien Carbery <damien.carbery@sun.com>
 
-	* data/gnome-settings-daemon-uninstalled.pc.in: fix include path for
+	* data/scarecrow-settings-daemon-uninstalled.pc.in: fix include path for
 	building against the uninstalled package (bug #543289)
 
 2008-07-15  Gerd Kohlberger  <gerdk@svn.gnome.org>
@@ -1751,12 +1751,12 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2008-05-27  Jens Granseuer  <jensgr@gmx.net>
 
-	* gnome-settings-daemon/gnome-settings-manager.c: (_unload_plugin),
+	* scarecrow-settings-daemon/gnome-settings-manager.c: (_unload_plugin),
 	(_unload_all): stop all plugins on shutdown
 
 2008-05-27  Lucas Rocha  <lucasr@gnome.org>
 
-	* gnome-settings-daemon/main.c (set_session_over_handler,
+	* scarecrow-settings-daemon/main.c (set_session_over_handler,
 	on_session_over, main): listen to "SessionOver" D-Bus signal from
 	Session Manager to know when to shutdown. Bug #522017.
 
@@ -1811,7 +1811,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 
 	Patch by: Brian Cameron <brian.cameron@sun.com>
 
-	* gnome-settings-daemon/main.c: (main): don't die when the
+	* scarecrow-settings-daemon/main.c: (main): don't die when the
 	user's home directory is read-only (bug #530975)
 
 2008-05-02  Jens Granseuer  <jensgr@gmx.net>
@@ -1859,13 +1859,13 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2008-04-21  Lucas Rocha  <lucasr@gnome.org>
 
-	Install .desktop for gnome-settings-daemon in a standard autostart
+	Install .desktop for scarecrow-settings-daemon in a standard autostart
 	directory as required by new gnome-session (bug #526984).
 
 	* configure.ac: expand $libexecdir to be used on .desktop file. 
 	* acinclude.m4: added new m4 macro (AS_AC_EXPAND) for expanding 
 	variables.
-	* data/Makefile.am, data/gnome-settings-daemon.desktop.in.in: install 
+	* data/Makefile.am, data/scarecrow-settings-daemon.desktop.in.in: install 
 	g-s-d .desktop file.
 
 2008-04-21  Rodrigo Moya <rodrigo@gnome-db.org>
@@ -1945,13 +1945,13 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2008-04-12  Jens Granseuer  <jensgr@gmx.net>
 
-	* gnome-settings-daemon/main.c:
+	* scarecrow-settings-daemon/main.c:
 	* plugins/media-keys/gsd-media-keys-manager.c: DBus API has been
 	stable for a while; don't define DBUS_API_SUBJECT_TO_CHANGE anymore
 
 2008-04-12  Jens Granseuer  <jensgr@gmx.net>
 
-	* gnome-settings-daemon/main.c: (acquire_name_on_proxy),
+	* scarecrow-settings-daemon/main.c: (acquire_name_on_proxy),
 	(bus_register), (main): fix a few small leaks
 
 2008-04-12  Jens Granseuer  <jensgr@gmx.net>
@@ -1961,7 +1961,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2008-04-11  Jens Granseuer  <jensgr@gmx.net>
 
-	* gnome-settings-daemon/main.c: turn into a daemon by default and
+	* scarecrow-settings-daemon/main.c: turn into a daemon by default and
 	make --no-daemon work
 
 2008-04-11  Jens Granseuer  <jensgr@gmx.net>
@@ -2305,7 +2305,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2008-03-29  Jens Granseuer  <jensgr@gmx.net>
 
-	* gnome-settings-daemon/main.c: mark string for translation
+	* scarecrow-settings-daemon/main.c: mark string for translation
 
 2008-03-29  Jens Granseuer  <jensgr@gmx.net>
 
@@ -2352,7 +2352,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 2008-03-28  Michael J. Chudobiak  <mjc@svn.gnome.org>
 
 	* configure.ac:
-	* data/gnome-settings-daemon.schemas.in:
+	* data/scarecrow-settings-daemon.schemas.in:
 	* plugins/Makefile.am:
 	* plugins/housekeeping/Makefile.am:
 	* plugins/housekeeping/gsd-housekeeping-manager.c:
@@ -2391,7 +2391,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2008-03-24  William Jon McCann  <jmccann@redhat.com>
 
-	* gnome-settings-daemon/Makefile.am:
+	* scarecrow-settings-daemon/Makefile.am:
 	* plugins/a11y-keyboard/gsd-a11y-keyboard-manager.c:
 	(set_server_from_gconf), (gsd_a11y_keyboard_manager_start):
 	* plugins/background/Makefile.am:
@@ -2426,9 +2426,9 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2008-03-24  William Jon McCann  <jmccann@redhat.com>
 
-	* gnome-settings-daemon/gnome-settings-manager.c:
+	* scarecrow-settings-daemon/gnome-settings-manager.c:
 	(compare_location), (_load_file), (_load_dir):
-	* gnome-settings-daemon/gnome-settings-plugin-info.c: (debug_info),
+	* scarecrow-settings-daemon/gnome-settings-plugin-info.c: (debug_info),
 	(gnome_settings_plugin_info_fill_from_file),
 	(gnome_settings_plugin_info_deactivate), (load_plugin_module),
 	(gnome_settings_plugin_info_activate),
@@ -2455,29 +2455,29 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2008-03-24  William Jon McCann  <jmccann@redhat.com>
 
-	* gnome-settings-daemon/gnome-settings-manager.c:
+	* scarecrow-settings-daemon/gnome-settings-manager.c:
 	(gnome_settings_manager_start):
-	* gnome-settings-daemon/gnome-settings-profile.c:
+	* scarecrow-settings-daemon/gnome-settings-profile.c:
 	(_gnome_settings_profile_log):
-	* gnome-settings-daemon/gnome-settings-profile.h:
-	* gnome-settings-daemon/main.c: (main):
+	* scarecrow-settings-daemon/gnome-settings-profile.h:
+	* scarecrow-settings-daemon/main.c: (main):
 	Add missing files.  Add some more profiling points.
 
 2008-03-24  William Jon McCann  <jmccann@redhat.com>
 
 	* configure.ac:
-	* gnome-settings-daemon/Makefile.am:
-	* gnome-settings-daemon/gnome-settings-manager.c: (_load_file),
+	* scarecrow-settings-daemon/Makefile.am:
+	* scarecrow-settings-daemon/gnome-settings-manager.c: (_load_file),
 	(_load_dir), (_load_all), (gnome_settings_manager_start):
-	* gnome-settings-daemon/gnome-settings-plugin-info.c:
+	* scarecrow-settings-daemon/gnome-settings-plugin-info.c:
 	(gnome_settings_plugin_info_fill_from_file), (load_plugin_module),
 	(_activate_plugin):
-	* gnome-settings-daemon/main.c: (bus_register), (main):
+	* scarecrow-settings-daemon/main.c: (bus_register), (main):
 	Add some profiling code.  Must specify --enable-profiling to
 	configure.
 
 	Can now be profiled like so:
-	strace -ttt -f -o /tmp/logfile.strace gnome-settings-daemon
+	strace -ttt -f -o /tmp/logfile.strace scarecrow-settings-daemon
 	python plot-timeline.py -o prettygraph.png /tmp/logfile.strace
 
 	See: http://www.gnome.org/~federico/news-2006-03.html#09
@@ -2553,7 +2553,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 
 	* data/Makefile.am:
 	* data/apps_gnome_settings_daemon_default_editor.schemas.in:
-	* data/gnome-settings-daemon.schemas.in: remove obsolete settings for
+	* data/scarecrow-settings-daemon.schemas.in: remove obsolete settings for
 	the removed default editor plugin
 
 2008-03-01  Jens Granseuer  <jensgr@gmx.net>
@@ -2564,7 +2564,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2008-02-29  William Jon McCann  <jmccann@redhat.com>
 
-	* gnome-settings-daemon/main.c:
+	* scarecrow-settings-daemon/main.c:
 	Disable debug by default again.
 
 2008-02-29  Jens Granseuer  <jensgr@gmx.net>
@@ -2590,12 +2590,12 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2008-02-29  Jens Granseuer  <jensgr@gmx.net>
 
-	* gnome-settings-daemon/gnome-settings-manager.c:
+	* scarecrow-settings-daemon/gnome-settings-manager.c:
 	(register_manager), (gnome_settings_manager_start): minor clean-up
 
 2008-02-28  William Jon McCann  <jmccann@redhat.com>
 
-	* gnome-settings-daemon/gnome-settings-manager.c:
+	* scarecrow-settings-daemon/gnome-settings-manager.c:
 	(gnome_settings_manager_error_quark), (_load_file),
 	(gnome_settings_manager_awake), (gnome_settings_manager_start),
 	(gnome_settings_manager_start_with_settings_prefix),
@@ -2603,9 +2603,9 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 	(gnome_settings_manager_get_property),
 	(gnome_settings_manager_class_init),
 	(gnome_settings_manager_finalize), (gnome_settings_manager_new):
-	* gnome-settings-daemon/gnome-settings-manager.h:
-	* gnome-settings-daemon/gnome-settings-manager.xml:
-	* gnome-settings-daemon/main.c: (main):
+	* scarecrow-settings-daemon/gnome-settings-manager.h:
+	* scarecrow-settings-daemon/gnome-settings-manager.xml:
+	* scarecrow-settings-daemon/main.c: (main):
 	When dbus activated only load the plugins when requested
 	instead of at startup.  Add a new method to start and set
 	plugin settings prefix.  This allows gdm to use dbus
@@ -2635,38 +2635,38 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2008-02-25  William Jon McCann  <jmccann@redhat.com>
 
-	* gnome-settings-daemon/main.c: (gsd_log_default_handler), (main):
+	* scarecrow-settings-daemon/main.c: (gsd_log_default_handler), (main):
 	Add --debug command line option.
 	Only print DEBUG level messages if --debug is used.
 
 2008-02-25  William Jon McCann  <jmccann@redhat.com>
 
-	* gnome-settings-daemon/gnome-settings-plugin-info.c:
+	* scarecrow-settings-daemon/gnome-settings-plugin-info.c:
 	(gnome_settings_plugin_info_fill_from_file):
 	Don't warn on missing priority since we don't recommend
 	that it be used.
 
 2008-02-22  William Jon McCann  <jmccann@redhat.com>
 
-	* data/gnome-settings-daemon.schemas.in:
+	* data/scarecrow-settings-daemon.schemas.in:
 	Take a stab at defining the default load priorities.
 	Fixes #518155
 
 2008-02-22  William Jon McCann  <jmccann@redhat.com>
 
-	* data/gnome-settings-daemon.schemas.in:
-	* gnome-settings-daemon/gnome-settings-manager.c: (_load_file):
-	* gnome-settings-daemon/gnome-settings-plugin-info.c:
+	* data/scarecrow-settings-daemon.schemas.in:
+	* scarecrow-settings-daemon/gnome-settings-manager.c: (_load_file):
+	* scarecrow-settings-daemon/gnome-settings-plugin-info.c:
 	(gnome_settings_plugin_info_set_priority):
-	* gnome-settings-daemon/gnome-settings-plugin-info.h:
+	* scarecrow-settings-daemon/gnome-settings-plugin-info.h:
 	Allow gconf to override priorities.  Set sound plugin
 	priority to 1 (highest).
 	Fixes #515340
 
 2008-02-22  William Jon McCann  <jmccann@redhat.com>
 
-	* gnome-settings-daemon/Makefile.am:
-	* gnome-settings-daemon/gnome-settings-manager.c: (_load_info),
+	* scarecrow-settings-daemon/Makefile.am:
+	* scarecrow-settings-daemon/gnome-settings-manager.c: (_load_info),
 	(maybe_activate_plugin), (compare_location), (compare_priority),
 	(on_plugin_activated), (on_plugin_deactivated), (_load_file),
 	(_load_dir), (_load_all), (_unload_all),
@@ -2674,27 +2674,27 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 	(gnome_settings_manager_constructor),
 	(gnome_settings_manager_class_init),
 	(gnome_settings_manager_finalize):
-	* gnome-settings-daemon/gnome-settings-manager.h:
-	* gnome-settings-daemon/gnome-settings-manager.xml:
-	* gnome-settings-daemon/gnome-settings-plugin-info.c:
+	* scarecrow-settings-daemon/gnome-settings-manager.h:
+	* scarecrow-settings-daemon/gnome-settings-manager.xml:
+	* scarecrow-settings-daemon/gnome-settings-plugin-info.c:
 	(gnome_settings_plugin_info_class_init),
 	(gnome_settings_plugin_info_set_enabled_key_name),
 	(_deactivate_plugin), (_activate_plugin):
-	* gnome-settings-daemon/gnome-settings-plugin-info.h:
-	* gnome-settings-daemon/gnome-settings-plugins-engine.c:
-	* gnome-settings-daemon/gnome-settings-plugins-engine.h:
+	* scarecrow-settings-daemon/gnome-settings-plugin-info.h:
+	* scarecrow-settings-daemon/gnome-settings-plugins-engine.c:
+	* scarecrow-settings-daemon/gnome-settings-plugins-engine.h:
 	Merge PluginsEngine functionality into Manager.  Emit
 	signals when plugins are activated or deactivated.
 	Fixes #515341
 
 2008-02-22  William Jon McCann  <jmccann@redhat.com>
 
-	* gnome-settings-daemon/Makefile.am:
-	* gnome-settings-daemon/gnome-settings-manager.c:
+	* scarecrow-settings-daemon/Makefile.am:
+	* scarecrow-settings-daemon/gnome-settings-manager.c:
 	(gnome_settings_manager_start), (gnome_settings_manager_stop),
 	(gnome_settings_manager_constructor),
 	(gnome_settings_manager_finalize):
-	* gnome-settings-daemon/gnome-settings-plugin-info.c:
+	* scarecrow-settings-daemon/gnome-settings-plugin-info.c:
 	(gnome_settings_plugin_info_finalize),
 	(gnome_settings_plugin_info_class_init),
 	(gnome_settings_plugin_info_init),
@@ -2713,8 +2713,8 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 	(gnome_settings_plugin_info_get_copyright),
 	(gnome_settings_plugin_info_get_location),
 	(gnome_settings_plugin_info_get_priority):
-	* gnome-settings-daemon/gnome-settings-plugin-info.h:
-	* gnome-settings-daemon/gnome-settings-plugins-engine.c:
+	* scarecrow-settings-daemon/gnome-settings-plugin-info.h:
+	* scarecrow-settings-daemon/gnome-settings-plugins-engine.c:
 	(gnome_settings_plugins_engine_load), (maybe_activate_plugin),
 	(compare_location), (compare_priority),
 	(gnome_settings_plugins_engine_load_file),
@@ -2731,7 +2731,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 	(gnome_settings_plugins_engine_init),
 	(gnome_settings_plugins_engine_finalize),
 	(gnome_settings_plugins_engine_new):
-	* gnome-settings-daemon/gnome-settings-plugins-engine.h:
+	* scarecrow-settings-daemon/gnome-settings-plugins-engine.h:
 	Refactor the PluginInfo structure into a class.  This
 	will facilitate fixing bug #515341
 
@@ -2765,7 +2765,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2008-02-16  Jens Granseuer  <jensgr@gmx.net>
 
-	* gnome-settings-daemon/main.c: mark string as translatable
+	* scarecrow-settings-daemon/main.c: mark string as translatable
 
 2008-02-14  Jens Granseuer  <jensgr@gmx.net>
 
@@ -2800,13 +2800,13 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 
 	Patch by Wouter Bolsterlee <wbolster@gnome.org>
 
-	* gnome-settings-daemon/gnome-settings-plugins-engine.c
+	* scarecrow-settings-daemon/gnome-settings-plugins-engine.c
 	(gnome_settings_plugins_engine_load_all): assign return value from
 	g_slist_sort to the plugins list variable. (bug #515340)
 
 2008-02-10  Jens Granseuer  <jensgr@gmx.net>
 
-	* gnome-settings-daemon/main.c: update the default GConf prefix to
+	* scarecrow-settings-daemon/main.c: update the default GConf prefix to
 	match the changes from r112 or bug #514411
 
 2008-02-09  Jens Granseuer  <jensgr@gmx.net>
@@ -2819,7 +2819,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 	being the default if nothing is specified by the plugin. For multiple
 	plugins with identical priority start order is undefined. (bug #515340)
 
-	* gnome-settings-daemon/gnome-settings-plugins-engine.c:
+	* scarecrow-settings-daemon/gnome-settings-plugins-engine.c:
 	(gnome_settings_plugins_engine_load), (activate_plugin),
 	(compare_location), (compare_priority),
 	(gnome_settings_plugins_engine_load_file),
@@ -2829,7 +2829,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 	(gnome_settings_plugins_engine_get_plugins_list),
 	(gnome_settings_plugins_engine_get_plugin_copyright),
 	(gnome_settings_plugins_engine_get_plugin_priority):
-	* gnome-settings-daemon/gnome-settings-plugins-engine.h: add back
+	* scarecrow-settings-daemon/gnome-settings-plugins-engine.h: add back
 	support for defining plugin start order
 
 2008-02-09  Jens Granseuer  <jensgr@gmx.net>
@@ -2894,7 +2894,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2008-02-06  Jens Granseuer  <jensgr@gmx.net>
 
-	* data/gnome-settings-daemon.schemas.in: use gnome_settings_daemon for
+	* data/scarecrow-settings-daemon.schemas.in: use gnome_settings_daemon for
 	the GConf path. This is what the other g-s-d settings use as well, and
 	there is no good reason to use two separate paths (bug #514411)
 
@@ -2909,7 +2909,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 	Based on a patch by: Damien Carberry <damien carberry@sun.com>
 
 	* configure.ac:
-	* data/gnome-settings-daemon-uninstalled.pc.in: add uninstalled.pc
+	* data/scarecrow-settings-daemon-uninstalled.pc.in: add uninstalled.pc
 	file for building against an uninstalled copy of g-s-d (bug #511820)
 
 2008-02-05  Jens Granseuer  <jensgr@gmx.net>
@@ -2936,7 +2936,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 	* plugins/xrandr/Makefile.am:
 	* plugins/xrdb/Makefile.am:
 	* plugins/xsettings/Makefile.am:
-	* src: rename the src folder to gnome-settings-daemon. This is needed
+	* src: rename the src folder to scarecrow-settings-daemon. This is needed
 	so we can supply an uninstalled.pc file for g-s-d (see discussion in
 	bug #511820)
 
@@ -2956,7 +2956,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 	* data/apps_gnome_settings_daemon_keybindings.schemas.in:
 	* data/apps_gnome_settings_daemon_screensaver.schemas.in:
 	* data/desktop_gnome_font_rendering.schemas.in:
-	* data/gnome-settings-daemon.schemas.in:
+	* data/scarecrow-settings-daemon.schemas.in:
 
 	Review short and long descriptions for GConf keys, bug #514047.
 
@@ -2967,7 +2967,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 2008-02-01  Christian Persch  <chpe@gnome.org>
 
 	* configure.ac: Install the settings plugin to
-	$(libdir)/gnome-settings-daemon-2.0. Fixes install with libdir ==
+	$(libdir)/scarecrow-settings-daemon-2.0. Fixes install with libdir ==
 	libexecdir, bug #504203.
 
 2008-02-01  Christian Persch  <chpe@gnome.org>
@@ -3055,7 +3055,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 	* plugins/xsettings/Makefile.am:
 	* plugins/xsettings/xsettings.gnome-settings-plugin.desktop.in:
 	* po/POTFILES.in: No need to use weird naming of
-	.gnome-settings-daemon.in files. Bug #512048.
+	.scarecrow-settings-daemon.in files. Bug #512048.
 
 2008-01-29  Rodrigo Moya <rodrigo@gnome-db.org>
 
@@ -3091,7 +3091,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 	* src/Makefile.am:
 
 	Don't use weird autofu stuff to install
-	gnome-settings-daemon into another directory, but define
+	scarecrow-settings-daemon into another directory, but define
 	gsddir and gsd_PROGRAMS instead. Fixes bug #504203.
 
 2008-01-28  Wouter Bolsterlee  <wbolster@svn.gnome.org>
@@ -3100,9 +3100,9 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 	* src/Makefile.am:
 
 	Hopefully allow $(libdir) to be the same directory as
-	$(libexecdir) by installing the gnome-settings-daemon
+	$(libexecdir) by installing the scarecrow-settings-daemon
 	binary into a subdirectory of $(libexecdir), i.e.
-	$(libexecdir)/gnome-settings-daemon/gnome-settings-daemon.
+	$(libexecdir)/scarecrow-settings-daemon/scarecrow-settings-daemon.
 	Fixes bug #504203.
 
 2008-01-28  Wouter Bolsterlee  <wbolster@svn.gnome.org>
@@ -3121,7 +3121,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2008-01-26  Jens Granseuer  <jensgr@gmx.net>
 
-	* data/gnome-settings-daemon.pc.in: DBus API has been frozen for a
+	* data/scarecrow-settings-daemon.pc.in: DBus API has been frozen for a
 	while now. No longer define DBUS_API_SUBJECT_TO_CHANGE
 
 2008-01-25  Soren Sandmann  <sandmann@redhat.com>
@@ -3138,7 +3138,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2008-01-25  Jens Granseuer  <jensgr@gmx.net>
 
-	* data/gnome-settings-daemon.schemas.in: fix typo in typing break key.
+	* data/scarecrow-settings-daemon.schemas.in: fix typo in typing break key.
 	Bug #510429.
 
 2008-01-25  Jens Granseuer  <jensgr@gmx.net>
@@ -3208,11 +3208,11 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2008-01-14  Rodrigo Moya <rodrigo@gnome-db.org>
 
-	* data/gnome-settings-daemon.pc.in: reverted last patch.
+	* data/scarecrow-settings-daemon.pc.in: reverted last patch.
 
 2008-01-14  Rodrigo Moya <rodrigo@gnome-db.org>
 
-	* data/gnome-settings-daemon.pc.in: added dbusapidir variable, for
+	* data/scarecrow-settings-daemon.pc.in: added dbusapidir variable, for
 	the gnome-control-center module to access the .xml DBus interfaces file.
 
 2008-01-14  Denis Washington  <denisw@svn.gnome.org>
@@ -3362,7 +3362,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 2007-12-17  William Jon McCann  <mccann@jhu.edu>
 
 	* configure.ac:
-	* data/gnome-settings-daemon.schemas.in:
+	* data/scarecrow-settings-daemon.schemas.in:
 	* plugins/Makefile.am:
 	* plugins/sound/Makefile.am:
 	* plugins/sound/gsd-sound-manager.c: (start_gnome_sound),
@@ -3384,7 +3384,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2007-12-17  William Jon McCann  <mccann@jhu.edu>
 
-	* data/gnome-settings-daemon.schemas.in:
+	* data/scarecrow-settings-daemon.schemas.in:
 	Add schemas for media keys.
 
 2007-12-17  William Jon McCann  <mccann@jhu.edu>
@@ -3515,7 +3515,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 2007-12-17  William Jon McCann  <mccann@jhu.edu>
 
 	* configure.ac:
-	* data/gnome-settings-daemon.schemas.in:
+	* data/scarecrow-settings-daemon.schemas.in:
 	* plugins/Makefile.am:
 	* plugins/screensaver/Makefile.am:
 	* plugins/screensaver/gsd-screensaver-manager.c: (key_toggled_cb),
@@ -3570,7 +3570,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 2007-12-16  William Jon McCann  <mccann@jhu.edu>
 
 	* configure.ac:
-	* data/gnome-settings-daemon.schemas.in:
+	* data/scarecrow-settings-daemon.schemas.in:
 	* plugins/Makefile.am:
 	* plugins/background/Makefile.am:
 	* plugins/background/background.gnome-settings-plugin.desktop.in:
@@ -3594,7 +3594,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 2007-12-16  William Jon McCann  <mccann@jhu.edu>
 
 	* configure.ac:
-	* data/gnome-settings-daemon.schemas.in:
+	* data/scarecrow-settings-daemon.schemas.in:
 	* plugins/Makefile.am:
 	* plugins/default-editor/default-editor.gnome-settings-plugin.deskt
 	op.in:
@@ -3636,7 +3636,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 2007-12-16  William Jon McCann  <mccann@jhu.edu>
 
 	* configure.ac:
-	* data/gnome-settings-daemon.schemas.in:
+	* data/scarecrow-settings-daemon.schemas.in:
 	* plugins/Makefile.am:
 	* plugins/mouse/Makefile.am:
 	* plugins/mouse/gsd-locate-pointer.c: (locate_pointer_expose),
@@ -3664,7 +3664,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 2007-12-16  William Jon McCann  <mccann@jhu.edu>
 
 	* configure.ac:
-	* data/gnome-settings-daemon.schemas.in:
+	* data/scarecrow-settings-daemon.schemas.in:
 	* plugins/Makefile.am:
 	* plugins/keyboard/Makefile.am:
 	* plugins/keyboard/delayed-dialog.c: (gsd_delayed_show_dialog),
@@ -3711,7 +3711,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 2007-12-16  William Jon McCann  <mccann@jhu.edu>
 
 	* configure.ac:
-	* data/gnome-settings-daemon.schemas.in:
+	* data/scarecrow-settings-daemon.schemas.in:
 	* plugins/Makefile.am:
 	* plugins/default-editor/Makefile.am:
 	* plugins/default-editor/default-editor.gnome-settings-plugin.deskt
@@ -3741,7 +3741,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 2007-12-16  William Jon McCann  <mccann@jhu.edu>
 
 	* configure.ac:
-	* data/gnome-settings-daemon.schemas.in:
+	* data/scarecrow-settings-daemon.schemas.in:
 	* plugins/Makefile.am:
 	* plugins/font/Makefile:
 	* plugins/font/Makefile.am:
@@ -3767,7 +3767,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 
 2007-12-14  William Jon McCann  <mccann@jhu.edu>
 
-	* data/gnome-settings-daemon.schemas.in:
+	* data/scarecrow-settings-daemon.schemas.in:
 	Add schemas for clipboard and xrandr.
 
 2007-12-14  William Jon McCann  <mccann@jhu.edu>
@@ -3863,7 +3863,7 @@ Mon Jun 16 14:30:13 2008  Søren Sandmann  <sandmann@redhat.com>
 2007-12-14  William Jon McCann  <mccann@jhu.edu>
 
 	* configure.ac:
-	* data/gnome-settings-daemon.schemas.in:
+	* data/scarecrow-settings-daemon.schemas.in:
 	* plugins/Makefile.am:
 	* plugins/dummy/Makefile.am:
 	* plugins/dummy/dummy.gnome-settings-plugin.desktop.in:

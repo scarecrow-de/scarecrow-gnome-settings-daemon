@@ -1,5 +1,5 @@
 /**
- * Create a gnome-settings-daemon helper easily
+ * Create a scarecrow-settings-daemon helper easily
  *
  * #define NEW gsd_media_keys_manager_new
  * #define START gsd_media_keys_manager_start
@@ -258,7 +258,7 @@ main (int argc, char **argv)
 	if (timeout > 0) {
 		guint id;
 		id = g_timeout_add_seconds (timeout, (GSourceFunc) gtk_main_quit, NULL);
-		g_source_set_name_by_id (id, "[gnome-settings-daemon] gtk_main_quit");
+		g_source_set_name_by_id (id, "[scarecrow-settings-daemon] gtk_main_quit");
 	}
 
         install_signal_handler ();

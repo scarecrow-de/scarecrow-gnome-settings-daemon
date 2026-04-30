@@ -1,5 +1,5 @@
-# gnome-settings-daemon's Portuguese Translation
-# Copyright © 1999, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 gnome-settings-daemon
+# scarecrow-settings-daemon's Portuguese Translation
+# Copyright © 1999, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 scarecrow-settings-daemon
 # Distributed under the same licence as the gnome-control-center package
 # Duarte Loreto <happyguy_pt@hotmail.com>, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013.
 # Nuno Ferreira <nmrf@rnl.ist.utl.pt>, 1999.
@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 3.10\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/scarecrow-settings-daemon/"
 "issues\n"
 "POT-Creation-Date: 2020-09-03 20:47+0000\n"
 "PO-Revision-Date: 2020-09-20 02:26+0100\n"
@@ -2822,14 +2822,14 @@ msgstr[1] "Tem %u tentativas restantes"
 #~ msgstr "Ativação desta extensão"
 
 #~ msgid ""
-#~ "Whether this plugin would be activated by gnome-settings-daemon or not"
-#~ msgstr "Se esta extensão seria ativada pelo gnome-settings-daemon ou não"
+#~ "Whether this plugin would be activated by scarecrow-settings-daemon or not"
+#~ msgstr "Se esta extensão seria ativada pelo scarecrow-settings-daemon ou não"
 
 #~ msgid "Priority to use for this plugin"
 #~ msgstr "Prioridade de utilização desta extensão"
 
 #~ msgid ""
-#~ "Priority to use for this plugin in gnome-settings-daemon startup queue"
+#~ "Priority to use for this plugin in scarecrow-settings-daemon startup queue"
 #~ msgstr ""
 #~ "Prioridade de utilização desta extensão na fila de arranque do gnome-"
 #~ "settings-daemon"
@@ -3225,7 +3225,7 @@ msgstr[1] "Tem %u tentativas restantes"
 #~ msgstr ""
 #~ "Comando a ser executado quando um dispositivo é adicionado ou removido. "
 #~ "Um valor de saída de 1 significa que o dispositivo não será mais gerido "
-#~ "pelo gnome-settings-daemon."
+#~ "pelo scarecrow-settings-daemon."
 
 #~ msgid ""
 #~ "The type of hinting to use when rendering fonts. Possible values are: "
@@ -4411,15 +4411,15 @@ msgstr[1] "Tem %u tentativas restantes"
 #~ msgstr "Reiniciar o computador agora"
 
 #~ msgid ""
-#~ "Priority to use for this plugin in gnome-settings-daemon startup queue."
+#~ "Priority to use for this plugin in scarecrow-settings-daemon startup queue."
 #~ msgstr ""
 #~ "Prioridade de utilização deste plugin na fila de arranque do gnome-"
 #~ "settings-daemon."
 
 #~ msgid ""
-#~ "Whether this plugin would be activated by gnome-settings-daemon or not."
+#~ "Whether this plugin would be activated by scarecrow-settings-daemon or not."
 #~ msgstr ""
-#~ "Se este plugin deverá ser ativado pelo gnome-settings-daemon ou não."
+#~ "Se este plugin deverá ser ativado pelo scarecrow-settings-daemon ou não."
 
 #~ msgid "Allowed keys"
 #~ msgstr "Teclas permitidas"

@@ -272,141 +272,141 @@ msgid ""
 "\" for maximum hinting (may cause distortion of letter forms)."
 msgstr ""
 
-#: ../data/gnome-settings-daemon.schemas.in.h:1
+#: ../data/scarecrow-settings-daemon.schemas.in.h:1
 #, fuzzy
 msgid "Enable accessibility keyboard plugin"
 msgstr "კლავიატურით წვდომის შესაძლებლობების დაშ_ვება"
 
-#: ../data/gnome-settings-daemon.schemas.in.h:2
+#: ../data/scarecrow-settings-daemon.schemas.in.h:2
 #, fuzzy
 msgid "Enable background plugin"
 msgstr "ფონის _სურათის დამახსოვრება"
 
-#: ../data/gnome-settings-daemon.schemas.in.h:3
+#: ../data/scarecrow-settings-daemon.schemas.in.h:3
 msgid "Enable clipboard plugin"
 msgstr ""
 
-#: ../data/gnome-settings-daemon.schemas.in.h:4
+#: ../data/scarecrow-settings-daemon.schemas.in.h:4
 msgid "Enable default editor plugin"
 msgstr ""
 
-#: ../data/gnome-settings-daemon.schemas.in.h:5
+#: ../data/scarecrow-settings-daemon.schemas.in.h:5
 msgid "Enable font plugin"
 msgstr ""
 
-#: ../data/gnome-settings-daemon.schemas.in.h:6
+#: ../data/scarecrow-settings-daemon.schemas.in.h:6
 msgid "Enable keybindings plugin"
 msgstr ""
 
-#: ../data/gnome-settings-daemon.schemas.in.h:7
+#: ../data/scarecrow-settings-daemon.schemas.in.h:7
 #, fuzzy
 msgid "Enable keyboard plugin"
 msgstr "გამართვის გამონატანი კოდის ჩართვა"
 
-#: ../data/gnome-settings-daemon.schemas.in.h:8
+#: ../data/scarecrow-settings-daemon.schemas.in.h:8
 msgid "Enable media keys plugin"
 msgstr ""
 
-#: ../data/gnome-settings-daemon.schemas.in.h:9
+#: ../data/scarecrow-settings-daemon.schemas.in.h:9
 #, fuzzy
 msgid "Enable mouse plugin"
 msgstr "გამართვის გამონატანი კოდის ჩართვა"
 
-#: ../data/gnome-settings-daemon.schemas.in.h:10
+#: ../data/scarecrow-settings-daemon.schemas.in.h:10
 #, fuzzy
 msgid "Enable screensaver plugin"
 msgstr "სეანსის დაწყებისთანავე ეკრანმზოგის გაშვება"
 
-#: ../data/gnome-settings-daemon.schemas.in.h:11
+#: ../data/scarecrow-settings-daemon.schemas.in.h:11
 #, fuzzy
 msgid "Enable sound plugin"
 msgstr "გამართვის გამონატანი კოდის ჩართვა"
 
-#: ../data/gnome-settings-daemon.schemas.in.h:12
+#: ../data/scarecrow-settings-daemon.schemas.in.h:12
 msgid "Enable typing breaks plugin"
 msgstr ""
 
-#: ../data/gnome-settings-daemon.schemas.in.h:13
+#: ../data/scarecrow-settings-daemon.schemas.in.h:13
 msgid "Enable xrandr plugin"
 msgstr ""
 
-#: ../data/gnome-settings-daemon.schemas.in.h:14
+#: ../data/scarecrow-settings-daemon.schemas.in.h:14
 #, fuzzy
 msgid "Enable xrdb plugin"
 msgstr "გამართვის გამონატანი კოდის ჩართვა"
 
-#: ../data/gnome-settings-daemon.schemas.in.h:15
+#: ../data/scarecrow-settings-daemon.schemas.in.h:15
 msgid "Enable xsettings plugin"
 msgstr ""
 
-#: ../data/gnome-settings-daemon.schemas.in.h:16
+#: ../data/scarecrow-settings-daemon.schemas.in.h:16
 msgid "Set to True to enable the plugin to manage clipboard settings."
 msgstr ""
 
-#: ../data/gnome-settings-daemon.schemas.in.h:17
+#: ../data/scarecrow-settings-daemon.schemas.in.h:17
 msgid "Set to True to enable the plugin to manage desktop background settings."
 msgstr ""
 
-#: ../data/gnome-settings-daemon.schemas.in.h:18
+#: ../data/scarecrow-settings-daemon.schemas.in.h:18
 msgid "Set to True to enable the plugin to manage font settings."
 msgstr ""
 
-#: ../data/gnome-settings-daemon.schemas.in.h:19
+#: ../data/scarecrow-settings-daemon.schemas.in.h:19
 msgid "Set to True to enable the plugin to manage keyboard settings."
 msgstr ""
 
-#: ../data/gnome-settings-daemon.schemas.in.h:20
+#: ../data/scarecrow-settings-daemon.schemas.in.h:20
 msgid "Set to True to enable the plugin to manage mouse settings."
 msgstr ""
 
-#: ../data/gnome-settings-daemon.schemas.in.h:21
+#: ../data/scarecrow-settings-daemon.schemas.in.h:21
 msgid "Set to True to enable the plugin to manage multimedia keys settings."
 msgstr ""
 
-#: ../data/gnome-settings-daemon.schemas.in.h:22
+#: ../data/scarecrow-settings-daemon.schemas.in.h:22
 msgid "Set to True to enable the plugin to manage screensaver settings."
 msgstr ""
 
-#: ../data/gnome-settings-daemon.schemas.in.h:23
+#: ../data/scarecrow-settings-daemon.schemas.in.h:23
 msgid "Set to True to enable the plugin to manage sound settings."
 msgstr ""
 
-#: ../data/gnome-settings-daemon.schemas.in.h:24
+#: ../data/scarecrow-settings-daemon.schemas.in.h:24
 msgid ""
 "Set to True to enable the plugin to manage the accessibility keyboard "
 "settings."
 msgstr ""
 
-#: ../data/gnome-settings-daemon.schemas.in.h:25
+#: ../data/scarecrow-settings-daemon.schemas.in.h:25
 msgid ""
 "Set to True to enable the plugin to manage the default text editor setting."
 msgstr ""
 
-#: ../data/gnome-settings-daemon.schemas.in.h:26
+#: ../data/scarecrow-settings-daemon.schemas.in.h:26
 msgid "Set to True to enable the plugin to manage the keybindings."
 msgstr ""
 
-#: ../data/gnome-settings-daemon.schemas.in.h:27
+#: ../data/scarecrow-settings-daemon.schemas.in.h:27
 msgid "Set to True to enable the plugin to manage typing breaks."
 msgstr ""
 
-#: ../data/gnome-settings-daemon.schemas.in.h:28
+#: ../data/scarecrow-settings-daemon.schemas.in.h:28
 msgid "Set to True to enable the plugin to manage xrandr settings."
 msgstr ""
 
-#: ../data/gnome-settings-daemon.schemas.in.h:29
+#: ../data/scarecrow-settings-daemon.schemas.in.h:29
 msgid "Set to True to enable the plugin to manage xrdb settings."
 msgstr ""
 
-#: ../data/gnome-settings-daemon.schemas.in.h:30
+#: ../data/scarecrow-settings-daemon.schemas.in.h:30
 msgid "Set to True to enable the plugin to manage xsettings."
 msgstr ""
 
-#: ../gnome-settings-daemon/main.c:49
+#: ../scarecrow-settings-daemon/main.c:49
 msgid "Don't become a daemon"
 msgstr ""
 
-#: ../gnome-settings-daemon/main.c:50
+#: ../scarecrow-settings-daemon/main.c:50
 msgid "GConf prefix from which to load plugin settings"
 msgstr ""
 
@@ -1801,13 +1801,13 @@ msgstr "X-ის პარამეტრების გამოყენე�
 #~ msgstr "შეუძლებელია გაფორმების წაშლა"
 
 #~ msgid ""
-#~ "Unable to start the settings manager 'gnome-settings-daemon'.\n"
+#~ "Unable to start the settings manager 'scarecrow-settings-daemon'.\n"
 #~ "Without the GNOME settings manager running, some preferences may not take "
 #~ "effect. This could indicate a problem with Bonobo, or a non-GNOME (e.g. "
 #~ "KDE) settings manager may already be active and conflicting with the "
 #~ "GNOME settings manager."
 #~ msgstr ""
-#~ "ვერ ვუშვებ პარამეტრების მმართველს 'gnome-settings-daemon'.\n"
+#~ "ვერ ვუშვებ პარამეტრების მმართველს 'scarecrow-settings-daemon'.\n"
 #~ "გნომის პარამეტრების მმართველის გაშვების გარეშე ზოგმა პარამეტრმა შეიძლება "
 #~ "ეფექტი არ იქონიოს. ეს შეიძლება ნიშნავდეს პრობლემებს ბონობოსთან (Bonobo), "
 #~ "ან უკვე გაშვებულია არა გნომის (მაგალითად KDE) პარამეტრების მმართველი და "

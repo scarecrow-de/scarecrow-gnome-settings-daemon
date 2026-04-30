@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bn\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-settings-daemon&keywords=I18N+L10N&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=scarecrow-settings-daemon&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2011-03-21 10:21+0000\n"
 "PO-Revision-Date: 2011-04-04 15:48+0600\n"
 "Last-Translator: Israt Jahan <israt@ankur.org.bd>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Language: bn_BD\n"
 "X-DamnedLies-Scope: partial\n"
 
-#: ../data/gnome-settings-daemon.desktop.in.in.h:1
+#: ../data/scarecrow-settings-daemon.desktop.in.in.h:1
 msgid "GNOME Settings Daemon"
 msgstr "GNOME Settings ডেমন"
 
@@ -417,11 +417,11 @@ msgstr ""
 "জন্য \"grayscale\", ও সাব-পিক্সেল অ্যান্টি-অ্যালায়েসিংয়ের জন্য (শুধুমাত্র LCD পর্দায় "
 "প্রযোজ্য) \"rgba\"।"
 
-#: ../gnome-settings-daemon/main.c:54
+#: ../scarecrow-settings-daemon/main.c:54
 msgid "Enable debugging code"
 msgstr "কোড ডিবাগ ব্যবস্থা সক্রিয় করুন"
 
-#: ../gnome-settings-daemon/main.c:55
+#: ../scarecrow-settings-daemon/main.c:55
 #| msgid "Exit after a time - for debugging"
 msgid "Exit after a time (for debugging)"
 msgstr "নির্দিষ্ট সময় পর প্রস্থান (ডিবাগের জন্য)"

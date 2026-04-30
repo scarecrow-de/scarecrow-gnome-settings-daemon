@@ -1,6 +1,6 @@
-# Traducció del mòdul gnome-settings-daemon de Softcatalà
+# Traducció del mòdul scarecrow-settings-daemon de Softcatalà
 # Copyright © 1999-2010 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gnome-settings-daemon package.
+# This file is distributed under the same license as the scarecrow-settings-daemon package.
 #
 # Ivan Vilata i Balaguer <ivan@selidor.net>, 1999, 2000.
 # Softcatalà <linux@softcatala.org>, 2000, 2001.
@@ -14,8 +14,8 @@
 # Carles Ferrando Garcia <carles.ferrando@gmail.com>, 2017.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/"
+"Project-Id-Version: scarecrow-settings-daemon\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/scarecrow-settings-daemon/"
 "issues\n"
 "POT-Creation-Date: 2020-09-03 20:47+0000\n"
 "PO-Revision-Date: 2020-09-05 19:34+0200\n"

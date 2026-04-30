@@ -1,4 +1,4 @@
-# translation of gnome-settings-daemon.master.po to Español
+# translation of scarecrow-settings-daemon.master.po to Español
 # Copyright © 1999-2002, 2006, 2007, 2008 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-control-center package.
 #
@@ -16,8 +16,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon.master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/"
+"Project-Id-Version: scarecrow-settings-daemon.master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/scarecrow-settings-daemon/"
 "issues\n"
 "POT-Creation-Date: 2020-09-03 20:47+0000\n"
 "PO-Revision-Date: 2020-09-04 12:49+0200\n"
@@ -3063,14 +3063,14 @@ msgstr[1] "Le quedan %u intentos"
 #~ msgstr "Activación de este complemento"
 
 #~ msgid ""
-#~ "Whether this plugin would be activated by gnome-settings-daemon or not"
-#~ msgstr "Indica si gnome-settings-daemon activará este complemento o no"
+#~ "Whether this plugin would be activated by scarecrow-settings-daemon or not"
+#~ msgstr "Indica si scarecrow-settings-daemon activará este complemento o no"
 
 #~ msgid "Priority to use for this plugin"
 #~ msgstr "Prioridad de uso para este complemento"
 
 #~ msgid ""
-#~ "Priority to use for this plugin in gnome-settings-daemon startup queue"
+#~ "Priority to use for this plugin in scarecrow-settings-daemon startup queue"
 #~ msgstr ""
 #~ "Prioridad que usar para este complemento en la cola de inicio de gnome-"
 #~ "settings-daemon"
@@ -3209,7 +3209,7 @@ msgstr[1] "Le quedan %u intentos"
 #~ "daemon."
 #~ msgstr ""
 #~ "Comando que ejecutar cuando se añade o se quita un dispositivo. Un valor "
-#~ "de salir 1 significa que el gnome-settings-daemon no seguirá gestionando "
+#~ "de salir 1 significa que el scarecrow-settings-daemon no seguirá gestionando "
 #~ "el dispositivo."
 
 #~ msgid ""
@@ -4518,14 +4518,14 @@ msgstr[1] "Le quedan %u intentos"
 #~ msgstr "Predeterminado"
 
 #~ msgid ""
-#~ "Priority to use for this plugin in gnome-settings-daemon startup queue."
+#~ "Priority to use for this plugin in scarecrow-settings-daemon startup queue."
 #~ msgstr ""
 #~ "Prioridad que usar para este complemento en la cola de inicio de gnome-"
 #~ "settings-daemon."
 
 #~ msgid ""
-#~ "Whether this plugin would be activated by gnome-settings-daemon or not."
-#~ msgstr "Indica si gnome-settings-daemon activará este complemento o no."
+#~ "Whether this plugin would be activated by scarecrow-settings-daemon or not."
+#~ msgstr "Indica si scarecrow-settings-daemon activará este complemento o no."
 
 #~ msgid "Do you want to activate Slow Keys?"
 #~ msgstr "¿Desea activar las «Teclas lentas»?"
@@ -4692,14 +4692,14 @@ msgstr[1] "Le quedan %u intentos"
 #~ "usuario conectó el monitor externo al arrancar el sistema."
 
 #~ msgid ""
-#~ "Usually, gnome-settings-daemon configures internal and external monitors "
+#~ "Usually, scarecrow-settings-daemon configures internal and external monitors "
 #~ "according to the turn_on_external_monitors_at_startup and "
 #~ "turn_on_laptop_monitor_at_startup settings and determines an appropriate "
 #~ "cloning/side-by-side mode. Setting this key to True disables this, and "
 #~ "the monitor settings are not touched at all (unless there is an explicit "
 #~ "user configuration)."
 #~ msgstr ""
-#~ "Generalmente gnome-settings-daemon configura los monitores internos y "
+#~ "Generalmente scarecrow-settings-daemon configura los monitores internos y "
 #~ "externos según los ajustes de «turn_on_external_monitors_at_startup» y "
 #~ "«turn_on_laptop_monitor_at_startup» y determina un modo apropiado de "
 #~ "clonado o lado a lado. Establecer esta clave a cierta lo desactiva y no "

@@ -2586,7 +2586,7 @@ screencast_start (GsdMediaKeysManager *manager)
                 priv->screencast_timeout_id = g_timeout_add_seconds (max_length,
                                                                      screencast_timeout,
                                                                      manager);
-                g_source_set_name_by_id (priv->screencast_timeout_id, "[gnome-settings-daemon] screencast_timeout");
+                g_source_set_name_by_id (priv->screencast_timeout_id, "[scarecrow-settings-daemon] screencast_timeout");
         }
         priv->screencast_recording = TRUE;
 }
@@ -3342,7 +3342,7 @@ gsd_media_keys_manager_start (GsdMediaKeysManager *manager,
 #endif
 
         priv->start_idle_id = g_idle_add ((GSourceFunc) start_media_keys_idle_cb, manager);
-        g_source_set_name_by_id (priv->start_idle_id, "[gnome-settings-daemon] start_media_keys_idle_cb");
+        g_source_set_name_by_id (priv->start_idle_id, "[scarecrow-settings-daemon] start_media_keys_idle_cb");
 
         register_manager (manager_object);
 

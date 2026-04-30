@@ -1,6 +1,6 @@
-# Simplified Chinese translation of gnome-settings-daemon.
-# Copyright (C) 2002-2019 gnome-settings-daemon master's COPYRIGHT HOLDER
-# This file is distributed under the same license as the gnome-settings-daemon package.
+# Simplified Chinese translation of scarecrow-settings-daemon.
+# Copyright (C) 2002-2019 scarecrow-settings-daemon master's COPYRIGHT HOLDER
+# This file is distributed under the same license as the scarecrow-settings-daemon package.
 # by Abel Cheung <maddog@linuxhall.org>, 2001.
 # He Qiangqiang <carton@linux.net.cn>, 2002.
 # Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002.
@@ -25,8 +25,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/"
+"Project-Id-Version: scarecrow-settings-daemon master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/scarecrow-settings-daemon/"
 "issues\n"
 "POT-Creation-Date: 2020-09-03 20:47+0000\n"
 "PO-Revision-Date: 2020-09-04 10:05-0400\n"
@@ -2776,15 +2776,15 @@ msgstr[0] "您还有 %u 次尝试机会"
 #~ msgstr "激活该插件"
 
 #~ msgid ""
-#~ "Whether this plugin would be activated by gnome-settings-daemon or not"
-#~ msgstr "是否该插件应由 gnome-settings-daemon 激活"
+#~ "Whether this plugin would be activated by scarecrow-settings-daemon or not"
+#~ msgstr "是否该插件应由 scarecrow-settings-daemon 激活"
 
 #~ msgid "Priority to use for this plugin"
 #~ msgstr "使用该插件的优先程度"
 
 #~ msgid ""
-#~ "Priority to use for this plugin in gnome-settings-daemon startup queue"
-#~ msgstr "在 gnome-settings-daemon 启动队列中使用该插件的优先程度"
+#~ "Priority to use for this plugin in scarecrow-settings-daemon startup queue"
+#~ msgstr "在 scarecrow-settings-daemon 启动队列中使用该插件的优先程度"
 
 #~ msgid "Enable debugging code"
 #~ msgstr "启用调试代码"
@@ -4109,12 +4109,12 @@ msgstr[0] "您还有 %u 次尝试机会"
 #~ msgstr "现在重启"
 
 #~ msgid ""
-#~ "Priority to use for this plugin in gnome-settings-daemon startup queue."
-#~ msgstr "在 gnome-settings-daemon 启动队列中使用该插件的优先程度"
+#~ "Priority to use for this plugin in scarecrow-settings-daemon startup queue."
+#~ msgstr "在 scarecrow-settings-daemon 启动队列中使用该插件的优先程度"
 
 #~ msgid ""
-#~ "Whether this plugin would be activated by gnome-settings-daemon or not."
-#~ msgstr "是否该插件应被 gnome-settings-daemon 激活。"
+#~ "Whether this plugin would be activated by scarecrow-settings-daemon or not."
+#~ msgstr "是否该插件应被 scarecrow-settings-daemon 激活。"
 
 #~ msgid ""
 #~ "If notifications should be shown at session start if a profile is invalid."
@@ -4363,14 +4363,14 @@ msgstr[0] "您还有 %u 次尝试机会"
 #~ msgstr "系统启动时，如果用户插入外部显示器，打开笔记本显示器。"
 
 #~ msgid ""
-#~ "Usually, gnome-settings-daemon configures internal and external monitors "
+#~ "Usually, scarecrow-settings-daemon configures internal and external monitors "
 #~ "according to the turn_on_external_monitors_at_startup and "
 #~ "turn_on_laptop_monitor_at_startup settings and determines an appropriate "
 #~ "cloning/side-by-side mode. Setting this key to True disables this, and "
 #~ "the monitor settings are not touched at all (unless there is an explicit "
 #~ "user configuration)."
 #~ msgstr ""
-#~ "通常情况下，gnome-settings-daemon 会根据 "
+#~ "通常情况下，scarecrow-settings-daemon 会根据 "
 #~ "turn_on_external_monitors_at_startup 和 turn_on_laptop_monitor_at_startup "
 #~ "设定来配置内部和外部的显示器，并决定合适的“克隆/肩并肩”模式。设定该键值为 "
 #~ "True 则禁止该功能而根本不理会显示器设定(除非这里有单独指定的用户配置)。"

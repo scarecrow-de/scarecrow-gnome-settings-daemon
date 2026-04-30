@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon\n"
+"Project-Id-Version: scarecrow-settings-daemon\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-04-12 23:58-0500\n"
 "PO-Revision-Date: 2013-04-14 13:55-0500\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Launchpad-Export-Date: 2011-05-02 07:52+0000\n"
 "X-Generator: Launchpad (build 12915)\n"
 
-#: ../data/gnome-settings-daemon.desktop.in.in.h:1
+#: ../data/scarecrow-settings-daemon.desktop.in.in.h:1
 msgid "GNOME Settings Daemon"
 msgstr "GNOME Ayarları Cını"
 
@@ -156,10 +156,10 @@ msgstr "Cihaz takıldığında çalıştırılacak özelleştirilmiş komut"
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.gschema.xml.in.in.h:22
 msgid ""
 "Command to be run when a device is added or removed. An exit value of 1 "
-"means that the device will not be handled further by gnome-settings-daemon."
+"means that the device will not be handled further by scarecrow-settings-daemon."
 msgstr ""
 "Bir cihaz eklengeninde yaki çetleştirilgeninde ifa etilecek emir. Çıqış "
-"qıymeti 1, cihaz ileride gnome-settings-daemon tarafından qollanmaycaq "
+"qıymeti 1, cihaz ileride scarecrow-settings-daemon tarafından qollanmaycaq "
 "demektir."
 
 # tr
@@ -191,7 +191,7 @@ msgstr "Bu eklentinin aktifleştirilmesi"
 #: ../data/io.github.scarecrow.settings-daemon.plugins.updates.gschema.xml.in.in.h:2
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:2
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:2
-msgid "Whether this plugin would be activated by gnome-settings-daemon or not"
+msgid "Whether this plugin would be activated by scarecrow-settings-daemon or not"
 msgstr ""
 "Bu eklentinin gnome ayarlar servisi tarafından aktifleştirilip "
 "aktifleştirilmeyeceği"
@@ -225,7 +225,7 @@ msgstr "Bu eklenti için kullanım önceliği"
 #: ../data/io.github.scarecrow.settings-daemon.plugins.updates.gschema.xml.in.in.h:4
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:6
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:8
-msgid "Priority to use for this plugin in gnome-settings-daemon startup queue"
+msgid "Priority to use for this plugin in scarecrow-settings-daemon startup queue"
 msgstr ""
 "Bu eklentinin gnome ayarlar servisinin başlangıç kuyruğundaki kullanım "
 "önceliği"
@@ -1259,15 +1259,15 @@ msgstr ""
 "Genellikle ek olarak durumsal veya zorla kapatılmış olanları."
 
 # tr
-#: ../gnome-settings-daemon/main.c:52
+#: ../scarecrow-settings-daemon/main.c:52
 msgid "Enable debugging code"
 msgstr "Hata ayıklama kodunu etkinleştir"
 
-#: ../gnome-settings-daemon/main.c:53
+#: ../scarecrow-settings-daemon/main.c:53
 msgid "Replace existing daemon"
 msgstr "Mevcut cınnı ivaz et"
 
-#: ../gnome-settings-daemon/main.c:54
+#: ../scarecrow-settings-daemon/main.c:54
 msgid "Exit after a time (for debugging)"
 msgstr "Bir aradan soñra çıq (illetsizlendirmek içün)"
 

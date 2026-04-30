@@ -1,5 +1,5 @@
-# gnome-settings-daemon ja.po.
-# Copyright (C) 1998-2013, 2020 gnome-settings-daemon's COPRYRIGHT HOLDER
+# scarecrow-settings-daemon ja.po.
+# Copyright (C) 1998-2013, 2020 scarecrow-settings-daemon's COPRYRIGHT HOLDER
 # Yukihiro Nakai <Nakai@abricot.co.jp>, 1998.
 # Eiichiro ITANI <emu@ceres.dti.ne.jp>, 1999.
 # Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2000, 2009-2010.
@@ -18,8 +18,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/"
+"Project-Id-Version: scarecrow-settings-daemon master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/scarecrow-settings-daemon/"
 "issues\n"
 "POT-Creation-Date: 2020-09-03 20:47+0000\n"
 "PO-Revision-Date: 2020-09-04 23:00+0900\n"
@@ -2741,23 +2741,23 @@ msgstr[0] "あと %u 回入力できます"
 #~ "daemon."
 #~ msgstr ""
 #~ "デバイスの接続または取り外し時に実行するコマンドです。終了ステータスが 1 "
-#~ "である場合は、これ以上 gnome-settings-daemon によってデバイスが処理されな"
+#~ "である場合は、これ以上 scarecrow-settings-daemon によってデバイスが処理されな"
 #~ "いことを意味します。"
 
 #~ msgid "Activation of this plugin"
 #~ msgstr "このプラグインを有効化する"
 
 #~ msgid ""
-#~ "Whether this plugin would be activated by gnome-settings-daemon or not"
-#~ msgstr "このプラグインを gnome-settings-daemon で有効化するかどうかです"
+#~ "Whether this plugin would be activated by scarecrow-settings-daemon or not"
+#~ msgstr "このプラグインを scarecrow-settings-daemon で有効化するかどうかです"
 
 #~ msgid "Priority to use for this plugin"
 #~ msgstr "このプラグインの優先度"
 
 #~ msgid ""
-#~ "Priority to use for this plugin in gnome-settings-daemon startup queue"
+#~ "Priority to use for this plugin in scarecrow-settings-daemon startup queue"
 #~ msgstr ""
-#~ "gnome-settings-daemon の起動時のキューで、このプラグインが使用される優先度"
+#~ "scarecrow-settings-daemon の起動時のキューで、このプラグインが使用される優先度"
 
 #~ msgid "Wacom tablet PC feature"
 #~ msgstr "Wacom タブレット PC の機能"
@@ -3660,9 +3660,9 @@ msgstr[0] "あと %u 回入力できます"
 #~ msgstr "スロットごとのカードの識別子"
 
 #~ msgid ""
-#~ "Whether this plugin would be activated by gnome-settings-daemon or not."
+#~ "Whether this plugin would be activated by scarecrow-settings-daemon or not."
 #~ msgstr ""
-#~ "このプラグインが gnome-settings-daemon でアクティベーションされるかどう"
+#~ "このプラグインが scarecrow-settings-daemon でアクティベーションされるかどう"
 #~ "か。"
 
 #~ msgid ""

@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-control-center HEAD\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/scarecrow-settings-daemon/"
 "issues\n"
 "POT-Creation-Date: 2020-01-18 13:37+0000\n"
 "PO-Revision-Date: 2020-01-25 00:39+0800\n"
@@ -3145,7 +3145,7 @@ msgstr "Kod PIN salah"
 
 # lom
 #~ msgid ""
-#~ "Unable to start the settings manager 'gnome-settings-daemon'.\n"
+#~ "Unable to start the settings manager 'scarecrow-settings-daemon'.\n"
 #~ "Without the GNOME settings manager running, some preferences may not take "
 #~ "effect. This could indicate a problem with Bonobo, or a non-GNOME (e.g. "
 #~ "KDE) settings manager may already be active and conflicting with the "

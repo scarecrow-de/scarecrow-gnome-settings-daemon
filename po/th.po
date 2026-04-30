@@ -1,6 +1,6 @@
-# Thai gnome-settings-daemon translation.
+# Thai scarecrow-settings-daemon translation.
 # Copyright (C) 2003-2012 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gnome-settings-daemon package.
+# This file is distributed under the same license as the scarecrow-settings-daemon package.
 # Paisa Seeluangsawat <paisa@users.sf.net>, 2003, 2004.
 # Supakorn Siddhichai <supakorn.siddhichai@nectec.or.th>, 2004.
 # Supranee Thirawatthanasuk <supranee@opentle.org>, 2004.
@@ -10,7 +10,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon\n"
+"Project-Id-Version: scarecrow-settings-daemon\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "settings-daemon&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2012-10-09 09:13+0000\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../data/gnome-settings-daemon.desktop.in.in.h:1
+#: ../data/scarecrow-settings-daemon.desktop.in.in.h:1
 msgid "GNOME Settings Daemon"
 msgstr "ดีมอนค่าตั้ง GNOME"
 
@@ -161,8 +161,8 @@ msgstr "เรียกทำงานปลั๊กอินนี้"
 #: ../data/io.github.scarecrow.settings-daemon.plugins.updates.gschema.xml.in.in.h:2
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:2
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:2
-msgid "Whether this plugin would be activated by gnome-settings-daemon or not"
-msgstr "กำหนดว่าจะเรียกใช้ปลั๊กอินนี้จาก gnome-settings-daemon หรือไม่"
+msgid "Whether this plugin would be activated by scarecrow-settings-daemon or not"
+msgstr "กำหนดว่าจะเรียกใช้ปลั๊กอินนี้จาก scarecrow-settings-daemon หรือไม่"
 
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:3
 #: ../data/io.github.scarecrow.settings-daemon.plugins.color.gschema.xml.in.in.h:3
@@ -191,8 +191,8 @@ msgstr "ลำดับความสำคัญของปลั๊กอิ
 #: ../data/io.github.scarecrow.settings-daemon.plugins.updates.gschema.xml.in.in.h:4
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xrandr.gschema.xml.in.in.h:6
 #: ../data/io.github.scarecrow.settings-daemon.plugins.xsettings.gschema.xml.in.in.h:8
-msgid "Priority to use for this plugin in gnome-settings-daemon startup queue"
-msgstr "ลำดับความสำคัญของปลั๊กอินนี้ในคิวการเรียกทำงานของ gnome-settings-daemon"
+msgid "Priority to use for this plugin in scarecrow-settings-daemon startup queue"
+msgstr "ลำดับความสำคัญของปลั๊กอินนี้ในคิวการเรียกทำงานของ scarecrow-settings-daemon"
 
 #: ../data/io.github.scarecrow.settings-daemon.peripherals.wacom.gschema.xml.in.in.h:5
 msgid "Wacom stylus absolute mode"
@@ -1041,11 +1041,11 @@ msgstr ""
 "รายชื่อของมอดูล GTK+ ที่จะโหลด "
 "ซึ่งโดยปกติเป็นการระบุเพิ่มเติมจากมอดูลที่ปิดใช้แบบมีเงื่อนไขหรือบังคับปิด"
 
-#: ../gnome-settings-daemon/main.c:54
+#: ../scarecrow-settings-daemon/main.c:54
 msgid "Enable debugging code"
 msgstr "เปิดใช้โค้ดส่วนดีบั๊ก"
 
-#: ../gnome-settings-daemon/main.c:55
+#: ../scarecrow-settings-daemon/main.c:55
 msgid "Exit after a time (for debugging)"
 msgstr "ออกจากโปรแกรมหลังเวลาที่กำหนด (ใช้สำหรับดีบั๊ก)"
 
@@ -3032,12 +3032,12 @@ msgid "Manage X Settings"
 msgstr "จัดการค่าตั้งของ X"
 
 #~ msgid ""
-#~ "Priority to use for this plugin in gnome-settings-daemon startup queue."
-#~ msgstr "ลำดับความสำคัญของปลั๊กอินนี้ในคิวการเรียกทำงานของ gnome-settings-daemon"
+#~ "Priority to use for this plugin in scarecrow-settings-daemon startup queue."
+#~ msgstr "ลำดับความสำคัญของปลั๊กอินนี้ในคิวการเรียกทำงานของ scarecrow-settings-daemon"
 
 #~ msgid ""
-#~ "Whether this plugin would be activated by gnome-settings-daemon or not."
-#~ msgstr "กำหนดว่าจะเรียกใช้ปลั๊กอินนี้จาก gnome-settings-daemon หรือไม่"
+#~ "Whether this plugin would be activated by scarecrow-settings-daemon or not."
+#~ msgstr "กำหนดว่าจะเรียกใช้ปลั๊กอินนี้จาก scarecrow-settings-daemon หรือไม่"
 
 #~ msgid "Allowed keys"
 #~ msgstr "ปุ่มที่อนุญาตให้ใช้"

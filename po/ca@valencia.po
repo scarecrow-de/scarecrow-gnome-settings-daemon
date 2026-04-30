@@ -1,6 +1,6 @@
-# Traducció del mòdul gnome-settings-daemon de Softcatalà
+# Traducció del mòdul scarecrow-settings-daemon de Softcatalà
 # Copyright © 1999-2010 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gnome-settings-daemon package.
+# This file is distributed under the same license as the scarecrow-settings-daemon package.
 #
 # Ivan Vilata i Balaguer <ivan@selidor.net>, 1999, 2000.
 # Softcatalà <linux@softcatala.org>, 2000, 2001.
@@ -14,7 +14,7 @@
 # Carles Ferrando Garcia <carles.ferrando@gmail.com>, 2017.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon\n"
+"Project-Id-Version: scarecrow-settings-daemon\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "settings-daemon&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2017-10-03 10:01+0000\n"
@@ -2157,14 +2157,14 @@ msgstr ""
 #~ msgstr "Activació d'aquest connector"
 
 #~ msgid ""
-#~ "Whether this plugin would be activated by gnome-settings-daemon or not"
-#~ msgstr "Si el gnome-settings-daemon hauria d'activar aquest connector"
+#~ "Whether this plugin would be activated by scarecrow-settings-daemon or not"
+#~ msgstr "Si el scarecrow-settings-daemon hauria d'activar aquest connector"
 
 #~ msgid "Priority to use for this plugin"
 #~ msgstr "Prioritat per utilitzar aquest connector"
 
 #~ msgid ""
-#~ "Priority to use for this plugin in gnome-settings-daemon startup queue"
+#~ "Priority to use for this plugin in scarecrow-settings-daemon startup queue"
 #~ msgstr ""
 #~ "Prioritat per utilitzar aquest connector en la cua d'inici del gnome-"
 #~ "settings-daemon"
@@ -2424,7 +2424,7 @@ msgstr ""
 #~ "daemon."
 #~ msgstr ""
 #~ "Ordre a executar quan s'adjunti o s'extregui un dispositiu. Un valor de "
-#~ "sortida 1 significa que el gnome-settings-daemon no gestionarà més el "
+#~ "sortida 1 significa que el scarecrow-settings-daemon no gestionarà més el "
 #~ "dispositiu."
 
 #~ msgid "Wacom last calibrated resolution"

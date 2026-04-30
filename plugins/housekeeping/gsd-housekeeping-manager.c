@@ -304,7 +304,7 @@ do_cleanup_soon (GsdHousekeepingManager *manager)
                 manager->short_term_cb = g_timeout_add_seconds (INTERVAL_TWO_MINUTES,
                                                (GSourceFunc) do_cleanup_once,
                                                manager);
-                g_source_set_name_by_id (manager->short_term_cb, "[gnome-settings-daemon] do_cleanup_once");
+                g_source_set_name_by_id (manager->short_term_cb, "[scarecrow-settings-daemon] do_cleanup_once");
         }
 }
 
@@ -429,7 +429,7 @@ gsd_housekeeping_manager_start (GsdHousekeepingManager *manager,
         manager->long_term_cb = g_timeout_add_seconds (INTERVAL_ONCE_A_DAY,
                                       (GSourceFunc) do_cleanup,
                                       manager);
-        g_source_set_name_by_id (manager->long_term_cb, "[gnome-settings-daemon] do_cleanup");
+        g_source_set_name_by_id (manager->long_term_cb, "[scarecrow-settings-daemon] do_cleanup");
 
         gnome_settings_profile_end (NULL);
 
@@ -487,7 +487,7 @@ gsd_housekeeping_manager_class_init (GsdHousekeepingManagerClass *klass)
 
         object_class->finalize = gsd_housekeeping_manager_finalize;
 
-        notify_init ("gnome-settings-daemon");
+        notify_init ("scarecrow-settings-daemon");
 }
 
 static void

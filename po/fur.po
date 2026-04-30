@@ -1,12 +1,12 @@
-# Friulian translation for gnome-settings-daemon.
-# Copyright (C) 2016 gnome-settings-daemon's COPYRIGHT HOLDER
-# This file is distributed under the same license as the gnome-settings-daemon package.
+# Friulian translation for scarecrow-settings-daemon.
+# Copyright (C) 2016 scarecrow-settings-daemon's COPYRIGHT HOLDER
+# This file is distributed under the same license as the scarecrow-settings-daemon package.
 # Fabio Tomat <f.t.public@gmail.com>, 2016.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-settings-daemon master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-settings-daemon/"
+"Project-Id-Version: scarecrow-settings-daemon master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/scarecrow-settings-daemon/"
 "issues\n"
 "POT-Creation-Date: 2020-10-08 17:28+0000\n"
 "PO-Revision-Date: 2020-10-18 16:41+0200\n"
@@ -2828,15 +2828,15 @@ msgstr[1] "Tu âs ancjemò %u tentatîfs"
 #~ msgstr "Ativazion di chest plugin"
 
 #~ msgid ""
-#~ "Whether this plugin would be activated by gnome-settings-daemon or not"
+#~ "Whether this plugin would be activated by scarecrow-settings-daemon or not"
 #~ msgstr ""
-#~ "Indiche se chest plugin al à di jessi ativât di gnome-settings-daemon o no"
+#~ "Indiche se chest plugin al à di jessi ativât di scarecrow-settings-daemon o no"
 
 #~ msgid "Priority to use for this plugin"
 #~ msgstr "Prioritât di doprâ par chest plugin"
 
 #~ msgid ""
-#~ "Priority to use for this plugin in gnome-settings-daemon startup queue"
+#~ "Priority to use for this plugin in scarecrow-settings-daemon startup queue"
 #~ msgstr ""
 #~ "Prioritât di doprâ par chest plugin te code di inviament di gnome-"
 #~ "settings-daemon"
