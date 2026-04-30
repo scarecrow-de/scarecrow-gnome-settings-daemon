@@ -1,5 +1,5 @@
 install_data(
-  '61-gnome-settings-daemon-rfkill.rules',
+  '61-scarecrow-settings-daemon-rfkill.rules',
   install_dir: join_paths(udev_dir, 'rules.d')
 )
 
