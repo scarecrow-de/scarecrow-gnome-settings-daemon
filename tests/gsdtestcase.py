@@ -211,6 +211,6 @@ class GSDTestCase(X11SessionTestCase):
         '''trigger activity to reset idle timer'''
 
         obj_mutter_idlemonitor = klass.session_bus_con.get_object(
-            'io.github.scarecrow-de.Mutter.IdleMonitor', '/org/gnome/Mutter/IdleMonitor/Core')
+            'io.github.scarecrow-de.Mutter.IdleMonitor', '/io/github/scarecrow-de/Mutter/IdleMonitor/Core')
 
         obj_mutter_idlemonitor.ResetIdletime(dbus_interface='io.github.scarecrow-de.Mutter.IdleMonitor')

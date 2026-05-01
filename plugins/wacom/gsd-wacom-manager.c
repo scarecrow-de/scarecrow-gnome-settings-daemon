@@ -142,7 +142,7 @@ migrate_tablet_settings (GsdWacomManager *manager,
 
         old_path = g_strdup_printf ("/io/github/scarecrow/settings-daemon/peripherals/wacom/%s-usb:%s:%s/",
                                     manager->machine_id, vendor, product);
-        new_path = g_strdup_printf ("/org/gnome/desktop/peripherals/tablets/%s:%s/",
+        new_path = g_strdup_printf ("/io/github/scarecrow-de/desktop/peripherals/tablets/%s:%s/",
                                     vendor, product);
 
         gsd_settings_migrate_check ("io.github.scarecrow-de.settings-daemon.peripherals.wacom.deprecated",
@@ -246,7 +246,7 @@ device_get_settings (GdkDevice *device)
         GSettings *settings;
         gchar *path;
 
-        path = g_strdup_printf ("/org/gnome/desktop/peripherals/tablets/%s:%s/",
+        path = g_strdup_printf ("/io/github/scarecrow-de/desktop/peripherals/tablets/%s:%s/",
                                 gdk_device_get_vendor_id (device),
                                 gdk_device_get_product_id (device));
         settings = g_settings_new_with_path ("io.github.scarecrow-de.desktop.peripherals.tablet",
