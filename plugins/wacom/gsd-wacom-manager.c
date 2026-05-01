@@ -55,7 +55,7 @@
 #define UNKNOWN_DEVICE_NOTIFICATION_TIMEOUT 15000
 
 #define GSD_DBUS_NAME "io.github.scarecrow-de.SettingsDaemon"
-#define GSD_DBUS_PATH "/io.github.scarecrow-de.SettingsDaemon"
+#define GSD_DBUS_PATH "/io/github/scarecrow-de/SettingsDaemon"
 #define GSD_DBUS_BASE_INTERFACE "io.github.scarecrow-de.SettingsDaemon"
 
 #define GSD_WACOM_DBUS_PATH GSD_DBUS_PATH "/Wacom"
@@ -64,7 +64,7 @@
 #define LEFT_HANDED_KEY		"left-handed"
 
 static const gchar introspection_xml[] =
-"<node name='/io.github.scarecrow-de.SettingsDaemon/Wacom'>"
+"<node name='/io/github/scarecrow-de/SettingsDaemon/Wacom'>"
 "  <interface name='io.github.scarecrow-de.SettingsDaemon.Wacom'>"
 "    <method name='SetOLEDLabels'>"
 "      <arg name='device_path' direction='in' type='s'/>"
@@ -140,7 +140,7 @@ migrate_tablet_settings (GsdWacomManager *manager,
         vendor = gdk_device_get_vendor_id (device);
         product = gdk_device_get_product_id (device);
 
-        old_path = g_strdup_printf ("/io/github/scarecrow/settings-daemon/peripherals/wacom/%s-usb:%s:%s/",
+        old_path = g_strdup_printf ("/io/github/scarecrow-de/settings-daemon/peripherals/wacom/%s-usb:%s:%s/",
                                     manager->machine_id, vendor, product);
         new_path = g_strdup_printf ("/io/github/scarecrow-de/desktop/peripherals/tablets/%s:%s/",
                                     vendor, product);
