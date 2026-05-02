@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema gettext-domain="@GETTEXT_PACKAGE@" id="io.github.scarecrow-de.settings-daemon.peripherals" path="/io/github/scarecrow-de/settings-daemon/peripherals/">
-    <child name="smartcard" schema="io.github.scarecrow-de.settings-daemon.peripherals.smartcard"/>
-    <child name="keyboard" schema="io.github.scarecrow-de.settings-daemon.peripherals.keyboard"/>
-    <child name="mouse" schema="io.github.scarecrow-de.settings-daemon.peripherals.mouse"/>
-    <child name="touchscreen" schema="io.github.scarecrow-de.settings-daemon.peripherals.touchscreen"/>
+  <schema gettext-domain="@GETTEXT_PACKAGE@" id="io.github.scarecrow_de.settings-daemon.peripherals" path="/io/github/scarecrow_de/settings-daemon/peripherals/">
+    <child name="smartcard" schema="io.github.scarecrow_de.settings-daemon.peripherals.smartcard"/>
+    <child name="keyboard" schema="io.github.scarecrow_de.settings-daemon.peripherals.keyboard"/>
+    <child name="mouse" schema="io.github.scarecrow_de.settings-daemon.peripherals.mouse"/>
+    <child name="touchscreen" schema="io.github.scarecrow_de.settings-daemon.peripherals.touchscreen"/>
   </schema>
-  <schema gettext-domain="@GETTEXT_PACKAGE@" id="io.github.scarecrow-de.settings-daemon.peripherals.smartcard" path="/io/github/scarecrow-de/settings-daemon/peripherals/smartcard/">
-    <key name="removal-action" enum="io.github.scarecrow-de.settings-daemon.GsdSmartcardRemovalAction">
+  <schema gettext-domain="@GETTEXT_PACKAGE@" id="io.github.scarecrow_de.settings-daemon.peripherals.smartcard" path="/io/github/scarecrow_de/settings-daemon/peripherals/smartcard/">
+    <key name="removal-action" enum="io.github.scarecrow_de.settings-daemon.GsdSmartcardRemovalAction">
       <default>'none'</default>
       <summary>Smartcard removal action</summary>
       <description>Set this to one of “none”, “lock-screen”, or “force-logout”. The action will get performed when the smartcard used for log in is removed.</description>
     </key>
   </schema>
-  <schema gettext-domain="@GETTEXT_PACKAGE@" id="io.github.scarecrow-de.settings-daemon.peripherals.keyboard" path="/io/github/scarecrow-de/settings-daemon/peripherals/keyboard/">
+  <schema gettext-domain="@GETTEXT_PACKAGE@" id="io.github.scarecrow_de.settings-daemon.peripherals.keyboard" path="/io/github/scarecrow_de/settings-daemon/peripherals/keyboard/">
     <key name="click" type="b">
       <default>true</default>
     </key>
     <key name="click-volume" type="i">
       <default>0</default>
     </key>
-    <key name="bell-mode" enum="io.github.scarecrow-de.settings-daemon.GsdBellMode">
+    <key name="bell-mode" enum="io.github.scarecrow_de.settings-daemon.GsdBellMode">
       <default>'on'</default>
       <description>Possible values are “on”, “off”, and “custom”.</description>
     </key>
@@ -36,7 +36,7 @@
       <description>File name of the bell sound to be played.</description>
     </key>
   </schema>
-  <schema gettext-domain="@GETTEXT_PACKAGE@" id="io.github.scarecrow-de.settings-daemon.peripherals.mouse" path="/io/github/scarecrow-de/settings-daemon/peripherals/mouse/">
+  <schema gettext-domain="@GETTEXT_PACKAGE@" id="io.github.scarecrow_de.settings-daemon.peripherals.mouse" path="/io/github/scarecrow_de/settings-daemon/peripherals/mouse/">
     <key name="double-click" type="i">
       <default>400</default>
       <summary>Double click time</summary>
@@ -48,7 +48,7 @@
       <description>Distance before a drag is started.</description>
     </key>
   </schema>
-  <schema gettext-domain="@GETTEXT_PACKAGE@" id="io.github.scarecrow-de.settings-daemon.peripherals.touchscreen" path="/io/github/scarecrow-de/settings-daemon/peripherals/touchscreen/">
+  <schema gettext-domain="@GETTEXT_PACKAGE@" id="io.github.scarecrow_de.settings-daemon.peripherals.touchscreen" path="/io/github/scarecrow_de/settings-daemon/peripherals/touchscreen/">
     <key name="orientation-lock" type="b">
       <default>false</default>
       <summary>Whether the tablet’s orientation is locked, or rotated automatically.</summary>
@@ -56,7 +56,7 @@
   </schema>
 
   <!-- Deprecated schemas/keys -->
-  <schema id="io.github.scarecrow-de.settings-daemon.peripherals.mouse.deprecated">
+  <schema id="io.github.scarecrow_de.settings-daemon.peripherals.mouse.deprecated">
     <key name="left-handed" type="b">
       <default>false</default>
       <summary>Mouse button orientation</summary>
@@ -78,7 +78,7 @@
       <description>Enables middle mouse button emulation through simultaneous left and right button click.</description>
     </key>
   </schema>
-  <schema id="io.github.scarecrow-de.settings-daemon.peripherals.keyboard.deprecated">
+  <schema id="io.github.scarecrow_de.settings-daemon.peripherals.keyboard.deprecated">
     <key name="repeat" type="b">
       <default>true</default>
     </key>
@@ -98,7 +98,7 @@
       <description>When set to true, GNOME will remember the state of the NumLock LED between sessions.</description>
     </key>
   </schema>
-  <schema id="io.github.scarecrow-de.settings-daemon.peripherals.touchpad.deprecated">
+  <schema id="io.github.scarecrow_de.settings-daemon.peripherals.touchpad.deprecated">
     <key name="disable-while-typing" type="b">
       <default>false</default>
       <summary>Disable touchpad while typing</summary>
@@ -109,7 +109,7 @@
       <summary>Enable horizontal scrolling</summary>
       <description>Set this to TRUE to allow horizontal scrolling by the same method selected with the scroll_method key.</description>
     </key>
-    <key name="scroll-method" enum="io.github.scarecrow-de.settings-daemon.GsdTouchpadScrollMethod">
+    <key name="scroll-method" enum="io.github.scarecrow_de.settings-daemon.GsdTouchpadScrollMethod">
       <default>'two-finger-scrolling'</default>
       <summary>Select the touchpad scroll method</summary>
       <description>Select the touchpad scroll method. Supported values are: “disabled”, “edge-scrolling”, “two-finger-scrolling”.</description>
@@ -124,7 +124,7 @@
       <summary>Enable touchpad</summary>
       <description>Set this to TRUE to enable all touchpads.</description>
     </key>
-    <key name="left-handed" enum="io.github.scarecrow-de.settings-daemon.GsdTouchpadHandedness">
+    <key name="left-handed" enum="io.github.scarecrow_de.settings-daemon.GsdTouchpadHandedness">
       <default>'mouse'</default>
       <summary>Touchpad button orientation</summary>
       <description>Swap left and right mouse buttons for left-handed mice with “left”, “right” for right-handed, “mouse” to follow the mouse setting.</description>
@@ -145,7 +145,7 @@
       <description>Set this to TRUE to enable natural (reverse) scrolling for touchpads.</description>
     </key>
   </schema>
-  <schema id="io.github.scarecrow-de.settings-daemon.peripherals.trackball.deprecated">
+  <schema id="io.github.scarecrow_de.settings-daemon.peripherals.trackball.deprecated">
     <key name="scroll-wheel-emulation-button" type="i">
       <default>0</default>
       <range min="0" max="24"/>

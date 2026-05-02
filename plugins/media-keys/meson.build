@@ -17,8 +17,8 @@ sources += gnome.genmarshal(
 
 sources += gnome.gdbus_codegen(
   'shell-key-grabber',
-  'io.github.scarecrow-de.ShellKeyGrabber.xml',
-  interface_prefix: 'io.github.scarecrow-de.',
+  'io.github.scarecrow_de.ShellKeyGrabber.xml',
+  interface_prefix: 'io.github.scarecrow_de.',
   namespace: 'Shell'
 )
 

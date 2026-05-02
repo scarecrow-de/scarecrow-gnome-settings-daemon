@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="io.github.scarecrow-de.settings-daemon.peripherals.wacom.deprecated">
-    <child name="stylus" schema="io.github.scarecrow-de.settings-daemon.peripherals.wacom.stylus.deprecated"/>
-    <child name="eraser" schema="io.github.scarecrow-de.settings-daemon.peripherals.wacom.eraser.deprecated"/>
+  <schema id="io.github.scarecrow_de.settings-daemon.peripherals.wacom.deprecated">
+    <child name="stylus" schema="io.github.scarecrow_de.settings-daemon.peripherals.wacom.stylus.deprecated"/>
+    <child name="eraser" schema="io.github.scarecrow_de.settings-daemon.peripherals.wacom.eraser.deprecated"/>
 
     <!-- is-absolute applies to all tools but PAD, CURSOR is hard-coded -->
     <key name="is-absolute" type="b">
@@ -20,7 +20,7 @@
       <summary>Wacom tablet aspect ratio</summary>
       <description>Enable this to restrict the Wacom tablet area to match the aspect ratio of the output.</description>
     </key>
-    <key name="rotation" enum="io.github.scarecrow-de.settings-daemon.GsdWacomRotation">
+    <key name="rotation" enum="io.github.scarecrow_de.settings-daemon.GsdWacomRotation">
       <default>'none'</default>
       <summary>Wacom tablet rotation</summary>
       <description>Set this to “none”, “cw” for 90 degree clockwise, “half” for 180 degree, and “ccw” for 90 degree counterclockwise.</description>
@@ -31,7 +31,7 @@
       <description>Enable this to move the cursor when the user touches the tablet.</description>
     </key>
   </schema>
-  <schema id="io.github.scarecrow-de.settings-daemon.peripherals.wacom.stylus.deprecated">
+  <schema id="io.github.scarecrow_de.settings-daemon.peripherals.wacom.stylus.deprecated">
     <key name="pressurecurve" type="ai">
       <default>[0, 0, 100, 100]</default>
       <summary>Wacom stylus pressure curve</summary>
@@ -48,7 +48,7 @@
       <description>Set this to the pressure value at which a stylus click event is generated.</description>
     </key>
   </schema>
-  <schema id="io.github.scarecrow-de.settings-daemon.peripherals.wacom.eraser.deprecated">
+  <schema id="io.github.scarecrow_de.settings-daemon.peripherals.wacom.eraser.deprecated">
     <key name="pressurecurve" type="ai">
       <default>[0, 0, 100, 100]</default>
       <summary>Wacom eraser pressure curve</summary>
@@ -65,8 +65,8 @@
       <description>Set this to the pressure value at which an eraser click event is generated.</description>
     </key>
   </schema>
-  <schema id="io.github.scarecrow-de.settings-daemon.peripherals.wacom.tablet-button.deprecated">
-    <key name="action-type" enum="io.github.scarecrow-de.settings-daemon.GsdWacomActionType">
+  <schema id="io.github.scarecrow_de.settings-daemon.peripherals.wacom.tablet-button.deprecated">
+    <key name="action-type" enum="io.github.scarecrow_de.settings-daemon.GsdWacomActionType">
       <default>'none'</default>
       <summary>Wacom button action type</summary>
       <description>The type of action triggered by the button being pressed.</description>
@@ -89,7 +89,7 @@
       <description>Label will be rendered to OLED display belonging to the button</description>
     </key>
   </schema>
-  <schema id="io.github.scarecrow-de.desktop.peripherals.tablet.deprecated">
+  <schema id="io.github.scarecrow_de.desktop.peripherals.tablet.deprecated">
     <key name="display" type="as">
       <default>["", "", ""]</default>
     </key>

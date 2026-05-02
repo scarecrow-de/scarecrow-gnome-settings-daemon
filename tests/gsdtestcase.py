@@ -95,7 +95,7 @@ class GSDTestCase(X11SessionTestCase):
         klass.start_session()
         klass.start_monitor()
 
-        klass.settings_session = Gio.Settings(schema_id='io.github.scarecrow-de.desktop.session')
+        klass.settings_session = Gio.Settings(schema_id='io.github.scarecrow_de.desktop.session')
 
     @classmethod
     def tearDownClass(klass):
@@ -211,6 +211,6 @@ class GSDTestCase(X11SessionTestCase):
         '''trigger activity to reset idle timer'''
 
         obj_mutter_idlemonitor = klass.session_bus_con.get_object(
-            'io.github.scarecrow-de.Mutter.IdleMonitor', '/io/github/scarecrow-de/Mutter/IdleMonitor/Core')
+            'io.github.scarecrow_de.Mutter.IdleMonitor', '/io/github/scarecrow_de/Mutter/IdleMonitor/Core')
 
-        obj_mutter_idlemonitor.ResetIdletime(dbus_interface='io.github.scarecrow-de.Mutter.IdleMonitor')
+        obj_mutter_idlemonitor.ResetIdletime(dbus_interface='io.github.scarecrow_de.Mutter.IdleMonitor')

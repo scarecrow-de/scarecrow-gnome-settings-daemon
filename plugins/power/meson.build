@@ -67,7 +67,7 @@ gsd_power_enums_update = executable(
 )
 
 if host_is_linux
-  policy = 'io.github.scarecrow-de.settings-daemon.plugins.power.policy'
+  policy = 'io.github.scarecrow_de.settings-daemon.plugins.power.policy'
 
   policy_in = configure_file(
     input: policy + '.in.in',

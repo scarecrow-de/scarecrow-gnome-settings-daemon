@@ -20,24 +20,15 @@
 -->
 
 <node name="/" xmlns:doc="http://www.freedesktop.org/dbus/1.0/doc.dtd">
-        <!--
-        io.github.scarecrow-de.ScreenSaver:
+  <!--
+      io.github.scarecrow_de.Shell:
 
-        An interface used for managing the lock screen.
-        -->
-        <interface name="io.github.scarecrow-de.ScreenSaver">
-                <method name="Lock" />
-                <method name="GetActive">
-                        <arg name="active" direction="out" type="b" />
-                </method>
-                <method name="SetActive">
-                        <arg name="value" direction="in" type="b" />
-                </method>
-                <method name="GetActiveTime">
-                        <arg name="value" direction="out" type="u" />
-                </method>
-                <signal name="ActiveChanged">
-                        <arg name="new_value" type="b" />
-                </signal>
-        </interface>
+      An interface used to request shell features.
+  -->
+  <interface name="io.github.scarecrow_de.Shell">
+    <method name="FocusSearch"/>
+    <method name="ShowOSD">
+      <arg type="a{sv}" direction="in" name="params"/>
+    </method>
+  </interface>
 </node>

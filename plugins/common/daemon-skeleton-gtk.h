@@ -25,8 +25,8 @@
 #error Include PLUGIN_CFLAGS in the daemon s CFLAGS
 #endif /* !PLUGIN_NAME */
 
-#define GNOME_SESSION_DBUS_NAME                     "io.github.scarecrow-de.SessionManager"
-#define GNOME_SESSION_CLIENT_PRIVATE_DBUS_INTERFACE "io.github.scarecrow-de.SessionManager.ClientPrivate"
+#define GNOME_SESSION_DBUS_NAME                     "io.github.scarecrow_de.SessionManager"
+#define GNOME_SESSION_CLIENT_PRIVATE_DBUS_INTERFACE "io.github.scarecrow_de.SessionManager.ClientPrivate"
 
 static MANAGER *manager = NULL;
 static int timeout = -1;

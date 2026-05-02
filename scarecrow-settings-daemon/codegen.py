@@ -18,7 +18,7 @@ Please see:
 import subprocess
 import sys
 
-name = 'io.github.scarecrow-de.' + sys.argv[1]
+name = 'io.github.scarecrow_de.' + sys.argv[1]
 
 subprocess.call([
   'gdbus-codegen',

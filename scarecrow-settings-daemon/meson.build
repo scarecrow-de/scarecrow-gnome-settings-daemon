@@ -14,7 +14,7 @@ dbus_headers = []
 codegen = find_program('codegen.py')
 
 foreach iface: dbus_ifaces
-  name = 'io.github.scarecrow-de.' + iface[0]
+  name = 'io.github.scarecrow_de.' + iface[0]
 
   # FIXME: Opaque target return from gdbus_codegen
   # Please see:

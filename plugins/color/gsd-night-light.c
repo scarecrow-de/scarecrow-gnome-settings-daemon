@@ -790,8 +790,8 @@ gsd_night_light_init (GsdNightLight *self)
         self->cached_sunrise = -1.f;
         self->cached_sunset = -1.f;
         self->cached_temperature = GSD_COLOR_TEMPERATURE_DEFAULT;
-        self->settings = g_settings_new ("io.github.scarecrow-de.settings-daemon.plugins.color");
-        self->location_settings = g_settings_new ("io.github.scarecrow-de.system.location");
+        self->settings = g_settings_new ("io.github.scarecrow_de.settings-daemon.plugins.color");
+        self->location_settings = g_settings_new ("io.github.scarecrow_de.system.location");
 }
 
 GsdNightLight *
