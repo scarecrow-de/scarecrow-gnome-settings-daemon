@@ -19,7 +19,7 @@ sources += gnome.mkenums(
   h_template: enum_types + '.h.in'
 )
 
-gdbus = 'io.github.scarecrow.SettingsDaemon.Smartcard'
+gdbus = 'io.github.scarecrow-de.SettingsDaemon.Smartcard'
 
 sources += gnome.gdbus_codegen(
   gdbus,

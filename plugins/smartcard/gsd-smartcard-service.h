@@ -26,7 +26,7 @@
 #include <gio/gio.h>
 #include "gsd-smartcard-manager.h"
 
-#include "io.github.scarecrow.SettingsDaemon.Smartcard.h"
+#include "io.github.scarecrow-de.SettingsDaemon.Smartcard.h"
 
 #include <prerror.h>
 #include <prinit.h>

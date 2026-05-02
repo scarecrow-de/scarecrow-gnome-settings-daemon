@@ -42,7 +42,7 @@ class XsettingsPluginTest(gsdtestcase.GSDTestCase):
 
         # wait until the daemon is on the bus
         try:
-            self.wait_for_bus_object('io.github.scarecrow.SessionManager',
+            self.wait_for_bus_object('io.github.scarecrow-de.SessionManager',
                                      '/io/github/scarecrow-de/SessionManager')
         except:
             # on failure, print log
@@ -53,7 +53,7 @@ class XsettingsPluginTest(gsdtestcase.GSDTestCase):
         self.session_log = open(self.session_log_write.name)
 
         self.obj_session_mgr = self.session_bus_con.get_object(
-            'io.github.scarecrow.SessionManager', '/io/github/scarecrow-de/SessionManager')
+            'io.github.scarecrow-de.SessionManager', '/io/github/scarecrow-de/SessionManager')
 
         self.start_mutter()
 
@@ -83,7 +83,7 @@ class XsettingsPluginTest(gsdtestcase.GSDTestCase):
         shutil.copy(os.path.join(os.path.dirname(__file__), 'gtk-modules-test/pk-gtk-module.desktop'),
                 os.path.join(modules_dir, 'pk-gtk-module.desktop'))
 
-        self.settings_sound = Gio.Settings.new('org.gnome.desktop.sound')
+        self.settings_sound = Gio.Settings.new('io.github.scarecrow-de.desktop.sound')
 
         env = os.environ.copy()
         self.daemon = subprocess.Popen(

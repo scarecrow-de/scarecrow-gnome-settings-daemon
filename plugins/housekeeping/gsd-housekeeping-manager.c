@@ -33,7 +33,7 @@
 #define INTERVAL_TWO_MINUTES 2*60
 
 /* Thumbnail cleaner */
-#define THUMB_PREFIX "org.gnome.desktop.thumbnail-cache"
+#define THUMB_PREFIX "io.github.scarecrow-de.desktop.thumbnail-cache"
 
 #define THUMB_AGE_KEY "maximum-age"
 #define THUMB_SIZE_KEY "maximum-size"
@@ -42,7 +42,7 @@
 
 static const gchar introspection_xml[] =
 "<node>"
-"  <interface name='io.github.scarecrow.SettingsDaemon.Housekeeping'>"
+"  <interface name='io.github.scarecrow-de.SettingsDaemon.Housekeeping'>"
 "    <method name='EmptyTrash'/>"
 "    <method name='RemoveTempFiles'/>"
 "  </interface>"
@@ -377,7 +377,7 @@ on_bus_gotten (GObject                *source_object,
         }
 
         manager->name_id = g_bus_own_name_on_connection (connection,
-                                                               "io.github.scarecrow.SettingsDaemon.Housekeeping",
+                                                               "io.github.scarecrow-de.SettingsDaemon.Housekeeping",
                                                                G_BUS_NAME_OWNER_FLAGS_NONE,
                                                                NULL,
                                                                NULL,
