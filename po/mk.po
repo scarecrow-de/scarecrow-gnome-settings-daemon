@@ -1231,12 +1231,12 @@ msgstr "Беше додаден уред за калибрација на бои
 msgid "Color calibration device removed"
 msgstr "Беше отстранет уред за калибрација на бои"
 
-#: ../plugins/datetime/org.gnome.settingsdaemon.datetimemechanism.policy.in.h:1
+#: ../plugins/datetime/io.github.scarecrow_de.settingsdaemon.datetimemechanism.policy.in.h:1
 #| msgid "Set up screen size and rotation settings"
 msgid "Change system time and date settings"
 msgstr "Промени ги поставувањата за време и датум"
 
-#: ../plugins/datetime/org.gnome.settingsdaemon.datetimemechanism.policy.in.h:2
+#: ../plugins/datetime/io.github.scarecrow_de.settingsdaemon.datetimemechanism.policy.in.h:2
 msgid "To change time or date settings, you need to authenticate."
 msgstr "За да ги промените поставувањата за датум и време мора да се автентицирате."
 

@@ -28,7 +28,7 @@
 #include <canberra-gtk.h>
 
 #define GNOME_DESKTOP_USE_UNSTABLE_API
-#include <libgnome-desktop/gnome-rr.h>
+#include <libscarecrow-desktop/scarecrow-rr.h>
 
 #ifdef GDK_WINDOWING_X11
 #include <gdk/gdkx.h>

@@ -2972,11 +2972,11 @@ msgstr "Módulu"
 msgid "smartcard driver"
 msgstr "controlador de tarxeta intelixente"
 
-#: ../plugins/datetime/org.gnome.settingsdaemon.datetimemechanism.policy.in.h:1
+#: ../plugins/datetime/io.github.scarecrow_de.settingsdaemon.datetimemechanism.policy.in.h:1
 msgid "Change system time and date settings"
 msgstr "Camudar la configuración de la hora y la data del sistema"
 
-#: ../plugins/datetime/org.gnome.settingsdaemon.datetimemechanism.policy.in.h:2
+#: ../plugins/datetime/io.github.scarecrow_de.settingsdaemon.datetimemechanism.policy.in.h:2
 msgid "To change time or date settings, you need to authenticate."
 msgstr ""
 "Pa camudar la configuración de la data o de la hora, tienes d'autenticate."

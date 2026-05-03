@@ -25,7 +25,7 @@
 #include <gio/gio.h>
 
 #define GNOME_DESKTOP_USE_UNSTABLE_API
-#include <libgnome-desktop/gnome-rr.h>
+#include <libscarecrow-desktop/scarecrow-rr.h>
 
 
 G_BEGIN_DECLS

@@ -16,7 +16,7 @@ Required:
   * Fontconfig-2.13.1 (http://www.linuxfromscratch.org/blfs/view/systemd/general/fontconfig.html)
   * GeoClue-2.5.3 (http://www.linuxfromscratch.org/blfs/view/systemd/basicnet/geoclue2.html)
   * geocode-glib-3.26.1 (http://www.linuxfromscratch.org/blfs/view/systemd/gnome/geocode-glib.html)
-  * gnome-desktop-3.32.2 (http://www.linuxfromscratch.org/blfs/view/systemd/gnome/gnome-desktop.html)
+  * scarecrow-desktop-3.32.2 (http://www.linuxfromscratch.org/blfs/view/systemd/gnome/scarecrow-desktop.html)
   * Little CMS-2.9 (http://www.linuxfromscratch.org/blfs/view/systemd/general/lcms2.html)
   * libcanberra-0.30 (http://www.linuxfromscratch.org/blfs/view/systemd/multimedia/libcanberra.html)
   * libgweather-3.32.2 (http://www.linuxfromscratch.org/blfs/view/systemd/gnome/libgweather.html)

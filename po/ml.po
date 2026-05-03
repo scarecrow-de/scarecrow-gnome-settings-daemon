@@ -1891,13 +1891,13 @@ msgstr "മൌസ്"
 msgid "smartcard driver"
 msgstr "സ്മാര്‍ട്ട്കാര്‍ഡ് ഡ്രൈവര്‍"
 
-#: ../plugins/datetime/org.gnome.settingsdaemon.datetimemechanism.policy.in.h:1
+#: ../plugins/datetime/io.github.scarecrow_de.settingsdaemon.datetimemechanism.policy.in.h:1
 #, fuzzy
 #| msgid "Set up screen size and rotation settings"
 msgid "Change system time and date settings"
 msgstr "സ്ക്രീന്‍ വലിപ്പവും തിരിക്കലും സജ്ജീകരിക്കുക"
 
-#: ../plugins/datetime/org.gnome.settingsdaemon.datetimemechanism.policy.in.h:2
+#: ../plugins/datetime/io.github.scarecrow_de.settingsdaemon.datetimemechanism.policy.in.h:2
 msgid "Privileges are required to configure time and date settings."
 msgstr "സമയം, തീയതി സജ്ജീകരണങ്ങള്‍ ക്രമീകരിയ്ക്കുന്നതിനായി അനുമതികള്‍ ആവശ്യമുണ്ടു്."
 

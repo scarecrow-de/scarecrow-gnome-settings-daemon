@@ -20,7 +20,7 @@ variables:
     gettext
     git
     glib2-devel
-    gnome-desktop3-devel
+    scarecrow-desktop3-devel
     gnome-session
     gobject-introspection
     gobject-introspection-devel

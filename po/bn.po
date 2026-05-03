@@ -1347,12 +1347,12 @@ msgstr "মডিউল"
 msgid "smartcard driver"
 msgstr "স্মার্টকার্ড ড্রাইভার"
 
-#: ../plugins/datetime/org.gnome.settingsdaemon.datetimemechanism.policy.in.h:1
+#: ../plugins/datetime/io.github.scarecrow_de.settingsdaemon.datetimemechanism.policy.in.h:1
 #| msgid "Set up screen size and rotation settings"
 msgid "Change system time and date settings"
 msgstr "সিস্টেমের সময় এবং তারিখের সেটিং পরিবর্তন"
 
-#: ../plugins/datetime/org.gnome.settingsdaemon.datetimemechanism.policy.in.h:2
+#: ../plugins/datetime/io.github.scarecrow_de.settingsdaemon.datetimemechanism.policy.in.h:2
 msgid "Privileges are required to configure time and date settings."
 msgstr "সময় এবং তারিখের সেটিং কনফিগার করা জরুরী।"
 
