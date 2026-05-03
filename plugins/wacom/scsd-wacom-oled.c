@@ -27,7 +27,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "csd-wacom-oled.h"
+#include "scsd-wacom-oled.h"
 
 #define MAGIC_BASE64		"base64:"		/*Label starting with base64: is treated as already encoded*/
 #define MAGIC_BASE64_LEN	strlen(MAGIC_BASE64)
@@ -163,7 +163,7 @@ oled_render_text (char             *label,
 }
 
 char *
-csd_wacom_oled_gdkpixbuf_to_base64 (GdkPixbuf *pixbuf)
+scsd_wacom_oled_gdkpixbuf_to_base64 (GdkPixbuf *pixbuf)
 {
 	int i, x, y, ch, rs;
 	guchar *pix, *p;
@@ -241,7 +241,7 @@ set_oled (const gchar  *device_path,
 
 	g_debug ("Setting OLED label '%s' on button %d (device %s)", label, button, device_path);
 
-	command = g_strdup_printf ("pkexec " LIBEXECDIR "/csd-wacom-oled-helper --path %s --button %d --buffer %s",
+	command = g_strdup_printf ("pkexec " LIBEXECDIR "/scsd-wacom-oled-helper --path %s --button %d --buffer %s",
 				   device_path, button, buffer);
 	ret = g_spawn_command_line_sync (command,
 					 NULL,

@@ -48,20 +48,20 @@
 #include <gudev/gudev.h>
 #endif
 
-#include "csd-settings-migrate.h"
+#include "scsd-settings-migrate.h"
 
 #include "mpris-controller.h"
 #include "scarecrow-settings-bus.h"
 #include "scarecrow-settings-profile.h"
-#include "csd-marshal.h"
-#include "csd-media-keys-manager.h"
+#include "scsd-marshal.h"
+#include "scsd-media-keys-manager.h"
 
 #include "shortcuts-list.h"
 #include "shell-key-grabber.h"
-#include "csd-screenshot-utils.h"
-#include "csd-input-helper.h"
-#include "csd-enums.h"
-#include "csd-shell-helper.h"
+#include "scsd-screenshot-utils.h"
+#include "scsd-input-helper.h"
+#include "scsd-enums.h"
+#include "scsd-shell-helper.h"
 
 #include <canberra.h>
 #include <pulse/pulseaudio.h>
@@ -97,7 +97,7 @@
 static const gchar introspection_xml[] =
 "<node name='/io/github/scarecrow_de/SettingsDaemon/MediaKeys'>"
 "  <interface name='io.github.scarecrow_de.SettingsDaemon.MediaKeys'>"
-"    <annotation name='org.freedesktop.DBus.GLib.CSymbol' value='csd_media_keys_manager'/>"
+"    <annotation name='org.freedesktop.DBus.GLib.CSymbol' value='scsd_media_keys_manager'/>"
 "    <method name='GrabMediaPlayerKeys'>"
 "      <arg name='application' direction='in' type='s'/>"
 "      <arg name='time' direction='in' type='u'/>"
@@ -131,7 +131,7 @@ static const gchar introspection_xml[] =
 #define AUDIO_SELECTION_DBUS_PATH               "/io/github/scarecrow_de/Shell/AudioDeviceSelection"
 #define AUDIO_SELECTION_DBUS_INTERFACE          "io.github.scarecrow_de.Shell.AudioDeviceSelection"
 
-#define GSD_MEDIA_KEYS_MANAGER_GET_PRIVATE(o) (csd_media_keys_manager_get_instance_private (o))
+#define GSD_MEDIA_KEYS_MANAGER_GET_PRIVATE(o) (scsd_media_keys_manager_get_instance_private (o))
 
 typedef struct {
         char   *application;
@@ -249,9 +249,9 @@ typedef struct
         MprisController *mpris_controller;
 } GsdMediaKeysManagerPrivate;
 
-static void     csd_media_keys_manager_class_init  (GsdMediaKeysManagerClass *klass);
-static void     csd_media_keys_manager_init        (GsdMediaKeysManager      *media_keys_manager);
-static void     csd_media_keys_manager_finalize    (GObject                  *object);
+static void     scsd_media_keys_manager_class_init  (GsdMediaKeysManagerClass *klass);
+static void     scsd_media_keys_manager_init        (GsdMediaKeysManager      *media_keys_manager);
+static void     scsd_media_keys_manager_finalize    (GObject                  *object);
 static void     register_manager                   (GsdMediaKeysManager      *manager);
 static void     custom_binding_changed             (GSettings           *settings,
                                                     const char          *settings_key,
@@ -262,7 +262,7 @@ static void     keys_sync_queue                    (GsdMediaKeysManager *manager
 static void     keys_sync_continue                 (GsdMediaKeysManager *manager);
 
 
-G_DEFINE_TYPE_WITH_PRIVATE (GsdMediaKeysManager, csd_media_keys_manager, G_TYPE_OBJECT)
+G_DEFINE_TYPE_WITH_PRIVATE (GsdMediaKeysManager, scsd_media_keys_manager, G_TYPE_OBJECT)
 
 static gpointer manager_object = NULL;
 
@@ -1247,7 +1247,7 @@ do_search_action (GsdMediaKeysManager *manager,
         if (priv->shell_proxy == NULL)
                 return;
 
-        csd_shell_call_focus_search (priv->shell_proxy,
+        scsd_shell_call_focus_search (priv->shell_proxy,
                                      NULL, NULL, NULL);
 }
 
@@ -1306,7 +1306,7 @@ on_screen_locked (GsdScreenSaver      *screen_saver,
         gboolean is_locked;
         GError *error = NULL;
 
-        is_locked = csd_screen_saver_call_lock_finish (screen_saver, result, &error);
+        is_locked = scsd_screen_saver_call_lock_finish (screen_saver, result, &error);
 
         if (!is_locked) {
                 g_warning ("Couldn't lock screen: %s", error->message);
@@ -1323,7 +1323,7 @@ do_lock_screensaver (GsdMediaKeysManager *manager)
         if (priv->screen_saver_proxy == NULL)
                 priv->screen_saver_proxy = gnome_settings_bus_get_screen_saver_proxy ();
 
-        csd_screen_saver_call_lock (priv->screen_saver_proxy,
+        scsd_screen_saver_call_lock (priv->screen_saver_proxy,
                                     priv->bus_cancellable,
                                     (GAsyncReadyCallback) on_screen_locked,
                                     manager);
@@ -1788,7 +1788,7 @@ name_vanished_handler (GDBusConnection     *connection,
  * events only nobody else is interested in.
  */
 static void
-csd_media_keys_manager_grab_media_player_keys (GsdMediaKeysManager *manager,
+scsd_media_keys_manager_grab_media_player_keys (GsdMediaKeysManager *manager,
                                                const char          *application,
                                                const char          *dbus_name,
                                                guint32              time)
@@ -1840,7 +1840,7 @@ csd_media_keys_manager_grab_media_player_keys (GsdMediaKeysManager *manager,
 }
 
 static void
-csd_media_keys_manager_release_media_player_keys (GsdMediaKeysManager *manager,
+scsd_media_keys_manager_release_media_player_keys (GsdMediaKeysManager *manager,
                                                   const char          *application,
                                                   const char          *name)
 {
@@ -1872,7 +1872,7 @@ csd_media_keys_manager_release_media_player_keys (GsdMediaKeysManager *manager,
 }
 
 static gboolean
-csd_media_player_key_pressed (GsdMediaKeysManager *manager,
+scsd_media_player_key_pressed (GsdMediaKeysManager *manager,
                               const char          *key)
 {
         GsdMediaKeysManagerPrivate *priv = GSD_MEDIA_KEYS_MANAGER_GET_PRIVATE (manager);
@@ -1934,14 +1934,14 @@ handle_method_call (GDBusConnection       *connection,
                 const char *app_name;
 
                 g_variant_get (parameters, "(&s)", &app_name);
-                csd_media_keys_manager_release_media_player_keys (manager, app_name, sender);
+                scsd_media_keys_manager_release_media_player_keys (manager, app_name, sender);
                 g_dbus_method_invocation_return_value (invocation, NULL);
         } else if (g_strcmp0 (method_name, "GrabMediaPlayerKeys") == 0) {
                 const char *app_name;
                 guint32 time;
 
                 g_variant_get (parameters, "(&su)", &app_name, &time);
-                csd_media_keys_manager_grab_media_player_keys (manager, app_name, sender, time);
+                scsd_media_keys_manager_grab_media_player_keys (manager, app_name, sender, time);
                 g_dbus_method_invocation_return_value (invocation, NULL);
         }
 }
@@ -1957,7 +1957,7 @@ static gboolean
 do_multimedia_player_action (GsdMediaKeysManager *manager,
                              const char          *key)
 {
-        return csd_media_player_key_pressed (manager, key);
+        return scsd_media_player_key_pressed (manager, key);
 }
 
 static void
@@ -2692,7 +2692,7 @@ do_action (GsdMediaKeysManager *manager,
         case WINDOW_SCREENSHOT_CLIP_KEY:
         case AREA_SCREENSHOT_KEY:
         case AREA_SCREENSHOT_CLIP_KEY:
-                csd_screenshot_take (type);
+                scsd_screenshot_take (type);
                 break;
         case SCREENCAST_KEY:
                 do_screencast_action (manager);
@@ -3318,7 +3318,7 @@ migrate_keybinding_settings (void)
                 { "magnifier-zoom-out",         "magnifier-zoom-out",           map_keybinding },
         };
 
-        csd_settings_migrate_check ("io.github.scarecrow_de.settings-daemon.plugins.media-keys.deprecated",
+        scsd_settings_migrate_check ("io.github.scarecrow_de.settings-daemon.plugins.media-keys.deprecated",
                                     "/io/github/scarecrow_de/settings-daemon/plugins/media-keys/",
                                     "io.github.scarecrow_de.settings-daemon.plugins.media-keys",
                                     "/io/github/scarecrow_de/settings-daemon/plugins/media-keys/",
@@ -3326,7 +3326,7 @@ migrate_keybinding_settings (void)
 }
 
 gboolean
-csd_media_keys_manager_start (GsdMediaKeysManager *manager,
+scsd_media_keys_manager_start (GsdMediaKeysManager *manager,
                               GError             **error)
 {
         GsdMediaKeysManagerPrivate *priv = GSD_MEDIA_KEYS_MANAGER_GET_PRIVATE (manager);
@@ -3352,7 +3352,7 @@ csd_media_keys_manager_start (GsdMediaKeysManager *manager,
 }
 
 void
-csd_media_keys_manager_stop (GsdMediaKeysManager *manager)
+scsd_media_keys_manager_stop (GsdMediaKeysManager *manager)
 {
         GsdMediaKeysManagerPrivate *priv = GSD_MEDIA_KEYS_MANAGER_GET_PRIVATE (manager);
 
@@ -3629,11 +3629,11 @@ logind_proxy_signal_cb (GDBusProxy  *proxy,
 }
 
 static void
-csd_media_keys_manager_class_init (GsdMediaKeysManagerClass *klass)
+scsd_media_keys_manager_class_init (GsdMediaKeysManagerClass *klass)
 {
         GObjectClass   *object_class = G_OBJECT_CLASS (klass);
 
-        object_class->finalize = csd_media_keys_manager_finalize;
+        object_class->finalize = scsd_media_keys_manager_finalize;
 }
 
 static void
@@ -3668,7 +3668,7 @@ inhibit_done (GObject      *source,
 }
 
 static void
-csd_media_keys_manager_init (GsdMediaKeysManager *manager)
+scsd_media_keys_manager_init (GsdMediaKeysManager *manager)
 {
         GsdMediaKeysManagerPrivate *priv = GSD_MEDIA_KEYS_MANAGER_GET_PRIVATE (manager);
         GError *error;
@@ -3728,12 +3728,12 @@ csd_media_keys_manager_init (GsdMediaKeysManager *manager)
 }
 
 static void
-csd_media_keys_manager_finalize (GObject *object)
+scsd_media_keys_manager_finalize (GObject *object)
 {
         GsdMediaKeysManager *manager = GSD_MEDIA_KEYS_MANAGER (object);
         GsdMediaKeysManagerPrivate *priv = GSD_MEDIA_KEYS_MANAGER_GET_PRIVATE (manager);
 
-        csd_media_keys_manager_stop (manager);
+        scsd_media_keys_manager_stop (manager);
 
         if (priv->inhibit_keys_fd != -1)
                 close (priv->inhibit_keys_fd);
@@ -3741,7 +3741,7 @@ csd_media_keys_manager_finalize (GObject *object)
         g_clear_object (&priv->logind_proxy);
         g_clear_object (&priv->screen_saver_proxy);
 
-        G_OBJECT_CLASS (csd_media_keys_manager_parent_class)->finalize (object);
+        G_OBJECT_CLASS (scsd_media_keys_manager_parent_class)->finalize (object);
 }
 
 static void
@@ -3906,7 +3906,7 @@ register_manager (GsdMediaKeysManager *manager)
 }
 
 GsdMediaKeysManager *
-csd_media_keys_manager_new (void)
+scsd_media_keys_manager_new (void)
 {
         if (manager_object != NULL) {
                 g_object_ref (manager_object);

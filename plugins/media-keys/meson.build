@@ -1,12 +1,12 @@
 sources = files(
   'bus-watch-namespace.c',
-  'csd-media-keys-manager.c',
-  'csd-screenshot-utils.c',
+  'scsd-media-keys-manager.c',
+  'scsd-screenshot-utils.c',
   'main.c',
   'mpris-controller.c'
 )
 
-marshal = 'csd-marshal'
+marshal = 'scsd-marshal'
 
 sources += gnome.genmarshal(
   marshal,
@@ -39,14 +39,14 @@ if enable_gudev
 endif
 
 executable(
-  'csd-' + plugin_name,
+  'scsd-' + plugin_name,
   sources,
   include_directories: [top_inc, data_inc],
   dependencies: deps,
   c_args: cflags,
   install: true,
-  install_rpath: csd_pkglibdir,
-  install_dir: csd_libexecdir
+  install_rpath: scsd_pkglibdir,
+  install_dir: scsd_libexecdir
 )
 
 program = 'audio-selection-test'

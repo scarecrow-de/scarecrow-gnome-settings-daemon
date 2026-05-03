@@ -24,13 +24,13 @@
 
 G_BEGIN_DECLS
 
-#define GSD_TYPE_A11Y_SETTINGS_MANAGER csd_a11y_settings_manager_get_type ()
-G_DECLARE_FINAL_TYPE (GsdA11ySettingsManager, csd_a11y_settings_manager, GSD, A11Y_SETTINGS_MANAGER, GObject)
+#define GSD_TYPE_A11Y_SETTINGS_MANAGER scsd_a11y_settings_manager_get_type ()
+G_DECLARE_FINAL_TYPE (GsdA11ySettingsManager, scsd_a11y_settings_manager, GSD, A11Y_SETTINGS_MANAGER, GObject)
 
-GsdA11ySettingsManager *csd_a11y_settings_manager_new                 (void);
-gboolean                csd_a11y_settings_manager_start               (GsdA11ySettingsManager *manager,
+GsdA11ySettingsManager *scsd_a11y_settings_manager_new                 (void);
+gboolean                scsd_a11y_settings_manager_start               (GsdA11ySettingsManager *manager,
                                                                        GError         **error);
-void                    csd_a11y_settings_manager_stop                (GsdA11ySettingsManager *manager);
+void                    scsd_a11y_settings_manager_stop                (GsdA11ySettingsManager *manager);
 
 G_END_DECLS
 

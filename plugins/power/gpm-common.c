@@ -36,15 +36,15 @@
 
 #include "scarecrow-settings-bus.h"
 #include "gpm-common.h"
-#include "csd-power-constants.h"
-#include "csd-power-manager.h"
+#include "scsd-power-constants.h"
+#include "scsd-power-manager.h"
 
 #define XSCREENSAVER_WATCHDOG_TIMEOUT           120 /* seconds */
 #define UPS_SOUND_LOOP_ID                        99
 #define GSD_POWER_MANAGER_CRITICAL_ALERT_TIMEOUT  5 /* seconds */
 
 static int
-csd_power_backlight_convert_safe (int value, int from_range, int to_range)
+scsd_power_backlight_convert_safe (int value, int from_range, int to_range)
 {
         /* round (value / from_range) * to_range */
         return (value * to_range + from_range / 2) / from_range;
@@ -52,23 +52,23 @@ csd_power_backlight_convert_safe (int value, int from_range, int to_range)
 
 /* take a discrete value with offset and convert to percentage */
 int
-csd_power_backlight_abs_to_percentage (int min, int max, int value)
+scsd_power_backlight_abs_to_percentage (int min, int max, int value)
 {
         g_return_val_if_fail (max > min, -1);
         g_return_val_if_fail (value >= min, -1);
         g_return_val_if_fail (value <= max, -1);
-        return csd_power_backlight_convert_safe (value - min, max - min, 100);
+        return scsd_power_backlight_convert_safe (value - min, max - min, 100);
 }
 
 /* take a percentage and convert to a discrete value with offset */
 int
-csd_power_backlight_percentage_to_abs (int min, int max, int value)
+scsd_power_backlight_percentage_to_abs (int min, int max, int value)
 {
         g_return_val_if_fail (max > min, -1);
         g_return_val_if_fail (value >= 0, -1);
         g_return_val_if_fail (value <= 100, -1);
 
-        return min + csd_power_backlight_convert_safe (value, 100, max - min);
+        return min + scsd_power_backlight_convert_safe (value, 100, max - min);
 }
 
 #define GPM_UP_TIME_PRECISION                   5*60
@@ -155,7 +155,7 @@ out:
 }
 
 gboolean
-csd_power_is_hardware_a_vm (void)
+scsd_power_is_hardware_a_vm (void)
 {
         const gchar *str;
         gboolean ret = FALSE;
@@ -281,7 +281,7 @@ disable_builtin_screensaver (gpointer unused)
 }
 
 guint
-csd_power_enable_screensaver_watchdog (void)
+scsd_power_enable_screensaver_watchdog (void)
 {
         int dummy;
         guint id;

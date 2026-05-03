@@ -1,7 +1,7 @@
 sources = files(
   'gpm-common.c',
-  'csd-backlight.c',
-  'csd-power-manager.c',
+  'scsd-backlight.c',
+  'scsd-power-manager.c',
   'main.c'
 )
 
@@ -17,7 +17,7 @@ deps = plugins_deps + [
   dependency('xext')
 ]
 
-# required for csd-power-enums-update, which we have
+# required for scsd-power-enums-update, which we have
 # to compile natively
 native_deps = [
   dependency('glib-2.0', native: true),
@@ -28,27 +28,27 @@ if host_is_linux
   deps += gudev_dep
 endif
 
-cflags += ['-DLIBEXECDIR="@0@"'.format(csd_libexecdir)]
+cflags += ['-DLIBEXECDIR="@0@"'.format(scsd_libexecdir)]
 
-csd_power = executable(
-  'csd-' + plugin_name,
+scsd_power = executable(
+  'scsd-' + plugin_name,
   sources,
   include_directories: [top_inc, data_inc],
   dependencies: deps,
   c_args: cflags,
   install: true,
-  install_rpath: csd_pkglibdir,
-  install_dir: csd_libexecdir
+  install_rpath: scsd_pkglibdir,
+  install_dir: scsd_libexecdir
 )
 
-sources = files('csd-power-enums-update.c')
+sources = files('scsd-power-enums-update.c')
 
 enums_headers = files(
   'gsm-inhibitor-flag.h',
   'gsm-presence-flag.h'
 )
 
-enums = 'csd-power-enums'
+enums = 'scsd-power-enums'
 
 sources += gnome.mkenums(
   enums,
@@ -57,8 +57,8 @@ sources += gnome.mkenums(
   h_template: enums + '.h.in'
 )
 
-csd_power_enums_update = executable(
-  'csd-power-enums-update',
+scsd_power_enums_update = executable(
+  'scsd-power-enums-update',
   sources,
   include_directories: top_inc,
   dependencies: native_deps,
@@ -80,45 +80,45 @@ if host_is_linux
     output: policy,
     po_dir: po_dir,
     install: true,
-    install_dir: join_paths(csd_datadir, 'polkit-1', 'actions')
+    install_dir: join_paths(scsd_datadir, 'polkit-1', 'actions')
   )
 
   sources = files(
-    'csd-backlight-helper.c',
+    'scsd-backlight-helper.c',
   )
 
   deps = [
   ]
 
   executable(
-    'csd-backlight-helper',
+    'scsd-backlight-helper',
     sources,
     include_directories: top_inc,
     dependencies: deps,
     install: true,
-    install_rpath: csd_pkglibdir,
-    install_dir: csd_libexecdir
+    install_rpath: scsd_pkglibdir,
+    install_dir: scsd_libexecdir
   )
 endif
 
-output = 'csdpowerconstants.py'
+output = 'scsdpowerconstants.py'
 
-csdpowerconstants_py = custom_target(
+scsdpowerconstants_py = custom_target(
   output,
-  input: 'csd-power-constants.h',
+  input: 'scsd-power-constants.h',
   output: output,
   build_by_default: true,
-  command: [join_paths(meson.current_source_dir(), 'csd-power-constants-update.pl'), '@INPUT@', '@OUTPUT@']
+  command: [join_paths(meson.current_source_dir(), 'scsd-power-constants-update.pl'), '@INPUT@', '@OUTPUT@']
 )
 
-output = 'csdpowerenums.py'
+output = 'scsdpowerenums.py'
 
-csdpowerenums_py = custom_target(
+scsdpowerenums_py = custom_target(
   output,
   output: output,
   capture: true,
   build_by_default: true,
-  command: [csd_power_enums_update]
+  command: [scsd_power_enums_update]
 )
 
 test_py = find_program('test.py')

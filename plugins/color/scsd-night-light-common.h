@@ -24,13 +24,13 @@
 
 G_BEGIN_DECLS
 
-gboolean csd_night_light_get_sunrise_sunset     (GDateTime      *dt,
+gboolean scsd_night_light_get_sunrise_sunset     (GDateTime      *dt,
                                                  gdouble         pos_lat,
                                                  gdouble         pos_long,
                                                  gdouble        *sunrise,
                                                  gdouble        *sunset);
-gdouble  csd_night_light_frac_day_from_dt       (GDateTime      *dt);
-gboolean csd_night_light_frac_day_is_between    (gdouble         value,
+gdouble  scsd_night_light_frac_day_from_dt       (GDateTime      *dt);
+gboolean scsd_night_light_frac_day_is_between    (gdouble         value,
                                                  gdouble         start,
                                                  gdouble         end);
 

@@ -4,8 +4,8 @@
 # Author  : Bastien Nocera <hadess@hadess.net>
 # Version : 1.2
 #
-# Input   : csd-power-constants.h
-# Output  : csdpowerconstants.py
+# Input   : scsd-power-constants.h
+# Output  : scsdpowerconstants.py
 #
 use strict;
 
@@ -15,14 +15,14 @@ my @constantselements;
 (scalar @ARGV >= 2) or die "Usage: $0 <input> <output>\n";
 my ($input, $output) = @ARGV;
 
-die "Could not open file csd-power-constants.h: $!\n" unless open(IN_CONSTANTS, "<:utf8", $input);
+die "Could not open file scsd-power-constants.h: $!\n" unless open(IN_CONSTANTS, "<:utf8", $input);
 
 # Output: gtk+/gdk/gdkkeysyms.h
-die "Could not open file csdpowerconstants.py: $!\n" unless open(OUT_CONSTANTS, ">:utf8", $output);
+die "Could not open file scsdpowerconstants.py: $!\n" unless open(OUT_CONSTANTS, ">:utf8", $output);
 
 print OUT_CONSTANTS<<EOF;
 
-# File auto-generated from script http://git.gnome.org/browse/scarecrow-settings-daemon/tree/plugins/power/csd-power-constants-update.pl
+# File auto-generated from script http://git.gnome.org/browse/scarecrow-settings-daemon/tree/plugins/power/scsd-power-constants-update.pl
 
 # Modified by the GTK+ Team and others 1997-2012.  See the AUTHORS
 # file for a list of people on the GTK+ Team.  See the ChangeLog

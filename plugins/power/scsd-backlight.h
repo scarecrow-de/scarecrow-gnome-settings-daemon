@@ -30,49 +30,49 @@
 
 G_BEGIN_DECLS
 
-#define GSD_TYPE_BACKLIGHT csd_backlight_get_type ()
-G_DECLARE_FINAL_TYPE (GsdBacklight, csd_backlight, GSD, BACKLIGHT, GObject);
+#define GSD_TYPE_BACKLIGHT scsd_backlight_get_type ()
+G_DECLARE_FINAL_TYPE (GsdBacklight, scsd_backlight, GSD, BACKLIGHT, GObject);
 
-gint csd_backlight_get_brightness        (GsdBacklight         *backlight,
+gint scsd_backlight_get_brightness        (GsdBacklight         *backlight,
                                           gint                 *target);
 
-void csd_backlight_set_brightness_async  (GsdBacklight         *backlight,
+void scsd_backlight_set_brightness_async  (GsdBacklight         *backlight,
                                           gint                  percentage,
                                           GCancellable         *cancellable,
                                           GAsyncReadyCallback   callback,
                                           gpointer              user_data);
-void csd_backlight_step_up_async         (GsdBacklight         *backlight,
+void scsd_backlight_step_up_async         (GsdBacklight         *backlight,
                                           GCancellable         *cancellable,
                                           GAsyncReadyCallback   callback,
                                           gpointer              user_data);
-void csd_backlight_step_down_async       (GsdBacklight         *backlight,
+void scsd_backlight_step_down_async       (GsdBacklight         *backlight,
                                           GCancellable         *cancellable,
                                           GAsyncReadyCallback   callback,
                                           gpointer              user_data);
-void csd_backlight_cycle_up_async        (GsdBacklight         *backlight,
+void scsd_backlight_cycle_up_async        (GsdBacklight         *backlight,
                                           GCancellable         *cancellable,
                                           GAsyncReadyCallback   callback,
                                           gpointer              user_data);
 
-gint csd_backlight_set_brightness_finish (GsdBacklight         *backlight,
+gint scsd_backlight_set_brightness_finish (GsdBacklight         *backlight,
                                           GAsyncResult         *res,
                                           GError              **error);
 
-gint csd_backlight_step_up_finish        (GsdBacklight         *backlight,
+gint scsd_backlight_step_up_finish        (GsdBacklight         *backlight,
                                           GAsyncResult         *res,
                                           GError              **error);
 
-gint csd_backlight_step_down_finish      (GsdBacklight         *backlight,
+gint scsd_backlight_step_down_finish      (GsdBacklight         *backlight,
                                           GAsyncResult         *res,
                                           GError              **error);
 
-gint csd_backlight_cycle_up_finish       (GsdBacklight         *backlight,
+gint scsd_backlight_cycle_up_finish       (GsdBacklight         *backlight,
                                           GAsyncResult         *res,
                                           GError              **error);
 
-const char*  csd_backlight_get_connector (GsdBacklight         *backlight);
+const char*  scsd_backlight_get_connector (GsdBacklight         *backlight);
 
-GsdBacklight* csd_backlight_new          (GnomeRRScreen        *screen,
+GsdBacklight* scsd_backlight_new          (GnomeRRScreen        *screen,
                                           GError              **error);
 
 

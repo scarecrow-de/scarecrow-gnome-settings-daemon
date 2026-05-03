@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2012      Przemo Firszt <przemo@firszt.eu>
  *
- * The code is derived from csd-wacom-led-helper.c
+ * The code is derived from scsd-wacom-led-helper.c
  * written by:
  * Copyright (C) 2010-2011 Richard Hughes <richard@hughsie.com>
  * Copyright (C) 2012      Bastien Nocera <hadess@hadess.net>
@@ -34,7 +34,7 @@
 #include <fcntl.h>
 #include <gudev/gudev.h>
 
-#include "csd-wacom-oled-constants.h"
+#include "scsd-wacom-oled-constants.h"
 
 #define USB_PIXELS_PER_BYTE 2
 #define BT_PIXELS_PER_BYTE 8
@@ -116,7 +116,7 @@ oled_bt_scramble_icon (guchar *input_image)
 }
 
 static void
-csd_wacom_oled_convert_1_bit (guchar *image)
+scsd_wacom_oled_convert_1_bit (guchar *image)
 {
 	guchar buf[BT_BUF_LEN];
 	guchar b0, b1, b2, b3, b4, b5, b6, b7;
@@ -138,7 +138,7 @@ csd_wacom_oled_convert_1_bit (guchar *image)
 }
 
 static int
-csd_wacom_oled_prepare_buf (guchar *image, GsdWacomOledType type)
+scsd_wacom_oled_prepare_buf (guchar *image, GsdWacomOledType type)
 {
 	int len = 0;
 
@@ -150,12 +150,12 @@ csd_wacom_oled_prepare_buf (guchar *image, GsdWacomOledType type)
 		break;
 	case GSD_WACOM_OLED_TYPE_BLUETOOTH:
 		/* ... but for bluetooth it has to be converted to 1 bit colour instead of scrambling */
-		csd_wacom_oled_convert_1_bit (image);
+		scsd_wacom_oled_convert_1_bit (image);
 		len = BT_BUF_LEN;
 		break;
 	case GSD_WACOM_OLED_TYPE_RAW_BLUETOOTH:
 		/* Image has also to be scrambled for devices connected over BT using the raw API ... */
-		csd_wacom_oled_convert_1_bit (image);
+		scsd_wacom_oled_convert_1_bit (image);
 		len = BT_BUF_LEN;
 		oled_bt_scramble_icon (image);
 		break;
@@ -167,7 +167,7 @@ csd_wacom_oled_prepare_buf (guchar *image, GsdWacomOledType type)
 }
 
 static gboolean
-csd_wacom_oled_helper_write (const gchar *filename, gchar *buffer, GsdWacomOledType type, GError **error)
+scsd_wacom_oled_helper_write (const gchar *filename, gchar *buffer, GsdWacomOledType type, GError **error)
 {
 	guchar *image;
 	gint retval;
@@ -194,7 +194,7 @@ csd_wacom_oled_helper_write (const gchar *filename, gchar *buffer, GsdWacomOledT
 		goto out;
 	}
 
-	length = csd_wacom_oled_prepare_buf (image, type);
+	length = scsd_wacom_oled_prepare_buf (image, type);
 	if (!length) {
 		ret = FALSE;
 		g_set_error (error, 1, 0, "Invalid image buffer length");
@@ -399,7 +399,7 @@ int main (int argc, char **argv)
 	if (!filename)
 		goto out;
 
-	if (csd_wacom_oled_helper_write (filename, buffer, type, &error) == FALSE) {
+	if (scsd_wacom_oled_helper_write (filename, buffer, type, &error) == FALSE) {
 		g_critical ("Could not set OLED icon for '%s': %s", path, error->message);
 		g_error_free (error);
 		g_free (filename);

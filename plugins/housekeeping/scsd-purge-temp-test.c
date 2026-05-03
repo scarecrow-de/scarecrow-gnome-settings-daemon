@@ -23,7 +23,7 @@
 #include "config.h"
 #include <gtk/gtk.h>
 #include <libnotify/notify.h>
-#include "csd-disk-space.h"
+#include "scsd-disk-space.h"
 
 int
 main (int    argc,
@@ -38,12 +38,12 @@ main (int    argc,
         g_setenv ("G_MESSAGES_DEBUG", "all", TRUE);
 
         gtk_init (&argc, &argv);
-        notify_init ("csd-purge-temp-test");
+        notify_init ("scsd-purge-temp-test");
         loop = g_main_loop_new (NULL, FALSE);
 
-        file = g_file_new_for_path ("/tmp/csd-purge-temp-test");
+        file = g_file_new_for_path ("/tmp/scsd-purge-temp-test");
         if (!g_file_query_exists (file, NULL)) {
-                g_warning ("Create /tmp/csd-purge-temp-test and add some files to it to test deletion by date");
+                g_warning ("Create /tmp/scsd-purge-temp-test and add some files to it to test deletion by date");
                 g_object_unref (file);
                 return 1;
         }

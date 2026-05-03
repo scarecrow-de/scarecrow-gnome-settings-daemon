@@ -26,13 +26,13 @@
 
 G_BEGIN_DECLS
 
-#define GSD_TYPE_XSETTINGS_GTK                (csd_xsettings_gtk_get_type ())
+#define GSD_TYPE_XSETTINGS_GTK                (scsd_xsettings_gtk_get_type ())
 
-G_DECLARE_FINAL_TYPE (GsdXSettingsGtk, csd_xsettings_gtk, GSD, XSETTINGS_GTK, GObject)
+G_DECLARE_FINAL_TYPE (GsdXSettingsGtk, scsd_xsettings_gtk, GSD, XSETTINGS_GTK, GObject)
 
-GsdXSettingsGtk *csd_xsettings_gtk_new        (void);
+GsdXSettingsGtk *scsd_xsettings_gtk_new        (void);
 
-const char * csd_xsettings_gtk_get_modules (GsdXSettingsGtk *gtk);
+const char * scsd_xsettings_gtk_get_modules (GsdXSettingsGtk *gtk);
 
 G_END_DECLS
 

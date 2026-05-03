@@ -24,9 +24,9 @@
 
 G_BEGIN_DECLS
 
-#define GSD_TYPE_MEDIA_KEYS_MANAGER         (csd_media_keys_manager_get_type ())
+#define GSD_TYPE_MEDIA_KEYS_MANAGER         (scsd_media_keys_manager_get_type ())
 
-G_DECLARE_DERIVABLE_TYPE (GsdMediaKeysManager, csd_media_keys_manager, GSD, MEDIA_KEYS_MANAGER, GObject)
+G_DECLARE_DERIVABLE_TYPE (GsdMediaKeysManager, scsd_media_keys_manager, GSD, MEDIA_KEYS_MANAGER, GObject)
 
 struct _GsdMediaKeysManagerClass
 {
@@ -36,10 +36,10 @@ struct _GsdMediaKeysManagerClass
                                                     const char          *key);
 };
 
-GsdMediaKeysManager * csd_media_keys_manager_new                       (void);
-gboolean              csd_media_keys_manager_start                     (GsdMediaKeysManager *manager,
+GsdMediaKeysManager * scsd_media_keys_manager_new                       (void);
+gboolean              scsd_media_keys_manager_start                     (GsdMediaKeysManager *manager,
                                                                         GError             **error);
-void                  csd_media_keys_manager_stop                      (GsdMediaKeysManager *manager);
+void                  scsd_media_keys_manager_stop                      (GsdMediaKeysManager *manager);
 
 
 G_END_DECLS

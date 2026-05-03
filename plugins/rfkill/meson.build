@@ -4,7 +4,7 @@ install_data(
 )
 
 sources = files(
-  'csd-rfkill-manager.c',
+  'scsd-rfkill-manager.c',
   'rfkill-glib.c',
   'main.c'
 )
@@ -17,12 +17,12 @@ deps += [
 ]
 
 executable(
-  'csd-' + plugin_name,
+  'scsd-' + plugin_name,
   sources,
   include_directories: [top_inc, common_inc],
   dependencies: deps,
   c_args: cflags,
   install: true,
-  install_rpath: csd_pkglibdir,
-  install_dir: csd_libexecdir
+  install_rpath: scsd_pkglibdir,
+  install_dir: scsd_libexecdir
 )

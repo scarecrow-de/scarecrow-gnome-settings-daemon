@@ -23,10 +23,10 @@
 
 #include <gio/gio.h>
 
-#include "csd-settings-migrate.h"
+#include "scsd-settings-migrate.h"
 
 void
-csd_settings_migrate_check (const gchar             *origin_schema,
+scsd_settings_migrate_check (const gchar             *origin_schema,
                             const gchar             *origin_path,
                             const gchar             *dest_schema,
                             const gchar             *dest_path,

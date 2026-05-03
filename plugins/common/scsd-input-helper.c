@@ -28,7 +28,7 @@
 #include <X11/Xatom.h>
 #include <X11/extensions/XInput2.h>
 
-#include "csd-input-helper.h"
+#include "scsd-input-helper.h"
 
 char *
 xdevice_get_device_node (int deviceid)

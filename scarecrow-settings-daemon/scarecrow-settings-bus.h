@@ -23,9 +23,9 @@
 #define __GNOME_SETTINGS_BUS_H
 
 #include <glib-object.h>
-#include "scarecrow-csd-session-manager-glue.h"
-#include "scarecrow-csd-screen-saver-glue.h"
-#include "scarecrow-csd-shell-glue.h"
+#include "scarecrow-scsd-session-manager-glue.h"
+#include "scarecrow-scsd-screen-saver-glue.h"
+#include "scarecrow-scsd-shell-glue.h"
 
 G_BEGIN_DECLS
 

@@ -18,7 +18,7 @@
  */
 
 #include "config.h"
-#include "csd-smartcard-utils.h"
+#include "scsd-smartcard-utils.h"
 
 #include <string.h>
 
@@ -102,7 +102,7 @@ dashed_string_to_dbus_error_string (const char *dashed_string,
 }
 
 void
-csd_smartcard_utils_register_error_domain (GQuark error_domain,
+scsd_smartcard_utils_register_error_domain (GQuark error_domain,
                                            GType  error_enum)
 {
         const char *error_domain_string;
@@ -122,7 +122,7 @@ csd_smartcard_utils_register_error_domain (GQuark error_domain,
                 char *dbus_error_string;
 
                 dbus_error_string = dashed_string_to_dbus_error_string (error_domain_string,
-                                                                        "csd",
+                                                                        "scsd",
                                                                         "io.github.scarecrow_de.SettingsDaemon",
                                                                         enum_class->values[i].value_nick);
 
@@ -137,7 +137,7 @@ csd_smartcard_utils_register_error_domain (GQuark error_domain,
 }
 
 char *
-csd_smartcard_utils_escape_object_path (const char *unescaped_string)
+scsd_smartcard_utils_escape_object_path (const char *unescaped_string)
 {
   const char *p;
   char *object_path;

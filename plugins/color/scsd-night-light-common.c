@@ -22,7 +22,7 @@
 #include <glib.h>
 #include <math.h>
 
-#include "csd-night-light-common.h"
+#include "scsd-night-light-common.h"
 
 static gdouble
 deg2rad (gdouble degrees)
@@ -47,7 +47,7 @@ rad2deg (gdouble radians)
  * a sunrise at all.
  */
 gboolean
-csd_night_light_get_sunrise_sunset (GDateTime *dt,
+scsd_night_light_get_sunrise_sunset (GDateTime *dt,
                                     gdouble pos_lat, gdouble pos_long,
                                     gdouble *sunrise, gdouble *sunset)
 {
@@ -107,7 +107,7 @@ csd_night_light_get_sunrise_sunset (GDateTime *dt,
 }
 
 gdouble
-csd_night_light_frac_day_from_dt (GDateTime *dt)
+scsd_night_light_frac_day_from_dt (GDateTime *dt)
 {
         return g_date_time_get_hour (dt) +
                 (gdouble) g_date_time_get_minute (dt) / 60.f +
@@ -115,7 +115,7 @@ csd_night_light_frac_day_from_dt (GDateTime *dt)
 }
 
 gboolean
-csd_night_light_frac_day_is_between (gdouble  value,
+scsd_night_light_frac_day_is_between (gdouble  value,
                                      gdouble  start,
                                      gdouble  end)
 {

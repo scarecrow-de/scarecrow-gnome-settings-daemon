@@ -1,7 +1,7 @@
-#define NEW csd_housekeeping_manager_new
-#define START csd_housekeeping_manager_start
-#define STOP csd_housekeeping_manager_stop
+#define NEW scsd_housekeeping_manager_new
+#define START scsd_housekeeping_manager_start
+#define STOP scsd_housekeeping_manager_stop
 #define MANAGER GsdHousekeepingManager
-#include "csd-housekeeping-manager.h"
+#include "scsd-housekeeping-manager.h"
 
 #include "daemon-skeleton.h"

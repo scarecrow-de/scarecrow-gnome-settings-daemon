@@ -27,10 +27,10 @@
 #include <glib.h>
 #include <gio/gio.h>
 
-#include "csd-disk-space-helper.h"
+#include "scsd-disk-space-helper.h"
 
 gboolean
-csd_should_ignore_unix_mount (GUnixMountEntry *mount)
+scsd_should_ignore_unix_mount (GUnixMountEntry *mount)
 {
         const char *fs, *device;
         g_autofree char *label = NULL;
@@ -140,7 +140,7 @@ csd_should_ignore_unix_mount (GUnixMountEntry *mount)
 
 /* Used in gnome-control-center's info panel */
 gboolean
-csd_is_removable_mount (GUnixMountEntry *mount)
+scsd_is_removable_mount (GUnixMountEntry *mount)
 {
         const char *mount_path;
         char *path;

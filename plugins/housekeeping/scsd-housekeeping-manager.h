@@ -24,14 +24,14 @@
 
 G_BEGIN_DECLS
 
-#define GSD_TYPE_HOUSEKEEPING_MANAGER         (csd_housekeeping_manager_get_type ())
+#define GSD_TYPE_HOUSEKEEPING_MANAGER         (scsd_housekeeping_manager_get_type ())
 
-G_DECLARE_FINAL_TYPE (GsdHousekeepingManager, csd_housekeeping_manager, GSD, HOUSEKEEPING_MANAGER, GObject)
+G_DECLARE_FINAL_TYPE (GsdHousekeepingManager, scsd_housekeeping_manager, GSD, HOUSEKEEPING_MANAGER, GObject)
 
-GsdHousekeepingManager * csd_housekeeping_manager_new           (void);
-gboolean                 csd_housekeeping_manager_start         (GsdHousekeepingManager  *manager,
+GsdHousekeepingManager * scsd_housekeeping_manager_new           (void);
+gboolean                 scsd_housekeeping_manager_start         (GsdHousekeepingManager  *manager,
                                                                  GError                 **error);
-void                     csd_housekeeping_manager_stop          (GsdHousekeepingManager  *manager);
+void                     scsd_housekeeping_manager_stop          (GsdHousekeepingManager  *manager);
 
 G_END_DECLS
 

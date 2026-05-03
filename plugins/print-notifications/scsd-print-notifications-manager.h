@@ -24,14 +24,14 @@
 
 G_BEGIN_DECLS
 
-#define GSD_TYPE_PRINT_NOTIFICATIONS_MANAGER         (csd_print_notifications_manager_get_type ())
+#define GSD_TYPE_PRINT_NOTIFICATIONS_MANAGER         (scsd_print_notifications_manager_get_type ())
 
-G_DECLARE_FINAL_TYPE (GsdPrintNotificationsManager, csd_print_notifications_manager, GSD, PRINT_NOTIFICATIONS_MANAGER, GObject)
+G_DECLARE_FINAL_TYPE (GsdPrintNotificationsManager, scsd_print_notifications_manager, GSD, PRINT_NOTIFICATIONS_MANAGER, GObject)
 
-GsdPrintNotificationsManager *csd_print_notifications_manager_new      (void);
-gboolean                      csd_print_notifications_manager_start    (GsdPrintNotificationsManager *manager,
+GsdPrintNotificationsManager *scsd_print_notifications_manager_new      (void);
+gboolean                      scsd_print_notifications_manager_start    (GsdPrintNotificationsManager *manager,
                                                                         GError                      **error);
-void                          csd_print_notifications_manager_stop     (GsdPrintNotificationsManager *manager);
+void                          scsd_print_notifications_manager_stop     (GsdPrintNotificationsManager *manager);
 
 G_END_DECLS
 

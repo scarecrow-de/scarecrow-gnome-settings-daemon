@@ -32,10 +32,10 @@
 
 G_BEGIN_DECLS
 
-#define GSD_TYPE_SMARTCARD_MANAGER         (csd_smartcard_manager_get_type ())
-#define GSD_SMARTCARD_MANAGER_ERROR        (csd_smartcard_manager_error_quark ())
+#define GSD_TYPE_SMARTCARD_MANAGER         (scsd_smartcard_manager_get_type ())
+#define GSD_SMARTCARD_MANAGER_ERROR        (scsd_smartcard_manager_error_quark ())
 
-G_DECLARE_FINAL_TYPE (GsdSmartcardManager, csd_smartcard_manager, GSD, SMARTCARD_MANAGER, GObject)
+G_DECLARE_FINAL_TYPE (GsdSmartcardManager, scsd_smartcard_manager, GSD, SMARTCARD_MANAGER, GObject)
 
 typedef enum
 {
@@ -48,18 +48,18 @@ typedef enum
          GSD_SMARTCARD_MANAGER_ERROR_NO_DRIVERS,
 } GsdSmartcardManagerError;
 
-GQuark                  csd_smartcard_manager_error_quark (void);
+GQuark                  scsd_smartcard_manager_error_quark (void);
 
 
-GsdSmartcardManager *   csd_smartcard_manager_new         (void);
-gboolean                csd_smartcard_manager_start       (GsdSmartcardManager  *manager,
+GsdSmartcardManager *   scsd_smartcard_manager_new         (void);
+gboolean                scsd_smartcard_manager_start       (GsdSmartcardManager  *manager,
                                                            GError              **error);
-void                    csd_smartcard_manager_stop        (GsdSmartcardManager  *manager);
+void                    scsd_smartcard_manager_stop        (GsdSmartcardManager  *manager);
 
-PK11SlotInfo *          csd_smartcard_manager_get_login_token (GsdSmartcardManager *manager);
-GList *                 csd_smartcard_manager_get_inserted_tokens (GsdSmartcardManager *manager,
+PK11SlotInfo *          scsd_smartcard_manager_get_login_token (GsdSmartcardManager *manager);
+GList *                 scsd_smartcard_manager_get_inserted_tokens (GsdSmartcardManager *manager,
                                                                    gsize               *num_tokens);
-void                    csd_smartcard_manager_do_remove_action (GsdSmartcardManager *manager);
+void                    scsd_smartcard_manager_do_remove_action (GsdSmartcardManager *manager);
 
 G_END_DECLS
 

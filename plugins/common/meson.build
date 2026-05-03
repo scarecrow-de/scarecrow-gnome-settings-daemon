@@ -1,17 +1,17 @@
 common_inc = include_directories('.')
 
 sources = files(
-  'csd-input-helper.c',
-  'csd-settings-migrate.c',
-  'csd-shell-helper.c'
+  'scsd-input-helper.c',
+  'scsd-settings-migrate.c',
+  'scsd-shell-helper.c'
 )
 
 resource_data = files('gtk.css')
 
 sources += gnome.compile_resources(
-  'csd-resources',
-  'csd.gresources.xml',
-  c_name: 'csd',
+  'scsd-resources',
+  'scsd.gresources.xml',
+  c_name: 'scsd',
   dependencies: resource_data
 )
 

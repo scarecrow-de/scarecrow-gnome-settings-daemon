@@ -30,8 +30,8 @@
 
 G_BEGIN_DECLS
 
-gboolean csd_should_ignore_unix_mount (GUnixMountEntry *mount);
-gboolean csd_is_removable_mount       (GUnixMountEntry *mount);
+gboolean scsd_should_ignore_unix_mount (GUnixMountEntry *mount);
+gboolean scsd_is_removable_mount       (GUnixMountEntry *mount);
 
 G_END_DECLS
 

@@ -1,4 +1,4 @@
-/* csd-screenshot-utils.h - utilities to take screenshots
+/* scsd-screenshot-utils.h - utilities to take screenshots
  *
  * Copyright (C) 2012 Red Hat, Inc.
  *
@@ -29,7 +29,7 @@
 
 G_BEGIN_DECLS
 
-void csd_screenshot_take (MediaKeyType key_type);
+void scsd_screenshot_take (MediaKeyType key_type);
 
 G_END_DECLS
 

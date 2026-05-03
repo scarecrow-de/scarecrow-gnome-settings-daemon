@@ -26,11 +26,11 @@ foreach schema: schemas
     output: schema,
     configuration: schema_conf,
     install: true,
-    install_dir: csd_schemadir
+    install_dir: scsd_schemadir
   )]
 endforeach
 
-enums_header = files('csd-enums.h')
+enums_header = files('scsd-enums.h')
 
 mkenums = gnome.mkenums(
   'io.github.scarecrow_de.settings-daemon.enums.xml',
@@ -42,25 +42,25 @@ mkenums = gnome.mkenums(
   vtail: '  </@type@>',
   ftail: '</schemalist>',
   install_header: true,
-  install_dir: csd_schemadir
+  install_dir: scsd_schemadir
 )
 
 install_data(
   enums_header,
-  install_dir: join_paths(csd_pkgincludedir, meson.project_name())
+  install_dir: join_paths(scsd_pkgincludedir, meson.project_name())
 )
 
 install_data(
   'scarecrow-settings-daemon.convert',
-  install_dir: join_paths(csd_datadir, 'GConf', 'gsettings')
+  install_dir: join_paths(scsd_datadir, 'GConf', 'gsettings')
 )
 
 pkg.generate(
-  version: csd_version,
+  version: scsd_version,
   name: meson.project_name(),
   description: meson.project_name() + ' specific enumerations',
   filebase: meson.project_name(),
-  subdirs: csd_api_name
+  subdirs: scsd_api_name
 )
 
 

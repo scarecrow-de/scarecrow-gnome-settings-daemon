@@ -59,7 +59,7 @@ class GSDTestCase(X11SessionTestCase):
         os.environ['GVFS_DISABLE_FUSE'] = '1'
         # we do some string checks, disable translations
         os.environ['LC_MESSAGES'] = 'C'
-        klass.workdir = tempfile.mkdtemp(prefix='csd-plugin-test')
+        klass.workdir = tempfile.mkdtemp(prefix='scsd-plugin-test')
 
         # Prevent applications from accessing an outside session manager
         os.environ['SESSION_MANAGER'] = ''

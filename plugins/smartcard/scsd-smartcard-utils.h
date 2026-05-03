@@ -24,9 +24,9 @@
 #include <gio/gio.h>
 
 G_BEGIN_DECLS
-void             csd_smartcard_utils_register_error_domain             (GQuark error_domain,
+void             scsd_smartcard_utils_register_error_domain             (GQuark error_domain,
                                                                         GType error_enum);
-char *           csd_smartcard_utils_escape_object_path                (const char *unescaped_string);
+char *           scsd_smartcard_utils_escape_object_path                (const char *unescaped_string);
 
 G_END_DECLS
 

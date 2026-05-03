@@ -11,12 +11,12 @@ i18n.merge_file(
   output: policy,
   po_dir: po_dir,
   install: true,
-  install_dir: join_paths(csd_datadir, 'polkit-1', 'actions')
+  install_dir: join_paths(scsd_datadir, 'polkit-1', 'actions')
 )
 
 sources = files(
-  'csd-wacom-manager.c',
-  'csd-wacom-oled.c',
+  'scsd-wacom-manager.c',
+  'scsd-wacom-oled.c',
   'main.c'
 )
 
@@ -31,17 +31,17 @@ if enable_wacom
   deps += libwacom_dep
 endif
 
-cflags += ['-DLIBEXECDIR="@0@"'.format(csd_libexecdir)]
+cflags += ['-DLIBEXECDIR="@0@"'.format(scsd_libexecdir)]
 
 executable(
-  'csd-' + plugin_name,
+  'scsd-' + plugin_name,
   sources,
   include_directories: [top_inc, data_inc],
   dependencies: deps,
   c_args: cflags,
   install: true,
-  install_rpath: csd_pkglibdir,
-  install_dir: csd_libexecdir
+  install_rpath: scsd_pkglibdir,
+  install_dir: scsd_libexecdir
 )
 
 if enable_gudev
@@ -51,12 +51,12 @@ if enable_gudev
   ]
 
   executable(
-    'csd-wacom-oled-helper',
-    'csd-wacom-oled-helper.c',
+    'scsd-wacom-oled-helper',
+    'scsd-wacom-oled-helper.c',
     include_directories: top_inc,
     dependencies: deps,
     install: true,
-    install_rpath: csd_pkglibdir,
-    install_dir: csd_libexecdir
+    install_rpath: scsd_pkglibdir,
+    install_dir: scsd_libexecdir
   )
 endif

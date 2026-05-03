@@ -4,9 +4,9 @@ sources = files(
 )
 
 dbus_ifaces = [
-  ['SessionManager', 'scarecrow-csd-session-manager-glue'],
-  ['ScreenSaver', 'scarecrow-csd-screen-saver-glue'],
-  ['Shell', 'scarecrow-csd-shell-glue']
+  ['SessionManager', 'scarecrow-scsd-session-manager-glue'],
+  ['ScreenSaver', 'scarecrow-scsd-screen-saver-glue'],
+  ['Shell', 'scarecrow-scsd-shell-glue']
 ]
 
 dbus_headers = []
@@ -49,17 +49,17 @@ if enable_wayland
   deps += wayland_client_dep
 endif
 
-libcsd = shared_library(
-  'scarecrow_csd',
+libscsd = shared_library(
+  'scarecrow_scsd',
   sources: sources + dbus_headers,
   include_directories: top_inc,
   dependencies: deps,
   install: true,
-  install_dir: csd_pkglibdir
+  install_dir: scsd_pkglibdir
 )
 
-libcsd_dep = declare_dependency(
+libscsd_dep = declare_dependency(
   sources: dbus_headers,
   include_directories: include_directories('.'),
-  link_with: libcsd
+  link_with: libscsd
 )

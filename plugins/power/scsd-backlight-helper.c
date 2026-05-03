@@ -38,7 +38,7 @@
 #define GSD_BACKLIGHT_HELPER_EXIT_CODE_INVALID_USER		4
 
 #ifndef __linux__
-#error "csd-backlight-helper does not work on non-Linux"
+#error "scsd-backlight-helper does not work on non-Linux"
 #endif
 
 static void

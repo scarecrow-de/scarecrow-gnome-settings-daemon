@@ -25,13 +25,13 @@
 
 G_BEGIN_DECLS
 
-#define GSD_TYPE_COLOR_CALIBRATE         (csd_color_calibrate_get_type ())
-G_DECLARE_FINAL_TYPE (GsdColorCalibrate, csd_color_calibrate, GSD, COLOR_CALIBRATE, GObject)
+#define GSD_TYPE_COLOR_CALIBRATE         (scsd_color_calibrate_get_type ())
+G_DECLARE_FINAL_TYPE (GsdColorCalibrate, scsd_color_calibrate, GSD, COLOR_CALIBRATE, GObject)
 
-GType                   csd_color_calibrate_get_type            (void);
-GQuark                  csd_color_calibrate_error_quark         (void);
+GType                   scsd_color_calibrate_get_type            (void);
+GQuark                  scsd_color_calibrate_error_quark         (void);
 
-GsdColorCalibrate *     csd_color_calibrate_new                 (void);
+GsdColorCalibrate *     scsd_color_calibrate_new                 (void);
 
 G_END_DECLS
 

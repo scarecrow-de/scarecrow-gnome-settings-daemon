@@ -1,10 +1,10 @@
 common_files = files(
-  'csd-disk-space.c',
-  'csd-disk-space-helper.c'
+  'scsd-disk-space.c',
+  'scsd-disk-space-helper.c'
 )
 
 sources = common_files + files(
-  'csd-housekeeping-manager.c',
+  'scsd-housekeeping-manager.c',
   'main.c'
 )
 
@@ -15,20 +15,20 @@ deps = plugins_deps + [
 ]
 
 executable(
-  'csd-' + plugin_name,
+  'scsd-' + plugin_name,
   sources,
   include_directories: [top_inc, common_inc],
   dependencies: deps,
   c_args: cflags,
   install: true,
-  install_rpath: csd_pkglibdir,
-  install_dir: csd_libexecdir
+  install_rpath: scsd_pkglibdir,
+  install_dir: scsd_libexecdir
 )
 
 programs = [
-  'csd-disk-space-test',
-  'csd-empty-trash-test',
-  'csd-purge-temp-test'
+  'scsd-disk-space-test',
+  'scsd-empty-trash-test',
+  'scsd-purge-temp-test'
 ]
 
 foreach program: programs

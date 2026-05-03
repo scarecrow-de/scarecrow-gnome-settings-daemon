@@ -22,7 +22,7 @@
 #include <glib/gi18n-lib.h>
 #include <gio/gio.h>
 
-#include "csd-xsettings-gtk.h"
+#include "scsd-xsettings-gtk.h"
 
 #define XSETTINGS_PLUGIN_SCHEMA "io.github.scarecrow_de.settings-daemon.plugins.xsettings"
 
@@ -49,7 +49,7 @@ struct _GsdXSettingsGtk {
         GList             *cond_settings;
 };
 
-G_DEFINE_TYPE(GsdXSettingsGtk, csd_xsettings_gtk, G_TYPE_OBJECT)
+G_DEFINE_TYPE(GsdXSettingsGtk, scsd_xsettings_gtk, G_TYPE_OBJECT)
 
 static void update_gtk_modules (GsdXSettingsGtk *gtk);
 
@@ -280,7 +280,7 @@ gtk_modules_dir_changed_cb (GFileMonitor     *monitor,
 }
 
 static void
-csd_xsettings_gtk_init (GsdXSettingsGtk *gtk)
+scsd_xsettings_gtk_init (GsdXSettingsGtk *gtk)
 {
         GFile *file;
 
@@ -307,7 +307,7 @@ csd_xsettings_gtk_init (GsdXSettingsGtk *gtk)
 }
 
 static void
-csd_xsettings_gtk_finalize (GObject *object)
+scsd_xsettings_gtk_finalize (GObject *object)
 {
         GsdXSettingsGtk *gtk;
 
@@ -335,11 +335,11 @@ csd_xsettings_gtk_finalize (GObject *object)
 
         empty_cond_settings_list (gtk);
 
-        G_OBJECT_CLASS (csd_xsettings_gtk_parent_class)->finalize (object);
+        G_OBJECT_CLASS (scsd_xsettings_gtk_parent_class)->finalize (object);
 }
 
 static void
-csd_xsettings_gtk_get_property (GObject        *object,
+scsd_xsettings_gtk_get_property (GObject        *object,
                                 guint           prop_id,
                                 GValue         *value,
                                 GParamSpec     *pspec)
@@ -359,12 +359,12 @@ csd_xsettings_gtk_get_property (GObject        *object,
 }
 
 static void
-csd_xsettings_gtk_class_init (GsdXSettingsGtkClass *klass)
+scsd_xsettings_gtk_class_init (GsdXSettingsGtkClass *klass)
 {
         GObjectClass *object_class = G_OBJECT_CLASS (klass);
 
-        object_class->get_property = csd_xsettings_gtk_get_property;
-        object_class->finalize = csd_xsettings_gtk_finalize;
+        object_class->get_property = scsd_xsettings_gtk_get_property;
+        object_class->finalize = scsd_xsettings_gtk_finalize;
 
         g_object_class_install_property (object_class, PROP_GTK_MODULES,
                                          g_param_spec_string ("gtk-modules", NULL, NULL,
@@ -372,13 +372,13 @@ csd_xsettings_gtk_class_init (GsdXSettingsGtkClass *klass)
 }
 
 GsdXSettingsGtk *
-csd_xsettings_gtk_new (void)
+scsd_xsettings_gtk_new (void)
 {
         return GSD_XSETTINGS_GTK (g_object_new (GSD_TYPE_XSETTINGS_GTK, NULL));
 }
 
 const char *
-csd_xsettings_gtk_get_modules (GsdXSettingsGtk *gtk)
+scsd_xsettings_gtk_get_modules (GsdXSettingsGtk *gtk)
 {
         return gtk->modules;
 }

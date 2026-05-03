@@ -24,14 +24,14 @@
 
 G_BEGIN_DECLS
 
-#define GSD_TYPE_SHARING_MANAGER         (csd_sharing_manager_get_type ())
+#define GSD_TYPE_SHARING_MANAGER         (scsd_sharing_manager_get_type ())
 
-G_DECLARE_FINAL_TYPE (GsdSharingManager, csd_sharing_manager, GSD, SHARING_MANAGER, GObject)
+G_DECLARE_FINAL_TYPE (GsdSharingManager, scsd_sharing_manager, GSD, SHARING_MANAGER, GObject)
 
-GsdSharingManager *     csd_sharing_manager_new                 (void);
-gboolean                csd_sharing_manager_start               (GsdSharingManager *manager,
+GsdSharingManager *     scsd_sharing_manager_new                 (void);
+gboolean                scsd_sharing_manager_start               (GsdSharingManager *manager,
                                                                GError         **error);
-void                    csd_sharing_manager_stop                (GsdSharingManager *manager);
+void                    scsd_sharing_manager_stop                (GsdSharingManager *manager);
 
 G_END_DECLS
 

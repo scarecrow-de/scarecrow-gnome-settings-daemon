@@ -34,7 +34,7 @@
 #include <gio/gio.h>
 #include <pulse/pulseaudio.h>
 
-#include "csd-sound-manager.h"
+#include "scsd-sound-manager.h"
 #include "scarecrow-settings-profile.h"
 
 struct _GsdSoundManager
@@ -46,11 +46,11 @@ struct _GsdSoundManager
         guint      timeout;
 };
 
-static void csd_sound_manager_class_init (GsdSoundManagerClass *klass);
-static void csd_sound_manager_init (GsdSoundManager *sound_manager);
-static void csd_sound_manager_finalize (GObject *object);
+static void scsd_sound_manager_class_init (GsdSoundManagerClass *klass);
+static void scsd_sound_manager_init (GsdSoundManager *sound_manager);
+static void scsd_sound_manager_finalize (GObject *object);
 
-G_DEFINE_TYPE (GsdSoundManager, csd_sound_manager, G_TYPE_OBJECT)
+G_DEFINE_TYPE (GsdSoundManager, scsd_sound_manager, G_TYPE_OBJECT)
 
 static gpointer manager_object = NULL;
 
@@ -251,7 +251,7 @@ register_directory_callback (GsdSoundManager *manager,
 }
 
 gboolean
-csd_sound_manager_start (GsdSoundManager *manager,
+scsd_sound_manager_start (GsdSoundManager *manager,
                          GError **error)
 {
         guint i;
@@ -286,7 +286,7 @@ csd_sound_manager_start (GsdSoundManager *manager,
 }
 
 void
-csd_sound_manager_stop (GsdSoundManager *manager)
+scsd_sound_manager_stop (GsdSoundManager *manager)
 {
         g_debug ("Stopping sound manager");
 
@@ -308,33 +308,33 @@ csd_sound_manager_stop (GsdSoundManager *manager)
 }
 
 static void
-csd_sound_manager_dispose (GObject *object)
+scsd_sound_manager_dispose (GObject *object)
 {
         GsdSoundManager *manager;
 
         manager = GSD_SOUND_MANAGER (object);
 
-        csd_sound_manager_stop (manager);
+        scsd_sound_manager_stop (manager);
 
-        G_OBJECT_CLASS (csd_sound_manager_parent_class)->dispose (object);
+        G_OBJECT_CLASS (scsd_sound_manager_parent_class)->dispose (object);
 }
 
 static void
-csd_sound_manager_class_init (GsdSoundManagerClass *klass)
+scsd_sound_manager_class_init (GsdSoundManagerClass *klass)
 {
         GObjectClass *object_class = G_OBJECT_CLASS (klass);
 
-        object_class->dispose = csd_sound_manager_dispose;
-        object_class->finalize = csd_sound_manager_finalize;
+        object_class->dispose = scsd_sound_manager_dispose;
+        object_class->finalize = scsd_sound_manager_finalize;
 }
 
 static void
-csd_sound_manager_init (GsdSoundManager *manager)
+scsd_sound_manager_init (GsdSoundManager *manager)
 {
 }
 
 static void
-csd_sound_manager_finalize (GObject *object)
+scsd_sound_manager_finalize (GObject *object)
 {
         GsdSoundManager *sound_manager;
 
@@ -345,11 +345,11 @@ csd_sound_manager_finalize (GObject *object)
 
         g_return_if_fail (sound_manager);
 
-        G_OBJECT_CLASS (csd_sound_manager_parent_class)->finalize (object);
+        G_OBJECT_CLASS (scsd_sound_manager_parent_class)->finalize (object);
 }
 
 GsdSoundManager *
-csd_sound_manager_new (void)
+scsd_sound_manager_new (void)
 {
         if (manager_object) {
                 g_object_ref (manager_object);

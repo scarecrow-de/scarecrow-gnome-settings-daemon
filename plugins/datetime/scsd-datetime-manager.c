@@ -23,8 +23,8 @@
 #include <glib/gi18n.h>
 #include <libnotify/notify.h>
 
-#include "csd-datetime-manager.h"
-#include "csd-timezone-monitor.h"
+#include "scsd-datetime-manager.h"
+#include "scsd-timezone-monitor.h"
 #include "scarecrow-settings-profile.h"
 
 #define DATETIME_SCHEMA "io.github.scarecrow_de.desktop.datetime"
@@ -39,11 +39,11 @@ struct _GsdDatetimeManager
         NotifyNotification *notification;
 };
 
-static void csd_datetime_manager_class_init (GsdDatetimeManagerClass *klass);
-static void csd_datetime_manager_init (GsdDatetimeManager *manager);
-static void csd_datetime_manager_finalize (GObject *object);
+static void scsd_datetime_manager_class_init (GsdDatetimeManagerClass *klass);
+static void scsd_datetime_manager_init (GsdDatetimeManager *manager);
+static void scsd_datetime_manager_finalize (GObject *object);
 
-G_DEFINE_TYPE (GsdDatetimeManager, csd_datetime_manager, G_TYPE_OBJECT)
+G_DEFINE_TYPE (GsdDatetimeManager, scsd_datetime_manager, G_TYPE_OBJECT)
 
 static gpointer manager_object = NULL;
 
@@ -135,7 +135,7 @@ auto_timezone_settings_changed_cb (GSettings          *settings,
         enabled = g_settings_get_boolean (settings, key);
         if (enabled && self->timezone_monitor == NULL) {
                 g_debug ("Automatic timezone enabled");
-                self->timezone_monitor = csd_timezone_monitor_new ();
+                self->timezone_monitor = scsd_timezone_monitor_new ();
 
                 g_signal_connect (self->timezone_monitor, "timezone-changed",
                                   G_CALLBACK (timezone_changed_cb), self);
@@ -146,7 +146,7 @@ auto_timezone_settings_changed_cb (GSettings          *settings,
 }
 
 gboolean
-csd_datetime_manager_start (GsdDatetimeManager *self,
+scsd_datetime_manager_start (GsdDatetimeManager *self,
                             GError            **error)
 {
         g_debug ("Starting datetime manager");
@@ -164,7 +164,7 @@ csd_datetime_manager_start (GsdDatetimeManager *self,
 }
 
 void
-csd_datetime_manager_stop (GsdDatetimeManager *self)
+scsd_datetime_manager_stop (GsdDatetimeManager *self)
 {
         g_debug ("Stopping datetime manager");
 
@@ -180,22 +180,22 @@ csd_datetime_manager_stop (GsdDatetimeManager *self)
 }
 
 static void
-csd_datetime_manager_class_init (GsdDatetimeManagerClass *klass)
+scsd_datetime_manager_class_init (GsdDatetimeManagerClass *klass)
 {
         GObjectClass *object_class = G_OBJECT_CLASS (klass);
 
-        object_class->finalize = csd_datetime_manager_finalize;
+        object_class->finalize = scsd_datetime_manager_finalize;
 
         notify_init ("scarecrow-settings-daemon");
 }
 
 static void
-csd_datetime_manager_init (GsdDatetimeManager *manager)
+scsd_datetime_manager_init (GsdDatetimeManager *manager)
 {
 }
 
 static void
-csd_datetime_manager_finalize (GObject *object)
+scsd_datetime_manager_finalize (GObject *object)
 {
         GsdDatetimeManager *manager;
 
@@ -206,13 +206,13 @@ csd_datetime_manager_finalize (GObject *object)
 
         g_return_if_fail (manager != NULL);
 
-        csd_datetime_manager_stop (manager);
+        scsd_datetime_manager_stop (manager);
 
-        G_OBJECT_CLASS (csd_datetime_manager_parent_class)->finalize (object);
+        G_OBJECT_CLASS (scsd_datetime_manager_parent_class)->finalize (object);
 }
 
 GsdDatetimeManager *
-csd_datetime_manager_new (void)
+scsd_datetime_manager_new (void)
 {
         if (manager_object != NULL) {
                 g_object_ref (manager_object);

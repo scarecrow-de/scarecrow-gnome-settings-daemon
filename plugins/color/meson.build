@@ -1,12 +1,12 @@
 sources = files(
   'gcm-edid.c',
   'scarecrow-datetime-source.c',
-  'csd-color-calibrate.c',
-  'csd-color-manager.c',
-  'csd-color-profiles.c',
-  'csd-color-state.c',
-  'csd-night-light.c',
-  'csd-night-light-common.c',
+  'scsd-color-calibrate.c',
+  'scsd-color-manager.c',
+  'scsd-color-profiles.c',
+  'scsd-color-state.c',
+  'scsd-night-light.c',
+  'scsd-night-light-common.c',
   'main.c'
 )
 
@@ -20,25 +20,25 @@ deps = plugins_deps + [
   m_dep,
 ]
 
-cflags += ['-DBINDIR="@0@"'.format(csd_bindir)]
+cflags += ['-DBINDIR="@0@"'.format(scsd_bindir)]
 
 executable(
-  'csd-' + plugin_name,
+  'scsd-' + plugin_name,
   sources,
   include_directories: [top_inc, common_inc],
   dependencies: deps,
   c_args: cflags,
   install: true,
-  install_rpath: csd_pkglibdir,
-  install_dir: csd_libexecdir
+  install_rpath: scsd_pkglibdir,
+  install_dir: scsd_libexecdir
 )
 
 sources = files(
   'gcm-edid.c',
   'gcm-self-test.c',
   'scarecrow-datetime-source.c',
-  'csd-night-light.c',
-  'csd-night-light-common.c'
+  'scsd-night-light.c',
+  'scsd-night-light-common.c'
 )
 
 test_unit = 'gcm-self-test'

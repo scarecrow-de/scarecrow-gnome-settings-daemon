@@ -1,4 +1,4 @@
-/* csd-screenshot-utils.c - utilities to take screenshots
+/* scsd-screenshot-utils.c - utilities to take screenshots
  *
  * Copyright (C) 2012 Red Hat, Inc.
  *
@@ -30,7 +30,7 @@
 #include <string.h>
 #include <glib/gstdio.h>
 
-#include "csd-screenshot-utils.h"
+#include "scsd-screenshot-utils.h"
 
 #define SHELL_SCREENSHOT_BUS_NAME "io.github.scarecrow_de.Shell"
 #define SHELL_SCREENSHOT_BUS_PATH "/io/github/scarecrow_de/Shell/Screenshot"
@@ -279,7 +279,7 @@ screenshot_check_name_ready (ScreenshotContext *ctx)
 }
 
 void
-csd_screenshot_take (MediaKeyType key_type)
+scsd_screenshot_take (MediaKeyType key_type)
 {
   ScreenshotContext *ctx = g_slice_new0 (ScreenshotContext);
 

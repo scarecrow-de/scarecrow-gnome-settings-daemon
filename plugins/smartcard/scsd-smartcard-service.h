@@ -24,7 +24,7 @@
 #include <glib.h>
 #include <glib-object.h>
 #include <gio/gio.h>
-#include "csd-smartcard-manager.h"
+#include "scsd-smartcard-manager.h"
 
 #include "io.github.scarecrow_de.SettingsDaemon.Smartcard.h"
 
@@ -37,20 +37,20 @@
 
 G_BEGIN_DECLS
 
-#define GSD_TYPE_SMARTCARD_SERVICE (csd_smartcard_service_get_type ())
+#define GSD_TYPE_SMARTCARD_SERVICE (scsd_smartcard_service_get_type ())
 
-G_DECLARE_FINAL_TYPE (GsdSmartcardService, csd_smartcard_service, GSD, SMARTCARD_SERVICE, GsdSmartcardServiceManagerSkeleton)
+G_DECLARE_FINAL_TYPE (GsdSmartcardService, scsd_smartcard_service, GSD, SMARTCARD_SERVICE, GsdSmartcardServiceManagerSkeleton)
 
-void  csd_smartcard_service_new_async (GsdSmartcardManager  *manager,
+void  scsd_smartcard_service_new_async (GsdSmartcardManager  *manager,
                                        GCancellable         *cancellable,
                                        GAsyncReadyCallback   callback,
                                        gpointer              user_data);
-GsdSmartcardService *csd_smartcard_service_new_finish (GAsyncResult         *result,
+GsdSmartcardService *scsd_smartcard_service_new_finish (GAsyncResult         *result,
                                                        GError              **error);
 
-void  csd_smartcard_service_register_driver (GsdSmartcardService  *service,
+void  scsd_smartcard_service_register_driver (GsdSmartcardService  *service,
                                              SECMODModule         *driver);
-void  csd_smartcard_service_sync_token (GsdSmartcardService  *service,
+void  scsd_smartcard_service_sync_token (GsdSmartcardService  *service,
                                         PK11SlotInfo         *slot_info,
                                         GCancellable         *cancellable);
 

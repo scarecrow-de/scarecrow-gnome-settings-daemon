@@ -30,8 +30,8 @@
 
 #include "scarecrow-settings-bus.h"
 #include "scarecrow-settings-profile.h"
-#include "csd-enums.h"
-#include "csd-usb-protection-manager.h"
+#include "scsd-enums.h"
+#include "scsd-usb-protection-manager.h"
 
 #define PRIVACY_SETTINGS "io.github.scarecrow_de.desktop.privacy"
 #define USB_PROTECTION "usb-protection"
@@ -122,9 +122,9 @@ typedef enum {
         PRESENCE_ATTRIBUTES
 } UsbGuardPresenceChanged;
 
-static void csd_usb_protection_manager_finalize (GObject *object);
+static void scsd_usb_protection_manager_finalize (GObject *object);
 
-G_DEFINE_TYPE (GsdUsbProtectionManager, csd_usb_protection_manager, G_TYPE_OBJECT)
+G_DEFINE_TYPE (GsdUsbProtectionManager, scsd_usb_protection_manager, G_TYPE_OBJECT)
 
 static gpointer manager_object = NULL;
 
@@ -494,7 +494,7 @@ on_screen_locked (GsdScreenSaver          *screen_saver,
 {
         g_autoptr(GError) error = NULL;
 
-        csd_screen_saver_call_lock_finish (screen_saver, result, &error);
+        scsd_screen_saver_call_lock_finish (screen_saver, result, &error);
 
         if (error) {
                 if (g_error_matches (error, G_IO_ERROR, G_IO_ERROR_CANCELLED))
@@ -619,7 +619,7 @@ on_usbguard_signal (GDBusProxy *proxy,
                          * HUB class, it is suspect. It could be a false positive because this could
                          * be a "smart" keyboard for example, but at this stage is better be safe. */
                         if (hid_or_hub && !has_other_classes) {
-                                csd_screen_saver_call_lock (manager->screensaver_proxy,
+                                scsd_screen_saver_call_lock (manager->screensaver_proxy,
                                                             manager->cancellable,
                                                             (GAsyncReadyCallback) on_screen_locked,
                                                             manager);
@@ -1088,7 +1088,7 @@ start_usb_protection_idle_cb (GsdUsbProtectionManager *manager)
 }
 
 gboolean
-csd_usb_protection_manager_start (GsdUsbProtectionManager *manager,
+scsd_usb_protection_manager_start (GsdUsbProtectionManager *manager,
                                   GError                 **error)
 {
         gnome_settings_profile_start (NULL);
@@ -1110,7 +1110,7 @@ csd_usb_protection_manager_start (GsdUsbProtectionManager *manager,
 }
 
 void
-csd_usb_protection_manager_stop (GsdUsbProtectionManager *manager)
+scsd_usb_protection_manager_stop (GsdUsbProtectionManager *manager)
 {
         g_debug ("Stopping USB protection manager");
 
@@ -1141,31 +1141,31 @@ csd_usb_protection_manager_stop (GsdUsbProtectionManager *manager)
 }
 
 static void
-csd_usb_protection_manager_class_init (GsdUsbProtectionManagerClass *klass)
+scsd_usb_protection_manager_class_init (GsdUsbProtectionManagerClass *klass)
 {
         GObjectClass *object_class = G_OBJECT_CLASS (klass);
 
-        object_class->finalize = csd_usb_protection_manager_finalize;
+        object_class->finalize = scsd_usb_protection_manager_finalize;
 }
 
 static void
-csd_usb_protection_manager_init (GsdUsbProtectionManager *manager)
+scsd_usb_protection_manager_init (GsdUsbProtectionManager *manager)
 {
 }
 
 static void
-csd_usb_protection_manager_finalize (GObject *object)
+scsd_usb_protection_manager_finalize (GObject *object)
 {
         GsdUsbProtectionManager *usb_protection_manager;
 
         usb_protection_manager = GSD_USB_PROTECTION_MANAGER (object);
-        csd_usb_protection_manager_stop (usb_protection_manager);
+        scsd_usb_protection_manager_stop (usb_protection_manager);
 
-        G_OBJECT_CLASS (csd_usb_protection_manager_parent_class)->finalize (object);
+        G_OBJECT_CLASS (scsd_usb_protection_manager_parent_class)->finalize (object);
 }
 
 GsdUsbProtectionManager *
-csd_usb_protection_manager_new (void)
+scsd_usb_protection_manager_new (void)
 {
         if (manager_object != NULL) {
                 g_object_ref (manager_object);

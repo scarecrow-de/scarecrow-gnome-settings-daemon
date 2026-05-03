@@ -1,5 +1,5 @@
 #include <glib-object.h>
-#include <csd-power-enums.h>
+#include <scsd-power-enums.h>
 #include <stdio.h>
 
 /* XXX: The following functions use printf, because otherwise there were

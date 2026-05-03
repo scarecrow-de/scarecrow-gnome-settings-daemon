@@ -1,5 +1,5 @@
 sources = files(
-  'csd-print-notifications-manager.c',
+  'scsd-print-notifications-manager.c',
   'main.c'
 )
 
@@ -9,29 +9,29 @@ deps = plugins_deps + [
   libnotify_dep
 ]
 
-cflags += ['-DLIBEXECDIR="@0@"'.format(csd_libexecdir)]
-cflags += ['-DBINDIR="@0@"'.format(csd_bindir)]
+cflags += ['-DLIBEXECDIR="@0@"'.format(scsd_libexecdir)]
+cflags += ['-DBINDIR="@0@"'.format(scsd_bindir)]
 
 executable(
-  'csd-' + plugin_name,
+  'scsd-' + plugin_name,
   sources,
   include_directories: [top_inc, common_inc],
   dependencies: deps,
   c_args: cflags,
   install: true,
-  install_rpath: csd_pkglibdir,
-  install_dir: csd_libexecdir
+  install_rpath: scsd_pkglibdir,
+  install_dir: scsd_libexecdir
 )
 
-program = 'csd-printer'
+program = 'scsd-printer'
 
 executable(
   program,
   program + '.c',
   include_directories: top_inc,
   dependencies: deps,
-  c_args: '-DGNOME_SETTINGS_LOCALEDIR="@0@"'.format(csd_localedir),
+  c_args: '-DGNOME_SETTINGS_LOCALEDIR="@0@"'.format(scsd_localedir),
   install: true,
-  install_rpath: csd_pkglibdir,
-  install_dir: csd_libexecdir
+  install_rpath: scsd_pkglibdir,
+  install_dir: scsd_libexecdir
 )

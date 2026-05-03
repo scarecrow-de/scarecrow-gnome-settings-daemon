@@ -25,14 +25,14 @@
 
 G_BEGIN_DECLS
 
-#define GSD_TYPE_WACOM_MANAGER         (csd_wacom_manager_get_type ())
+#define GSD_TYPE_WACOM_MANAGER         (scsd_wacom_manager_get_type ())
 
-G_DECLARE_FINAL_TYPE (GsdWacomManager, csd_wacom_manager, GSD, WACOM_MANAGER, GObject)
+G_DECLARE_FINAL_TYPE (GsdWacomManager, scsd_wacom_manager, GSD, WACOM_MANAGER, GObject)
 
-GsdWacomManager *       csd_wacom_manager_new                 (void);
-gboolean                csd_wacom_manager_start               (GsdWacomManager *manager,
+GsdWacomManager *       scsd_wacom_manager_new                 (void);
+gboolean                scsd_wacom_manager_start               (GsdWacomManager *manager,
                                                                GError         **error);
-void                    csd_wacom_manager_stop                (GsdWacomManager *manager);
+void                    scsd_wacom_manager_stop                (GsdWacomManager *manager);
 
 G_END_DECLS
 

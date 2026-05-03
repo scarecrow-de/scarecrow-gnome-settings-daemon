@@ -25,15 +25,15 @@
 
 G_BEGIN_DECLS
 
-#define GSD_TYPE_COLOR_PROFILES         (csd_color_profiles_get_type ())
-G_DECLARE_FINAL_TYPE (GsdColorProfiles, csd_color_profiles, GSD, COLOR_PROFILES, GObject)
+#define GSD_TYPE_COLOR_PROFILES         (scsd_color_profiles_get_type ())
+G_DECLARE_FINAL_TYPE (GsdColorProfiles, scsd_color_profiles, GSD, COLOR_PROFILES, GObject)
 
-GQuark                  csd_color_profiles_error_quark          (void);
+GQuark                  scsd_color_profiles_error_quark          (void);
 
-GsdColorProfiles *      csd_color_profiles_new                  (void);
-gboolean                csd_color_profiles_start                (GsdColorProfiles *profiles,
+GsdColorProfiles *      scsd_color_profiles_new                  (void);
+gboolean                scsd_color_profiles_start                (GsdColorProfiles *profiles,
                                                                  GError **error);
-void                    csd_color_profiles_stop                 (GsdColorProfiles *profiles);
+void                    scsd_color_profiles_stop                 (GsdColorProfiles *profiles);
 
 G_END_DECLS
 

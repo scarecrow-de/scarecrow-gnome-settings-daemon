@@ -25,32 +25,32 @@
 
 G_BEGIN_DECLS
 
-#define GSD_TYPE_NIGHT_LIGHT (csd_night_light_get_type ())
-G_DECLARE_FINAL_TYPE (GsdNightLight, csd_night_light, GSD, NIGHT_LIGHT, GObject)
+#define GSD_TYPE_NIGHT_LIGHT (scsd_night_light_get_type ())
+G_DECLARE_FINAL_TYPE (GsdNightLight, scsd_night_light, GSD, NIGHT_LIGHT, GObject)
 
-GsdNightLight   *csd_night_light_new                    (void);
-gboolean         csd_night_light_start                  (GsdNightLight *self,
+GsdNightLight   *scsd_night_light_new                    (void);
+gboolean         scsd_night_light_start                  (GsdNightLight *self,
                                                          GError       **error);
 
-gboolean         csd_night_light_get_active             (GsdNightLight *self);
-gdouble          csd_night_light_get_sunrise            (GsdNightLight *self);
-gdouble          csd_night_light_get_sunset             (GsdNightLight *self);
-gdouble          csd_night_light_get_temperature        (GsdNightLight *self);
+gboolean         scsd_night_light_get_active             (GsdNightLight *self);
+gdouble          scsd_night_light_get_sunrise            (GsdNightLight *self);
+gdouble          scsd_night_light_get_sunset             (GsdNightLight *self);
+gdouble          scsd_night_light_get_temperature        (GsdNightLight *self);
 
-gboolean         csd_night_light_get_disabled_until_tmw (GsdNightLight *self);
-void             csd_night_light_set_disabled_until_tmw (GsdNightLight *self,
+gboolean         scsd_night_light_get_disabled_until_tmw (GsdNightLight *self);
+void             scsd_night_light_set_disabled_until_tmw (GsdNightLight *self,
                                                          gboolean       value);
 
-gboolean         csd_night_light_get_forced             (GsdNightLight *self);
-void             csd_night_light_set_forced             (GsdNightLight *self,
+gboolean         scsd_night_light_get_forced             (GsdNightLight *self);
+void             scsd_night_light_set_forced             (GsdNightLight *self,
                                                          gboolean       value);
 
 /* only for the self test program */
-void             csd_night_light_set_geoclue_enabled    (GsdNightLight *self,
+void             scsd_night_light_set_geoclue_enabled    (GsdNightLight *self,
                                                          gboolean       enabled);
-void             csd_night_light_set_date_time_now      (GsdNightLight *self,
+void             scsd_night_light_set_date_time_now      (GsdNightLight *self,
                                                          GDateTime     *datetime);
-void             csd_night_light_set_smooth_enabled     (GsdNightLight *self,
+void             scsd_night_light_set_smooth_enabled     (GsdNightLight *self,
                                                          gboolean       smooth_enabled);
 
 G_END_DECLS

@@ -24,14 +24,14 @@
 
 G_BEGIN_DECLS
 
-#define GSD_TYPE_KEYBOARD_MANAGER         (csd_keyboard_manager_get_type ())
+#define GSD_TYPE_KEYBOARD_MANAGER         (scsd_keyboard_manager_get_type ())
 
-G_DECLARE_FINAL_TYPE (GsdKeyboardManager, csd_keyboard_manager, GSD, KEYBOARD_MANAGER, GObject)
+G_DECLARE_FINAL_TYPE (GsdKeyboardManager, scsd_keyboard_manager, GSD, KEYBOARD_MANAGER, GObject)
 
-GsdKeyboardManager *       csd_keyboard_manager_new                 (void);
-gboolean                csd_keyboard_manager_start               (GsdKeyboardManager *manager,
+GsdKeyboardManager *       scsd_keyboard_manager_new                 (void);
+gboolean                scsd_keyboard_manager_start               (GsdKeyboardManager *manager,
                                                                GError         **error);
-void                    csd_keyboard_manager_stop                (GsdKeyboardManager *manager);
+void                    scsd_keyboard_manager_stop                (GsdKeyboardManager *manager);
 
 G_END_DECLS
 

@@ -25,7 +25,7 @@
 #include <libnotify/notify.h>
 #include <canberra-gtk.h>
 
-#include "csd-color-calibrate.h"
+#include "scsd-color-calibrate.h"
 
 #define GCM_SESSION_NOTIFY_TIMEOUT                      30000 /* ms */
 #define GCM_SETTINGS_RECALIBRATE_PRINTER_THRESHOLD      "recalibrate-printer-threshold"
@@ -39,11 +39,11 @@ struct _GsdColorCalibrate
         GSettings       *settings;
 };
 
-static void     csd_color_calibrate_class_init  (GsdColorCalibrateClass *klass);
-static void     csd_color_calibrate_init        (GsdColorCalibrate      *color_calibrate);
-static void     csd_color_calibrate_finalize    (GObject             *object);
+static void     scsd_color_calibrate_class_init  (GsdColorCalibrateClass *klass);
+static void     scsd_color_calibrate_init        (GsdColorCalibrate      *color_calibrate);
+static void     scsd_color_calibrate_finalize    (GObject             *object);
 
-G_DEFINE_TYPE (GsdColorCalibrate, csd_color_calibrate, G_TYPE_OBJECT)
+G_DEFINE_TYPE (GsdColorCalibrate, scsd_color_calibrate, G_TYPE_OBJECT)
 
 typedef struct {
         GsdColorCalibrate       *calibrate;
@@ -364,15 +364,15 @@ gcm_session_sensor_removed_cb (CdClient *client,
 }
 
 static void
-csd_color_calibrate_class_init (GsdColorCalibrateClass *klass)
+scsd_color_calibrate_class_init (GsdColorCalibrateClass *klass)
 {
         GObjectClass   *object_class = G_OBJECT_CLASS (klass);
 
-        object_class->finalize = csd_color_calibrate_finalize;
+        object_class->finalize = scsd_color_calibrate_finalize;
 }
 
 static void
-csd_color_calibrate_init (GsdColorCalibrate *calibrate)
+scsd_color_calibrate_init (GsdColorCalibrate *calibrate)
 {
         calibrate->settings = g_settings_new ("io.github.scarecrow_de.settings-daemon.plugins.color");
         calibrate->client = cd_client_new ();
@@ -388,7 +388,7 @@ csd_color_calibrate_init (GsdColorCalibrate *calibrate)
 }
 
 static void
-csd_color_calibrate_finalize (GObject *object)
+scsd_color_calibrate_finalize (GObject *object)
 {
         GsdColorCalibrate *calibrate;
 
@@ -400,11 +400,11 @@ csd_color_calibrate_finalize (GObject *object)
         g_clear_object (&calibrate->settings);
         g_clear_object (&calibrate->client);
 
-        G_OBJECT_CLASS (csd_color_calibrate_parent_class)->finalize (object);
+        G_OBJECT_CLASS (scsd_color_calibrate_parent_class)->finalize (object);
 }
 
 GsdColorCalibrate *
-csd_color_calibrate_new (void)
+scsd_color_calibrate_new (void)
 {
         GsdColorCalibrate *calibrate;
         calibrate = g_object_new (GSD_TYPE_COLOR_CALIBRATE, NULL);

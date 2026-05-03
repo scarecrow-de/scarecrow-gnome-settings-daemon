@@ -20,10 +20,10 @@
 #include "config.h"
 #include <stdlib.h>
 
-#include "csd-backlight.h"
+#include "scsd-backlight.h"
 #include "gpm-common.h"
-#include "csd-power-constants.h"
-#include "csd-power-manager.h"
+#include "scsd-power-constants.h"
+#include "scsd-power-manager.h"
 
 #ifdef __linux__
 #include <gudev/gudev.h>
@@ -67,19 +67,19 @@ enum {
 
 static GParamSpec *props[PROP_LAST];
 
-static void     csd_backlight_initable_iface_init (GInitableIface  *iface);
-static gboolean csd_backlight_initable_init       (GInitable       *initable,
+static void     scsd_backlight_initable_iface_init (GInitableIface  *iface);
+static gboolean scsd_backlight_initable_init       (GInitable       *initable,
                                                    GCancellable    *cancellable,
                                                    GError         **error);
 
 
-G_DEFINE_TYPE_EXTENDED (GsdBacklight, csd_backlight, G_TYPE_OBJECT, 0,
+G_DEFINE_TYPE_EXTENDED (GsdBacklight, scsd_backlight, G_TYPE_OBJECT, 0,
                         G_IMPLEMENT_INTERFACE (G_TYPE_INITABLE,
-                                               csd_backlight_initable_iface_init);)
+                                               scsd_backlight_initable_iface_init);)
 
 #ifdef __linux__
 static GUdevDevice*
-csd_backlight_udev_get_type (GList *devices, const gchar *type)
+scsd_backlight_udev_get_type (GList *devices, const gchar *type)
 {
         const gchar *type_tmp;
         GList *d;
@@ -100,7 +100,7 @@ csd_backlight_udev_get_type (GList *devices, const gchar *type)
  * raw backlight interface if no enabled interface is found.
  */
 static GUdevDevice*
-csd_backlight_udev_get_raw (GList *devices)
+scsd_backlight_udev_get_raw (GList *devices)
 {
         GUdevDevice *parent;
         const gchar *attr;
@@ -122,11 +122,11 @@ csd_backlight_udev_get_raw (GList *devices)
                 return G_UDEV_DEVICE (g_object_ref (d->data));
         }
 
-        return csd_backlight_udev_get_type (devices, "raw");
+        return scsd_backlight_udev_get_type (devices, "raw");
 }
 
 static void
-csd_backlight_udev_resolve (GsdBacklight *backlight)
+scsd_backlight_udev_resolve (GsdBacklight *backlight)
 {
         g_autolist(GUdevDevice) devices = NULL;
 
@@ -138,21 +138,21 @@ csd_backlight_udev_resolve (GsdBacklight *backlight)
 
         /* Search the backlight devices and prefer the types:
          * firmware -> platform -> raw */
-        backlight->udev_device = csd_backlight_udev_get_type (devices, "firmware");
+        backlight->udev_device = scsd_backlight_udev_get_type (devices, "firmware");
         if (backlight->udev_device != NULL)
                 return;
 
-        backlight->udev_device = csd_backlight_udev_get_type (devices, "platform");
+        backlight->udev_device = scsd_backlight_udev_get_type (devices, "platform");
         if (backlight->udev_device != NULL)
                 return;
 
-        backlight->udev_device = csd_backlight_udev_get_raw (devices);
+        backlight->udev_device = scsd_backlight_udev_get_raw (devices);
         if (backlight->udev_device != NULL)
                 return;
 }
 
 static gboolean
-csd_backlight_udev_idle_update_cb (GsdBacklight *backlight)
+scsd_backlight_udev_idle_update_cb (GsdBacklight *backlight)
 {
         g_autoptr(GError) error = NULL;
         gint brightness;
@@ -186,17 +186,17 @@ csd_backlight_udev_idle_update_cb (GsdBacklight *backlight)
 }
 
 static void
-csd_backlight_udev_idle_update (GsdBacklight *backlight)
+scsd_backlight_udev_idle_update (GsdBacklight *backlight)
 {
         if (backlight->idle_update)
                 return;
 
-        backlight->idle_update = g_idle_add ((GSourceFunc) csd_backlight_udev_idle_update_cb, backlight);
+        backlight->idle_update = g_idle_add ((GSourceFunc) scsd_backlight_udev_idle_update_cb, backlight);
 }
 
 
 static void
-csd_backlight_udev_uevent (GUdevClient *client, const gchar *action, GUdevDevice *device, gpointer user_data)
+scsd_backlight_udev_uevent (GUdevClient *client, const gchar *action, GUdevDevice *device, gpointer user_data)
 {
         GsdBacklight *backlight = GSD_BACKLIGHT (user_data);
 
@@ -213,18 +213,18 @@ csd_backlight_udev_uevent (GUdevClient *client, const gchar *action, GUdevDevice
 
         g_debug ("GsdBacklight: Got uevent");
 
-        csd_backlight_udev_idle_update (backlight);
+        scsd_backlight_udev_idle_update (backlight);
 }
 
 
 static gboolean
-csd_backlight_udev_init (GsdBacklight *backlight)
+scsd_backlight_udev_init (GsdBacklight *backlight)
 {
         const gchar* const subsystems[] = {"backlight", NULL};
         gint brightness_val;
 
         backlight->udev = g_udev_client_new (subsystems);
-        csd_backlight_udev_resolve (backlight);
+        scsd_backlight_udev_resolve (backlight);
         if (backlight->udev_device == NULL)
                 return FALSE;
 
@@ -254,7 +254,7 @@ csd_backlight_udev_init (GsdBacklight *backlight)
                  backlight->brightness_min, backlight->brightness_max, backlight->brightness_val);
 
         g_signal_connect_object (backlight->udev, "uevent",
-                                 G_CALLBACK (csd_backlight_udev_uevent),
+                                 G_CALLBACK (scsd_backlight_udev_uevent),
                                  backlight, 0);
 
         return TRUE;
@@ -266,7 +266,7 @@ typedef struct {
         char *value_str;
 } BacklightHelperData;
 
-static void csd_backlight_process_taskqueue (GsdBacklight *backlight);
+static void scsd_backlight_process_taskqueue (GsdBacklight *backlight);
 
 static void
 backlight_task_data_destroy (gpointer data)
@@ -278,7 +278,7 @@ backlight_task_data_destroy (gpointer data)
 }
 
 static void
-csd_backlight_set_helper_return (GsdBacklight *backlight, GTask *task, gint result, const GError *error)
+scsd_backlight_set_helper_return (GsdBacklight *backlight, GTask *task, gint result, const GError *error)
 {
         GTask *finished_task;
         gint percent = ABS_TO_PERCENTAGE (backlight->brightness_min, backlight->brightness_max, result);
@@ -299,7 +299,7 @@ csd_backlight_set_helper_return (GsdBacklight *backlight, GTask *task, gint resu
 
                 /* The udev handler won't read while a write is pending, so queue an
                  * update in case we have missed some events. */
-                csd_backlight_udev_idle_update (backlight);
+                scsd_backlight_udev_idle_update (backlight);
         }
 
         /* Return all the pending tasks up and including the one we actually
@@ -317,7 +317,7 @@ csd_backlight_set_helper_return (GsdBacklight *backlight, GTask *task, gint resu
 }
 
 static void
-csd_backlight_set_helper_finish (GObject *obj, GAsyncResult *res, gpointer user_data)
+scsd_backlight_set_helper_finish (GObject *obj, GAsyncResult *res, gpointer user_data)
 {
         g_autoptr(GSubprocess) proc = G_SUBPROCESS (obj);
         GTask *task = G_TASK (user_data);
@@ -338,17 +338,17 @@ csd_backlight_set_helper_finish (GObject *obj, GAsyncResult *res, gpointer user_
                 goto done;
 
 done:
-        csd_backlight_set_helper_return (backlight, task, data->value, error);
+        scsd_backlight_set_helper_return (backlight, task, data->value, error);
         /* Start processing any tasks that were added in the meantime. */
-        csd_backlight_process_taskqueue (backlight);
+        scsd_backlight_process_taskqueue (backlight);
 }
 
 static void
-csd_backlight_run_set_helper (GsdBacklight *backlight, GTask *task)
+scsd_backlight_run_set_helper (GsdBacklight *backlight, GTask *task)
 {
         GSubprocess *proc = NULL;
         BacklightHelperData *data = g_task_get_task_data (task);
-        const gchar *csd_backlight_helper = NULL;
+        const gchar *scsd_backlight_helper = NULL;
         GError *error = NULL;
 
         g_assert (backlight->active_task == NULL);
@@ -359,34 +359,34 @@ csd_backlight_run_set_helper (GsdBacklight *backlight, GTask *task)
 
         /* This is solely for use by the test environment. If given, execute
          * this helper instead of the internal helper using pkexec */
-        csd_backlight_helper = g_getenv ("GSD_BACKLIGHT_HELPER");
-        if (!csd_backlight_helper) {
+        scsd_backlight_helper = g_getenv ("GSD_BACKLIGHT_HELPER");
+        if (!scsd_backlight_helper) {
                 proc = g_subprocess_new (G_SUBPROCESS_FLAGS_STDOUT_SILENCE,
                                          &error,
                                          "pkexec",
-                                         LIBEXECDIR "/csd-backlight-helper",
+                                         LIBEXECDIR "/scsd-backlight-helper",
                                          g_udev_device_get_sysfs_path (backlight->udev_device),
                                          data->value_str, NULL);
         } else {
                 proc = g_subprocess_new (G_SUBPROCESS_FLAGS_STDOUT_SILENCE,
                                          &error,
-                                         csd_backlight_helper,
+                                         scsd_backlight_helper,
                                          g_udev_device_get_sysfs_path (backlight->udev_device),
                                          data->value_str, NULL);
         }
 
         if (proc == NULL) {
-                csd_backlight_set_helper_return (backlight, task, -1, error);
+                scsd_backlight_set_helper_return (backlight, task, -1, error);
                 return;
         }
 
         g_subprocess_wait_async (proc, g_task_get_cancellable (task),
-                                 csd_backlight_set_helper_finish,
+                                 scsd_backlight_set_helper_finish,
                                  task);
 }
 
 static void
-csd_backlight_process_taskqueue (GsdBacklight *backlight)
+scsd_backlight_process_taskqueue (GsdBacklight *backlight)
 {
         GTask *to_run;
 
@@ -400,12 +400,12 @@ csd_backlight_process_taskqueue (GsdBacklight *backlight)
                 return;
 
         /* And run it! */
-        csd_backlight_run_set_helper (backlight, to_run);
+        scsd_backlight_run_set_helper (backlight, to_run);
 }
 #endif /* __linux__ */
 
 static GnomeRROutput*
-csd_backlight_rr_find_output (GsdBacklight *backlight, gboolean controllable)
+scsd_backlight_rr_find_output (GsdBacklight *backlight, gboolean controllable)
 {
         GnomeRROutput *output = NULL;
         GnomeRROutput **outputs;
@@ -431,7 +431,7 @@ out:
 }
 
 /**
- * csd_backlight_get_brightness
+ * scsd_backlight_get_brightness
  * @backlight: a #GsdBacklight
  * @target: Output parameter for the value the target value of pending set operations.
  *
@@ -448,7 +448,7 @@ out:
  * Returns: The last stable backlight value or -1 if the internal display is disabled.
  **/
 gint
-csd_backlight_get_brightness (GsdBacklight *backlight, gint *target)
+scsd_backlight_get_brightness (GsdBacklight *backlight, gint *target)
 {
         if (backlight->builtin_display_disabled)
                 return -1;
@@ -460,7 +460,7 @@ csd_backlight_get_brightness (GsdBacklight *backlight, gint *target)
 }
 
 static void
-csd_backlight_set_brightness_val_async (GsdBacklight *backlight,
+scsd_backlight_set_brightness_val_async (GsdBacklight *backlight,
                                         int value,
                                         GCancellable *cancellable,
                                         GAsyncReadyCallback callback,
@@ -504,7 +504,7 @@ csd_backlight_set_brightness_val_async (GsdBacklight *backlight,
 
                         /* Task is set up now. Queue it and ensure we are working something. */
                         g_queue_push_tail (&backlight->tasks, task);
-                        csd_backlight_process_taskqueue (backlight);
+                        scsd_backlight_process_taskqueue (backlight);
                 }
 
                 return;
@@ -512,7 +512,7 @@ csd_backlight_set_brightness_val_async (GsdBacklight *backlight,
 #endif /* __linux__ */
 
         /* Fallback to setting via GNOME RR/X11 */
-        output = csd_backlight_rr_find_output (backlight, TRUE);
+        output = scsd_backlight_rr_find_output (backlight, TRUE);
         if (output) {
                 if (!gnome_rr_output_set_backlight (output, value, &error)) {
                         g_task_return_error (task, error);
@@ -521,7 +521,7 @@ csd_backlight_set_brightness_val_async (GsdBacklight *backlight,
                 }
                 backlight->brightness_val = gnome_rr_output_get_backlight (output);
                 g_object_notify_by_pspec (G_OBJECT (backlight), props[PROP_BRIGHTNESS]);
-                g_task_return_int (task, csd_backlight_get_brightness (backlight, NULL));
+                g_task_return_int (task, scsd_backlight_get_brightness (backlight, NULL));
                 g_object_unref (task);
 
                 return;
@@ -536,14 +536,14 @@ csd_backlight_set_brightness_val_async (GsdBacklight *backlight,
 }
 
 void
-csd_backlight_set_brightness_async (GsdBacklight *backlight,
+scsd_backlight_set_brightness_async (GsdBacklight *backlight,
                                     gint percent,
                                     GCancellable *cancellable,
                                     GAsyncReadyCallback callback,
                                     gpointer user_data)
 {
-        /* Overflow/underflow is handled by csd_backlight_set_brightness_val_async. */
-        csd_backlight_set_brightness_val_async (backlight,
+        /* Overflow/underflow is handled by scsd_backlight_set_brightness_val_async. */
+        scsd_backlight_set_brightness_val_async (backlight,
                                                 PERCENTAGE_TO_ABS (backlight->brightness_min, backlight->brightness_max, percent),
                                                 cancellable,
                                                 callback,
@@ -551,22 +551,22 @@ csd_backlight_set_brightness_async (GsdBacklight *backlight,
 }
 
 /**
- * csd_backlight_set_brightness_finish
+ * scsd_backlight_set_brightness_finish
  * @backlight: a #GsdBacklight
  * @res: the #GAsyncResult passed to the callback
  * @error: #GError return address
  *
- * Finish an operation started by csd_backlight_set_brightness_async(). Will
+ * Finish an operation started by scsd_backlight_set_brightness_async(). Will
  * return the value that was actually set (which may be different because of
  * rounding or as multiple set actions were queued up).
  *
- * Please note that a call to csd_backlight_get_brightness() may not in fact
+ * Please note that a call to scsd_backlight_get_brightness() may not in fact
  * return the same value if further operations to set the value are pending.
  *
  * Returns: The brightness in percent that was set.
  **/
 gint
-csd_backlight_set_brightness_finish (GsdBacklight *backlight,
+scsd_backlight_set_brightness_finish (GsdBacklight *backlight,
                                      GAsyncResult *res,
                                      GError **error)
 {
@@ -574,17 +574,17 @@ csd_backlight_set_brightness_finish (GsdBacklight *backlight,
 }
 
 void
-csd_backlight_step_up_async (GsdBacklight *backlight,
+scsd_backlight_step_up_async (GsdBacklight *backlight,
                              GCancellable *cancellable,
                              GAsyncReadyCallback callback,
                              gpointer user_data)
 {
         gint value;
 
-        /* Overflows are handled by csd_backlight_set_brightness_val_async. */
+        /* Overflows are handled by scsd_backlight_set_brightness_val_async. */
         value = backlight->brightness_target + backlight->brightness_step;
 
-        csd_backlight_set_brightness_val_async (backlight,
+        scsd_backlight_set_brightness_val_async (backlight,
                                                 value,
                                                 cancellable,
                                                 callback,
@@ -592,27 +592,27 @@ csd_backlight_step_up_async (GsdBacklight *backlight,
 }
 
 /**
- * csd_backlight_step_up_finish
+ * scsd_backlight_step_up_finish
  * @backlight: a #GsdBacklight
  * @res: the #GAsyncResult passed to the callback
  * @error: #GError return address
  *
- * Finish an operation started by csd_backlight_step_up_async(). Will return
+ * Finish an operation started by scsd_backlight_step_up_async(). Will return
  * the value that was actually set (which may be different because of rounding
  * or as multiple set actions were queued up).
  *
- * Please note that a call to csd_backlight_get_brightness() may not in fact
+ * Please note that a call to scsd_backlight_get_brightness() may not in fact
  * return the same value if further operations to set the value are pending.
  *
- * For simplicity it is also valid to call csd_backlight_set_brightness_finish()
+ * For simplicity it is also valid to call scsd_backlight_set_brightness_finish()
  * allowing sharing the callback routine for calls to
- * csd_backlight_set_brightness_async(), csd_backlight_step_up_async(),
- * csd_backlight_step_down_async() and csd_backlight_cycle_up_async().
+ * scsd_backlight_set_brightness_async(), scsd_backlight_step_up_async(),
+ * scsd_backlight_step_down_async() and scsd_backlight_cycle_up_async().
  *
  * Returns: The brightness in percent that was set.
  **/
 gint
-csd_backlight_step_up_finish (GsdBacklight *backlight,
+scsd_backlight_step_up_finish (GsdBacklight *backlight,
                               GAsyncResult *res,
                               GError **error)
 {
@@ -620,17 +620,17 @@ csd_backlight_step_up_finish (GsdBacklight *backlight,
 }
 
 void
-csd_backlight_step_down_async (GsdBacklight *backlight,
+scsd_backlight_step_down_async (GsdBacklight *backlight,
                                GCancellable *cancellable,
                                GAsyncReadyCallback callback,
                                gpointer user_data)
 {
         gint value;
 
-        /* Underflows are handled by csd_backlight_set_brightness_val_async. */
+        /* Underflows are handled by scsd_backlight_set_brightness_val_async. */
         value = backlight->brightness_target - backlight->brightness_step;
 
-        csd_backlight_set_brightness_val_async (backlight,
+        scsd_backlight_set_brightness_val_async (backlight,
                                                 value,
                                                 cancellable,
                                                 callback,
@@ -638,27 +638,27 @@ csd_backlight_step_down_async (GsdBacklight *backlight,
 }
 
 /**
- * csd_backlight_step_down_finish
+ * scsd_backlight_step_down_finish
  * @backlight: a #GsdBacklight
  * @res: the #GAsyncResult passed to the callback
  * @error: #GError return address
  *
- * Finish an operation started by csd_backlight_step_down_async(). Will return
+ * Finish an operation started by scsd_backlight_step_down_async(). Will return
  * the value that was actually set (which may be different because of rounding
  * or as multiple set actions were queued up).
  *
- * Please note that a call to csd_backlight_get_brightness() may not in fact
+ * Please note that a call to scsd_backlight_get_brightness() may not in fact
  * return the same value if further operations to set the value are pending.
  *
- * For simplicity it is also valid to call csd_backlight_set_brightness_finish()
+ * For simplicity it is also valid to call scsd_backlight_set_brightness_finish()
  * allowing sharing the callback routine for calls to
- * csd_backlight_set_brightness_async(), csd_backlight_step_up_async(),
- * csd_backlight_step_down_async() and csd_backlight_cycle_up_async().
+ * scsd_backlight_set_brightness_async(), scsd_backlight_step_up_async(),
+ * scsd_backlight_step_down_async() and scsd_backlight_cycle_up_async().
  *
  * Returns: The brightness in percent that was set.
  **/
 gint
-csd_backlight_step_down_finish (GsdBacklight *backlight,
+scsd_backlight_step_down_finish (GsdBacklight *backlight,
                                 GAsyncResult *res,
                                 GError **error)
 {
@@ -666,29 +666,29 @@ csd_backlight_step_down_finish (GsdBacklight *backlight,
 }
 
 /**
- * csd_backlight_cycle_up_async
+ * scsd_backlight_cycle_up_async
  * @backlight: a #GsdBacklight
  * @cancellable: an optional #GCancellable, NULL to ignore
  * @callback: the #GAsyncReadyCallback invoked for cycle up to be finished
  * @user_data: the #gpointer passed to the callback
  *
- * Start a brightness cycle up operation by csd_backlight_cycle_up_async().
+ * Start a brightness cycle up operation by scsd_backlight_cycle_up_async().
  * The brightness will be stepped up if it is not already at the maximum.
  * If it is already at the maximum, it will be set to the minimum brightness.
  **/
 void
-csd_backlight_cycle_up_async (GsdBacklight *backlight,
+scsd_backlight_cycle_up_async (GsdBacklight *backlight,
                               GCancellable *cancellable,
                               GAsyncReadyCallback callback,
                               gpointer user_data)
 {
         if (backlight->brightness_target < backlight->brightness_max)
-                csd_backlight_step_up_async (backlight,
+                scsd_backlight_step_up_async (backlight,
                                              cancellable,
                                              callback,
                                              user_data);
         else
-                csd_backlight_set_brightness_val_async (backlight,
+                scsd_backlight_set_brightness_val_async (backlight,
                                                         backlight->brightness_min,
                                                         cancellable,
                                                         callback,
@@ -696,27 +696,27 @@ csd_backlight_cycle_up_async (GsdBacklight *backlight,
 }
 
 /**
- * csd_backlight_cycle_up_finish
+ * scsd_backlight_cycle_up_finish
  * @backlight: a #GsdBacklight
  * @res: the #GAsyncResult passed to the callback
  * @error: #GError return address
  *
- * Finish an operation started by csd_backlight_cycle_up_async(). Will return
+ * Finish an operation started by scsd_backlight_cycle_up_async(). Will return
  * the value that was actually set (which may be different because of rounding
  * or as multiple set actions were queued up).
  *
- * Please note that a call to csd_backlight_get_brightness() may not in fact
+ * Please note that a call to scsd_backlight_get_brightness() may not in fact
  * return the same value if further operations to set the value are pending.
  *
- * For simplicity it is also valid to call csd_backlight_set_brightness_finish()
+ * For simplicity it is also valid to call scsd_backlight_set_brightness_finish()
  * allowing sharing the callback routine for calls to
- * csd_backlight_set_brightness_async(), csd_backlight_step_up_async(),
- * csd_backlight_step_down_async() and csd_backlight_cycle_up_async().
+ * scsd_backlight_set_brightness_async(), scsd_backlight_step_up_async(),
+ * scsd_backlight_step_down_async() and scsd_backlight_cycle_up_async().
  *
  * Returns: The brightness in percent that was set.
  **/
 gint
-csd_backlight_cycle_up_finish (GsdBacklight *backlight,
+scsd_backlight_cycle_up_finish (GsdBacklight *backlight,
                                GAsyncResult *res,
                                GError **error)
 {
@@ -724,7 +724,7 @@ csd_backlight_cycle_up_finish (GsdBacklight *backlight,
 }
 
 /**
- * csd_backlight_get_connector
+ * scsd_backlight_get_connector
  * @backlight: a #GsdBacklight
  *
  * Return the connector for the display that is being controlled by the
@@ -734,11 +734,11 @@ csd_backlight_cycle_up_finish (GsdBacklight *backlight,
  * Returns: The connector of the controlled output or NULL if unknown.
  **/
 const char*
-csd_backlight_get_connector (GsdBacklight *backlight)
+scsd_backlight_get_connector (GsdBacklight *backlight)
 {
         GnomeRROutput *output;
 
-        output = csd_backlight_rr_find_output (backlight, FALSE);
+        output = scsd_backlight_rr_find_output (backlight, FALSE);
         if (output == NULL)
                 return NULL;
 
@@ -746,7 +746,7 @@ csd_backlight_get_connector (GsdBacklight *backlight)
 }
 
 static void
-csd_backlight_rr_screen_changed_cb (GnomeRRScreen *screen,
+scsd_backlight_rr_screen_changed_cb (GnomeRRScreen *screen,
                                     gpointer data)
 {
         GsdBacklight *backlight = GSD_BACKLIGHT (data);
@@ -758,7 +758,7 @@ csd_backlight_rr_screen_changed_cb (GnomeRRScreen *screen,
          *       This might backfire on us obviously if the hardware claims it
          *       can control a non-existing screen.
          */
-        output = csd_backlight_rr_find_output (backlight, FALSE);
+        output = scsd_backlight_rr_find_output (backlight, FALSE);
         if (output)
                 builtin_display_disabled = !gnome_rr_output_get_crtc (output);
 
@@ -769,7 +769,7 @@ csd_backlight_rr_screen_changed_cb (GnomeRRScreen *screen,
 }
 
 static void
-csd_backlight_get_property (GObject    *object,
+scsd_backlight_get_property (GObject    *object,
                             guint       prop_id,
                             GValue     *value,
                             GParamSpec *pspec)
@@ -782,7 +782,7 @@ csd_backlight_get_property (GObject    *object,
                 break;
 
         case PROP_BRIGHTNESS:
-                g_value_set_int (value, csd_backlight_get_brightness (backlight, NULL));
+                g_value_set_int (value, scsd_backlight_get_brightness (backlight, NULL));
                 break;
 
         default:
@@ -792,7 +792,7 @@ csd_backlight_get_property (GObject    *object,
 }
 
 static void
-csd_backlight_set_property (GObject      *object,
+scsd_backlight_set_property (GObject      *object,
                             guint         prop_id,
                             const GValue *value,
                             GParamSpec   *pspec)
@@ -804,9 +804,9 @@ csd_backlight_set_property (GObject      *object,
                 backlight->rr_screen = g_value_dup_object (value);
 
                 g_signal_connect_object (backlight->rr_screen, "changed",
-                                         G_CALLBACK (csd_backlight_rr_screen_changed_cb),
+                                         G_CALLBACK (scsd_backlight_rr_screen_changed_cb),
                                          object, 0);
-                csd_backlight_rr_screen_changed_cb (backlight->rr_screen, object);
+                scsd_backlight_rr_screen_changed_cb (backlight->rr_screen, object);
 
                 break;
 
@@ -817,7 +817,7 @@ csd_backlight_set_property (GObject      *object,
 }
 
 static gboolean
-csd_backlight_initable_init (GInitable       *initable,
+scsd_backlight_initable_init (GInitable       *initable,
                              GCancellable    *cancellable,
                              GError         **error)
 {
@@ -871,12 +871,12 @@ csd_backlight_initable_init (GInitable       *initable,
         }
 
         /* Try finding a udev device. */
-        if (csd_backlight_udev_init (backlight))
+        if (scsd_backlight_udev_init (backlight))
                 goto found;
 #endif /* __linux__ */
 
         /* Try GNOME RR as a fallback. */
-        output = csd_backlight_rr_find_output (backlight, TRUE);
+        output = scsd_backlight_rr_find_output (backlight, TRUE);
         if (output) {
                 g_debug ("Using GNOME RR (mutter) for backlight.");
                 backlight->brightness_min = 1;
@@ -904,7 +904,7 @@ found:
 }
 
 static void
-csd_backlight_finalize (GObject *object)
+scsd_backlight_finalize (GObject *object)
 {
         GsdBacklight *backlight = GSD_BACKLIGHT (object);
 
@@ -924,19 +924,19 @@ csd_backlight_finalize (GObject *object)
 }
 
 static void
-csd_backlight_initable_iface_init (GInitableIface *iface)
+scsd_backlight_initable_iface_init (GInitableIface *iface)
 {
-  iface->init = csd_backlight_initable_init;
+  iface->init = scsd_backlight_initable_init;
 }
 
 static void
-csd_backlight_class_init (GsdBacklightClass *klass)
+scsd_backlight_class_init (GsdBacklightClass *klass)
 {
         GObjectClass *object_class = G_OBJECT_CLASS (klass);
 
-        object_class->finalize = csd_backlight_finalize;
-        object_class->get_property = csd_backlight_get_property;
-        object_class->set_property = csd_backlight_set_property;
+        object_class->finalize = scsd_backlight_finalize;
+        object_class->get_property = scsd_backlight_get_property;
+        object_class->set_property = scsd_backlight_set_property;
 
         props[PROP_RR_SCREEN] = g_param_spec_object ("rr-screen", "GnomeRRScreen",
                                                      "GnomeRRScreen usable for backlight control.",
@@ -953,7 +953,7 @@ csd_backlight_class_init (GsdBacklightClass *klass)
 
 
 static void
-csd_backlight_init (GsdBacklight *backlight)
+scsd_backlight_init (GsdBacklight *backlight)
 {
         backlight->brightness_target = -1;
         backlight->brightness_min = -1;
@@ -968,7 +968,7 @@ csd_backlight_init (GsdBacklight *backlight)
 }
 
 GsdBacklight *
-csd_backlight_new (GnomeRRScreen  *rr_screen,
+scsd_backlight_new (GnomeRRScreen  *rr_screen,
                    GError        **error)
 {
         return GSD_BACKLIGHT (g_initable_new (GSD_TYPE_BACKLIGHT, NULL, error,

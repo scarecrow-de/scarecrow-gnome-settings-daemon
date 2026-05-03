@@ -51,13 +51,13 @@ char* get_filesystem (GFile *file);
 
 void delete_recursively_by_age (DeleteData *data);
 
-void csd_ldsm_setup (gboolean check_now);
-void csd_ldsm_clean (void);
+void scsd_ldsm_setup (gboolean check_now);
+void scsd_ldsm_clean (void);
 
 /* for the test */
-void csd_ldsm_show_empty_trash (void);
-void csd_ldsm_purge_trash      (GDateTime *old);
-void csd_ldsm_purge_temp_files (GDateTime *old);
+void scsd_ldsm_show_empty_trash (void);
+void scsd_ldsm_purge_trash      (GDateTime *old);
+void scsd_ldsm_purge_temp_files (GDateTime *old);
 
 G_END_DECLS
 
