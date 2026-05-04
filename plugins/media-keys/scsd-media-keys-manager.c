@@ -1366,7 +1366,7 @@ play_volume_changed_audio (GsdMediaKeysManager *manager,
                 ca_context_set_driver (priv->ca, "pulse");
                 ca_context_change_props (priv->ca, 0,
                                          CA_PROP_APPLICATION_ID,
-                                         "io.github.scarecrow_de.VolumeControl",
+                                         "org.gnome.VolumeControl",
                                          NULL);
 
                 priv->gtksettings =
