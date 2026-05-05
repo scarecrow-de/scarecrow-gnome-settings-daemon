@@ -2,7 +2,7 @@
 Type=Application
 Name=@description@
 Exec=@libexecdir@/scsd-@pluginname@
-OnlyShowIn=GNOME;
+OnlyShowIn=Scarecrow;
 NoDisplay=true
 X-GNOME-Autostart-Phase=Initialization
 X-GNOME-Autostart-Notify=true

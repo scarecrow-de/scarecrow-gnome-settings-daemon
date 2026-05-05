@@ -2,6 +2,6 @@
 Type=Application
 Name=GNOME Settings Daemon's @pluginname@ dummy autostart file
 Exec=/bin/false
-OnlyShowIn=GNOME;
+OnlyShowIn=Scarecrow;
 NoDisplay=true
 Hidden=true
